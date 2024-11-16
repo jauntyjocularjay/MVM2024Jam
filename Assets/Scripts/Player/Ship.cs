@@ -17,7 +17,6 @@ public class PlayerShip : MonoBehaviour
     {
         camera = Camera.main;
         playerData.position = gameObject.GetComponent<Transform>().position;
-        // input = gameObject.GetComponent<PlayerInput>();
     }
 
     private void OnEnable()
