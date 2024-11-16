@@ -302,6 +302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 182370043}
+  - component: {fileID: 182370044}
   m_Layer: 0
   m_Name: LayerC
   m_TagString: Untagged
@@ -329,6 +330,22 @@ Transform:
   - {fileID: 1675494144}
   m_Father: {fileID: 970365983}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182370044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182370042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765da303b9cf8d743ab6e605cb45c184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  relativeMovement: 0
+  playerData: {fileID: 11400000, guid: 302ed5bcd259c3d44ba603fab3828df5, type: 2}
+  layerData: {fileID: 11400000, guid: bb258456582793741a5db0a5ee3c6e1f, type: 2}
+  deltaDistance: 0
 --- !u!1 &298629333
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,7 +708,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 861095747}
-  m_Layer: 0
+  - component: {fileID: 861095748}
+  m_Layer: 26
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -714,6 +732,19 @@ Transform:
   - {fileID: 1980998680}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &861095748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861095746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0240908f57c19ab4ea2917536c5381b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData: {fileID: 11400000, guid: 302ed5bcd259c3d44ba603fab3828df5, type: 2}
 --- !u!1 &862267599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,6 +1397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1702074540}
+  - component: {fileID: 1702074541}
   m_Layer: 0
   m_Name: LayerB
   m_TagString: Untagged
@@ -1393,6 +1425,22 @@ Transform:
   - {fileID: 1853294335}
   m_Father: {fileID: 970365983}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1702074541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702074539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cfcc458cf065b64192ebb5bbcd96e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  relativeMovement: 0
+  playerData: {fileID: 11400000, guid: 302ed5bcd259c3d44ba603fab3828df5, type: 2}
+  layerData: {fileID: 11400000, guid: bb258456582793741a5db0a5ee3c6e1f, type: 2}
+  deltaDistance: 0
 --- !u!1 &1710294122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1664,8 +1712,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1980998680}
   - component: {fileID: 1980998681}
-  m_Layer: 0
-  m_Name: blue01
+  m_Layer: 26
+  m_Name: WenrexaShip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1729,7 +1777,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: da01fc08bc1ccf14a9471140c3e24be8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1750,6 +1798,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2004597355}
+  - component: {fileID: 2004597356}
   m_Layer: 0
   m_Name: LayerA
   m_TagString: Untagged
@@ -1777,6 +1826,22 @@ Transform:
   - {fileID: 13712821}
   m_Father: {fileID: 970365983}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2004597356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004597354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249f0bce6f925ae4f9be8840488efc9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  relativeMovement: 0
+  playerData: {fileID: 11400000, guid: 302ed5bcd259c3d44ba603fab3828df5, type: 2}
+  layerData: {fileID: 11400000, guid: bb258456582793741a5db0a5ee3c6e1f, type: 2}
+  deltaDistance: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
