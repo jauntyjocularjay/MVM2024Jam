@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1d1dfe3f9007c4b8ac848e45395f11, type: 3}
   m_Name: LayerData
   m_EditorClassIdentifier: 
-  deltaDistanceA: 0.6
+  deltaDistanceA: 0.12
   deltaDistanceB: 0.33
-  deltaDistanceC: 0.12
+  deltaDistanceC: 0.66
