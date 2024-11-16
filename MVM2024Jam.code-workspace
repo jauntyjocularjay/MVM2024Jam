@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "Assets/Scripts"
+		},
+		{
+			"path": "git"
 		}
 	],
 	"settings": {
