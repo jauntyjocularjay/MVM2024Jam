@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerShip : MonoBehaviour
 {
-    Camera camera;
+    new Camera camera;
     public PlayerData playerData;
 
     void Start()
