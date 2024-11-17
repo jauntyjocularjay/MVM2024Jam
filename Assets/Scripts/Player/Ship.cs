@@ -6,17 +6,16 @@ using UnityEngine.InputSystem;
 public class PlayerShip : MonoBehaviour
 {
     new Camera camera;
-    Vector3 orientation;
     public PlayerData playerData;
     public InputAction playerMovement;
     public InputAction playerAiming;
     public InputAction playerFire;
-    Vector2 moveDirection = Vector2.zero;
 
     void Start()
     {
         camera = Camera.main;
         playerData.position = gameObject.GetComponent<Transform>().position;
+        playerData.rotation = gameObject.GetComponent<Transform>().rotation;
     }
 
     private void OnEnable()
@@ -29,22 +28,25 @@ public class PlayerShip : MonoBehaviour
     }
     void Update()
     {
+        ReadMovement();
         playerData.position = transform.position;
+        playerData.rotation = transform.rotation;
         camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
-        ReadLeftStick();
     }
-    void ReadLeftStick()
+    void ReadMovement()
     {
-        moveDirection = playerMovement.ReadValue<Vector2>();
+        Vector2 moveDirection = playerMovement.ReadValue<Vector2>();
+        playerData.rotation = playerAiming.ReadValue<Quaternion>();
         moveDirection.Normalize();
+        playerData.moveDirection = moveDirection;
+        playerData.rotation.Normalize();
     }
     void FixedUpdate()
     {
         transform.position = new Vector2(
-            transform.position.x + (moveDirection.x * playerData.moveSpeed),
-            transform.position.y + (moveDirection.y * playerData.moveSpeed)
+            transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
+            transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
         );
+        transform.rotation = playerData.rotation;
     }
-    void OnSkip()
-    {}
 }

@@ -7,8 +7,8 @@ public class StaticLayer : Layer
     {
         position = gameObject.GetComponent<Transform>().position;
     }
-    void Update()
+    void FixedUpdate()
     {
-        gameObject.GetComponent<Transform>().position = playerData.position;
+        transform.position = playerData.position;
     }
 }

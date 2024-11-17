@@ -11,7 +11,7 @@ public class LayerB : Layer
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.position = deltaDistance * playerData.position;
     }
