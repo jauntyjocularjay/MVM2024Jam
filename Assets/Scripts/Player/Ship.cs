@@ -2,7 +2,6 @@ using System;
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem;
 
 public class PlayerShip : MonoBehaviour
 {
