@@ -47,10 +47,10 @@ public class PlayerShip : MonoBehaviour
     }
     void ReadCursorPosition()
     {
-        Vector2 mousePosition = Mouse.current.position.ReadValue() - screenCenter;
-        playerData.mouseAngle = mousePosition.normalized;
-        playerData.cursorPosition = playerData.mouseAngle * playerData.cursorRadius;
-        cursor.transform.position = playerData.cursorPosition + playerData.position;
+        Vector2 cursorPosition = Mouse.current.position.ReadValue() - screenCenter;
+        cursorPosition = cursorPosition.normalized;
+        cursorPosition *= playerData.cursorRadius;
+        cursor.transform.position = cursorPosition + playerData.position;
     }
     void FixedUpdate()
     {
