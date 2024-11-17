@@ -6,17 +6,18 @@ using UnityEngine.InputSystem;
 public class PlayerShip : MonoBehaviour
 {
     new Camera camera;
-    Vector3 position;
     public PlayerData playerData;
     public InputAction playerMovement;
     public InputAction playerAiming;
     public InputAction playerFire;
+    Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
+    public GameObject cursor;
 
     void Start()
     {
         camera = Camera.main;
         playerData.position = gameObject.GetComponent<Transform>().position;
-        playerData.rotation = gameObject.GetComponent<Transform>().rotation;
+        // playerData.rotation = gameObject.GetComponent<Transform>().rotation;
     }
 
     private void OnEnable()
@@ -30,17 +31,26 @@ public class PlayerShip : MonoBehaviour
     void Update()
     {
         ReadMovement();
+        ReadCursorPosition();
         playerData.position = transform.position;
-        playerData.rotation = transform.rotation;
+        // playerData.rotation = transform.rotation;
+        playerData.position = gameObject.GetComponent<Transform>().position;
         camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
     }
     void ReadMovement()
     {
         Vector2 moveDirection = playerMovement.ReadValue<Vector2>();
-        playerData.rotation = playerAiming.ReadValue<Quaternion>();
+        // playerData.rotation = playerAiming.ReadValue<Quaternion>();
         moveDirection.Normalize();
         playerData.moveDirection = moveDirection;
-        playerData.rotation.Normalize();
+        // playerData.rotation.Normalize();
+    }
+    void ReadCursorPosition()
+    {
+        Vector2 mousePosition = Mouse.current.position.ReadValue() - screenCenter;
+        playerData.mouseAngle = mousePosition.normalized;
+        playerData.cursorPosition = playerData.mouseAngle * playerData.cursorRadius;
+        cursor.transform.position = playerData.cursorPosition + playerData.position;
     }
     void FixedUpdate()
     {
@@ -48,7 +58,7 @@ public class PlayerShip : MonoBehaviour
             transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
             transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
         );
-        transform.rotation = playerData.rotation;
+        // transform.rotation = playerData.rotation;
     }
     void OnSkip()
     {}

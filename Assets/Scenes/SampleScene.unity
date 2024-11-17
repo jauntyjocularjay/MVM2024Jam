@@ -756,7 +756,6 @@ GameObject:
   m_Component:
   - component: {fileID: 861095747}
   - component: {fileID: 861095748}
-  - component: {fileID: 861095749}
   m_Layer: 26
   m_Name: Ship
   m_TagString: Untagged
@@ -972,6 +971,7 @@ MonoBehaviour:
       m_Action: Player Fire
       m_Flags: 0
     m_Flags: 0
+  cursor: {fileID: 2089327086}
 --- !u!1 &862267599
 GameObject:
   m_ObjectHideFlags: 0
