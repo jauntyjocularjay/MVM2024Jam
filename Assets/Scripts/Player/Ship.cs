@@ -1,16 +1,14 @@
 using System;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerShip : MonoBehaviour
 {
     new Camera camera;
-    Vector3 position;
     public PlayerData playerData;
     public InputAction playerMovement;
-    public InputAction playerAiming;
-    public InputAction playerFire;
+    // public InputAction playerAiming;
+    // public InputAction playerFire;
     Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
     public GameObject cursor;
 
@@ -18,9 +16,7 @@ public class PlayerShip : MonoBehaviour
     {
         camera = Camera.main;
         playerData.positionOnMap = gameObject.GetComponent<Transform>().position;
-        // playerData.rotation = gameObject.GetComponent<Transform>().rotation;
     }
-
     private void OnEnable()
     {
         playerMovement.Enable();
@@ -33,18 +29,19 @@ public class PlayerShip : MonoBehaviour
     {
         ReadMovement();
         ReadCursorPosition();
-        playerData.positionOnMap = transform.position;
-        // playerData.rotation = transform.rotation;
-        playerData.positionOnMap = gameObject.GetComponent<Transform>().position;
-        camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
     }
     void ReadMovement()
     {
-        Vector2 moveDirection = playerMovement.ReadValue<Vector2>();
-        // playerData.rotation = playerAiming.ReadValue<Quaternion>();
-        moveDirection.Normalize();
-        playerData.moveDirection = moveDirection;
-        // playerData.rotation.Normalize();
+        playerData.moveDirection = playerMovement.ReadValue<Vector2>();
+        playerData.moveDirection.Normalize();
+        playerData.positionOnMap = transform.position;
+        camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
+
+        if(playerData.moveDirection != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, playerData.moveDirection);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * playerData.rotationSpeed);
+        }
     }
     void ReadCursorPosition()
     {
@@ -68,8 +65,5 @@ public class PlayerShip : MonoBehaviour
             transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
             transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
         );
-        // transform.rotation = playerData.rotation;
     }
-    void OnSkip()
-    {}
 }

@@ -2,12 +2,7 @@ using UnityEngine;
 
 public class StaticLayer : Layer
 {
-    Vector2 position;
-    void Start()
-    {
-        position = gameObject.GetComponent<Transform>().position;
-    }
-    void FixedUpdate()
+    void LateUpdate()
     {
         transform.position = playerData.positionOnMap;
     }
