@@ -14,6 +14,13 @@ public class PlayerShip : MonoBehaviour
     Animator animator;
     public GameObject cursor;
 
+    bool damaged = false;
+    [SerializeField] float DamageCooldown = 5f;
+    float currentDamageCooldown = 0f;
+    //Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile. I'm thinking of creating a damaged state where the player will
+    //change color when they are hit, another hit and they die.
+
+
     void Start()
     {
         camera = Camera.main;
@@ -33,6 +40,8 @@ public class PlayerShip : MonoBehaviour
     {
         ReadMovement();
         ReadCursorPosition();
+        LookAtMouse();
+        HealingProccess();
     }
     void ReadMovement()
     {
@@ -57,8 +66,8 @@ public class PlayerShip : MonoBehaviour
 
         if(playerData.moveDirection != Vector3.zero)
         {
-            Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, playerData.moveDirection);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * playerData.rotationSpeed);
+         //   Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, playerData.moveDirection);
+         //   transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * playerData.rotationSpeed);
         }
     }
     void ReadCursorPosition()
@@ -70,6 +79,17 @@ public class PlayerShip : MonoBehaviour
         );
         cursor.transform.position = cursorPosition + playerData.positionOnMap;
     }
+
+    void LookAtMouse()
+    {
+        Vector2 direction = new Vector2(
+            cursor.transform.position.x - transform.position.x,
+            cursor.transform.position.y - transform.position.y
+            );
+
+        transform.up = direction;
+    }
+
     void ReadThumbstickAngle()
     {
         Vector2 cursorPosition = Mouse.current.position.ReadValue() - screenCenter;
@@ -83,5 +103,32 @@ public class PlayerShip : MonoBehaviour
             transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
             transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
         );
+
+    }
+
+    public void takeDamage()
+    {
+        //Here we'll have captured fighters die in place of the player if there are fighters available.
+
+        if (!damaged)
+        {
+            damaged = true;
+            currentDamageCooldown = 0f;
+        } else
+        {
+            //Die
+        }
+    }
+
+    void HealingProccess()
+    {
+        if(damaged)
+        {
+            currentDamageCooldown += Time.deltaTime;
+            if (currentDamageCooldown >= DamageCooldown)
+            {
+                damaged = false;
+            }
+        }
     }
 }
