@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4802809052400564288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5478423853415093065}
+  m_Layer: 26
+  m_Name: ShotPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5478423853415093065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4802809052400564288}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.462, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3151217536455797331}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5534213990405279015
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +452,7 @@ MonoBehaviour:
       m_Flags: 8
     m_Flags: 0
   cursor: {fileID: 5534213990405279015}
+  DamageCooldown: 5
 --- !u!95 &8346154042462507792
 Animator:
   serializedVersion: 7
@@ -477,6 +509,7 @@ Transform:
   - {fileID: 298256901384180984}
   - {fileID: 6426363529658838205}
   - {fileID: 8502747859396978931}
+  - {fileID: 5478423853415093065}
   m_Father: {fileID: 7467802510441063774}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7231910425107520535
