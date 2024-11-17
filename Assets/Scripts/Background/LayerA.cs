@@ -6,12 +6,11 @@ public class LayerA : Layer
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
         deltaDistance = layerData.deltaDistanceA;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.position = deltaDistance * playerData.position;
     }

@@ -3,8 +3,8 @@ guid: 6c882a5c1770c064eb23c8a5d66197b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -914344077490345409
-    second: Ship03_0
+      213: -3888763405390159545
+    second: Ship3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,24 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ship03_0
+      name: Ship3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3aa4bae7e89f43f0800000000000000
-      internalID: -914344077490345409
+      spriteID: 7416e2e4946580ac0800000000000000
+      internalID: -3888763405390159545
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ship03_0: -914344077490345409
+      Ship3_0: -3888763405390159545
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

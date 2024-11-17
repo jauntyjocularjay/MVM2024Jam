@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c54ac1522e3aa34bbe1b6f9a352fa97, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  position: {x: -4.0765924, y: 1.4038094}
+  position: {x: -8.588229, y: -24.008808}
+  moveDirection: {x: 0, y: 0}
+  cursorPosition: {x: -1.7431511, y: -0.98052245}
+  cursorRadius: 2.5
   moveSpeed: 0.3
+  mouseAngle: {x: -0.87157553, y: -0.49026123}

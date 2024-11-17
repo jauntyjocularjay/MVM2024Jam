@@ -86,6 +86,12 @@ TextureImporter:
   - first:
       213: 2688382946191591087
     second: Red1a_27
+  - first:
+      213: -8722734077594771967
+    second: Red1a_28
+  - first:
+      213: 2805675390891957541
+    second: Red1a_29
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,7 +124,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -127,12 +133,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -177,19 +183,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -197,10 +190,10 @@ TextureImporter:
       name: Red1a_0
       rect:
         serializedVersion: 2
-        x: 127
-        y: 444
-        width: 35
-        height: 24
+        x: 930
+        y: 519
+        width: 18
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,10 +212,10 @@ TextureImporter:
       name: Red1a_1
       rect:
         serializedVersion: 2
-        x: 306
-        y: 406
-        width: 44
-        height: 45
+        x: 127
+        y: 444
+        width: 35
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +234,10 @@ TextureImporter:
       name: Red1a_2
       rect:
         serializedVersion: 2
-        x: 563
-        y: 447
-        width: 28
-        height: 15
+        x: 306
+        y: 406
+        width: 44
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +256,10 @@ TextureImporter:
       name: Red1a_3
       rect:
         serializedVersion: 2
-        x: 570
-        y: 412
-        width: 41
-        height: 35
+        x: 563
+        y: 447
+        width: 28
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,10 +278,10 @@ TextureImporter:
       name: Red1a_4
       rect:
         serializedVersion: 2
-        x: 816
-        y: 400
-        width: 23
-        height: 48
+        x: 570
+        y: 412
+        width: 41
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +300,10 @@ TextureImporter:
       name: Red1a_5
       rect:
         serializedVersion: 2
-        x: 176
-        y: 404
-        width: 31
-        height: 24
+        x: 816
+        y: 400
+        width: 23
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,10 +322,10 @@ TextureImporter:
       name: Red1a_6
       rect:
         serializedVersion: 2
-        x: 363
-        y: 418
-        width: 22
-        height: 20
+        x: 176
+        y: 404
+        width: 31
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,10 +344,10 @@ TextureImporter:
       name: Red1a_7
       rect:
         serializedVersion: 2
-        x: 366
-        y: 395
-        width: 39
-        height: 25
+        x: 363
+        y: 418
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +366,10 @@ TextureImporter:
       name: Red1a_8
       rect:
         serializedVersion: 2
-        x: 140
-        y: 370
-        width: 46
-        height: 24
+        x: 366
+        y: 395
+        width: 39
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,10 +388,10 @@ TextureImporter:
       name: Red1a_9
       rect:
         serializedVersion: 2
-        x: 763
-        y: 392
-        width: 17
-        height: 19
+        x: 140
+        y: 370
+        width: 46
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,10 +410,10 @@ TextureImporter:
       name: Red1a_10
       rect:
         serializedVersion: 2
-        x: 764
-        y: 247
-        width: 56
-        height: 45
+        x: 763
+        y: 392
+        width: 17
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,10 +432,10 @@ TextureImporter:
       name: Red1a_11
       rect:
         serializedVersion: 2
-        x: 182
-        y: 190
-        width: 39
-        height: 51
+        x: 764
+        y: 247
+        width: 56
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -461,10 +454,10 @@ TextureImporter:
       name: Red1a_12
       rect:
         serializedVersion: 2
-        x: 339
-        y: 185
-        width: 30
-        height: 32
+        x: 182
+        y: 190
+        width: 39
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +476,10 @@ TextureImporter:
       name: Red1a_13
       rect:
         serializedVersion: 2
-        x: 425
-        y: 202
-        width: 38
-        height: 40
+        x: 339
+        y: 185
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +498,10 @@ TextureImporter:
       name: Red1a_14
       rect:
         serializedVersion: 2
-        x: 719
-        y: 203
-        width: 20
-        height: 34
+        x: 425
+        y: 202
+        width: 38
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -527,10 +520,10 @@ TextureImporter:
       name: Red1a_15
       rect:
         serializedVersion: 2
-        x: 764
-        y: 179
-        width: 41
-        height: 36
+        x: 719
+        y: 203
+        width: 20
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -549,10 +542,10 @@ TextureImporter:
       name: Red1a_16
       rect:
         serializedVersion: 2
-        x: 796
-        y: 208
-        width: 25
-        height: 13
+        x: 764
+        y: 179
+        width: 41
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -571,10 +564,10 @@ TextureImporter:
       name: Red1a_17
       rect:
         serializedVersion: 2
-        x: 144
-        y: 157
-        width: 30
-        height: 28
+        x: 796
+        y: 208
+        width: 25
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,10 +586,10 @@ TextureImporter:
       name: Red1a_18
       rect:
         serializedVersion: 2
-        x: 367
-        y: 138
-        width: 28
-        height: 47
+        x: 144
+        y: 157
+        width: 30
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,10 +608,10 @@ TextureImporter:
       name: Red1a_19
       rect:
         serializedVersion: 2
-        x: 396
-        y: 174
-        width: 39
-        height: 32
+        x: 367
+        y: 138
+        width: 28
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -637,10 +630,10 @@ TextureImporter:
       name: Red1a_20
       rect:
         serializedVersion: 2
-        x: 744
-        y: 129
-        width: 23
-        height: 20
+        x: 396
+        y: 174
+        width: 39
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +652,10 @@ TextureImporter:
       name: Red1a_21
       rect:
         serializedVersion: 2
-        x: 205
-        y: 34
-        width: 31
-        height: 28
+        x: 744
+        y: 129
+        width: 23
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -681,10 +674,10 @@ TextureImporter:
       name: Red1a_22
       rect:
         serializedVersion: 2
-        x: 234
-        y: 50
-        width: 9
-        height: 8
+        x: 205
+        y: 34
+        width: 31
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -703,10 +696,10 @@ TextureImporter:
       name: Red1a_23
       rect:
         serializedVersion: 2
-        x: 272
-        y: 31
-        width: 29
-        height: 35
+        x: 234
+        y: 50
+        width: 9
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -725,10 +718,10 @@ TextureImporter:
       name: Red1a_24
       rect:
         serializedVersion: 2
-        x: 541
-        y: 43
-        width: 32
-        height: 34
+        x: 272
+        y: 31
+        width: 29
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -747,10 +740,10 @@ TextureImporter:
       name: Red1a_25
       rect:
         serializedVersion: 2
-        x: 445
-        y: 0
+        x: 541
+        y: 43
         width: 32
-        height: 24
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -769,10 +762,10 @@ TextureImporter:
       name: Red1a_26
       rect:
         serializedVersion: 2
-        x: 509
-        y: 13
-        width: 23
-        height: 25
+        x: 445
+        y: 0
+        width: 32
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -791,10 +784,10 @@ TextureImporter:
       name: Red1a_27
       rect:
         serializedVersion: 2
-        x: 892
-        y: 10
-        width: 43
-        height: 28
+        x: 509
+        y: 13
+        width: 23
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -809,11 +802,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Red1a_28
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 10
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ed4ca429f92f680800000000000000
+      internalID: -8722734077594771967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red1a_29
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 0
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d9b2527e2cfe620800000000000000
+      internalID: 2805675390891957541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -844,6 +881,8 @@ TextureImporter:
       Red1a_25: -1594467295729895221
       Red1a_26: -2450438182460615892
       Red1a_27: 2688382946191591087
+      Red1a_28: -8722734077594771967
+      Red1a_29: 2805675390891957541
       Red1a_3: -9148904111367023893
       Red1a_4: 1177103528375476246
       Red1a_5: -5495185197662664302
