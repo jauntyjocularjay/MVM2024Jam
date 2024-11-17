@@ -17,7 +17,7 @@ public class PlayerShip : MonoBehaviour
     void Start()
     {
         camera = Camera.main;
-        playerData.position = gameObject.GetComponent<Transform>().position;
+        playerData.positionOnMap = gameObject.GetComponent<Transform>().position;
         // playerData.rotation = gameObject.GetComponent<Transform>().rotation;
     }
 
@@ -33,9 +33,9 @@ public class PlayerShip : MonoBehaviour
     {
         ReadMovement();
         ReadCursorPosition();
-        playerData.position = transform.position;
+        playerData.positionOnMap = transform.position;
         // playerData.rotation = transform.rotation;
-        playerData.position = gameObject.GetComponent<Transform>().position;
+        playerData.positionOnMap = gameObject.GetComponent<Transform>().position;
         camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
     }
     void ReadMovement()
@@ -49,9 +49,18 @@ public class PlayerShip : MonoBehaviour
     void ReadCursorPosition()
     {
         Vector2 cursorPosition = Mouse.current.position.ReadValue() - screenCenter;
+        cursorPosition = new Vector2(
+            cursorPosition.x / Screen.height * 10.0f,
+            cursorPosition.y / Screen.height * 10.0f
+        );
+        cursor.transform.position = cursorPosition + playerData.positionOnMap;
+    }
+    void ReadThumbstickAngle()
+    {
+        Vector2 cursorPosition = Mouse.current.position.ReadValue() - screenCenter;
         cursorPosition = cursorPosition.normalized;
         cursorPosition *= playerData.cursorRadius;
-        cursor.transform.position = cursorPosition + playerData.position;
+        cursor.transform.position = cursorPosition + playerData.positionOnMap;
     }
     void FixedUpdate()
     {

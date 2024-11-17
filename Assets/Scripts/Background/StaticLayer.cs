@@ -9,6 +9,6 @@ public class StaticLayer : Layer
     }
     void FixedUpdate()
     {
-        transform.position = playerData.position;
+        transform.position = playerData.positionOnMap;
     }
 }
