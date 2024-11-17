@@ -18,6 +18,7 @@ public class PlayerShip : MonoBehaviour
     {
         camera = Camera.main;
         animator = gameObject.GetComponent<Animator>();
+        animator = gameObject.GetComponent<Animator>();
         playerData.positionOnMap = gameObject.GetComponent<Transform>().position;
         animator.SetTrigger("idle");
     }
