@@ -756,7 +756,6 @@ GameObject:
   m_Component:
   - component: {fileID: 861095747}
   - component: {fileID: 861095748}
-  - component: {fileID: 861095749}
   m_Layer: 26
   m_Name: Ship
   m_TagString: Untagged
@@ -1179,7 +1178,7 @@ SpriteRenderer:
   m_Size: {x: 100, y: 56.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1155713586
@@ -1854,7 +1853,7 @@ GameObject:
   - component: {fileID: 1980998680}
   - component: {fileID: 1980998681}
   m_Layer: 26
-  m_Name: WenrexaShip
+  m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1870,7 +1869,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2089327087}
@@ -1920,7 +1919,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 15
-  m_Sprite: {fileID: 21300000, guid: da01fc08bc1ccf14a9471140c3e24be8, type: 3}
+  m_Sprite: {fileID: 758559697, guid: 1fbc03d83851d3b49ac6144be0c0c646, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2012,7 +2011,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 25, y: 25, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1980998680}
