@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class PlayerShip : MonoBehaviour
@@ -10,12 +11,15 @@ public class PlayerShip : MonoBehaviour
     // public InputAction playerAiming;
     // public InputAction playerFire;
     Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
+    Animator animator;
     public GameObject cursor;
 
     void Start()
     {
         camera = Camera.main;
+        animator = gameObject.GetComponent<Animator>();
         playerData.positionOnMap = gameObject.GetComponent<Transform>().position;
+        animator.SetTrigger("idle");
     }
     private void OnEnable()
     {
@@ -34,6 +38,20 @@ public class PlayerShip : MonoBehaviour
     {
         playerData.moveDirection = playerMovement.ReadValue<Vector2>();
         playerData.moveDirection.Normalize();
+
+        // if(playerData.moveDirection.x > 0.0f)
+        // {
+        //     animator.SetTrigger("bankleft");
+        // }
+        // else if(playerData.moveDirection.x < 0.0f)
+        // {
+        //     animator.SetTrigger("bankright");
+        // }
+        // else
+        // {
+        //     animator.SetTrigger("idle");
+        // }
+
         playerData.positionOnMap = transform.position;
         camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
 
