@@ -70,4 +70,6 @@ public class PlayerShip : MonoBehaviour
         );
         // transform.rotation = playerData.rotation;
     }
+    void OnSkip()
+    {}
 }
