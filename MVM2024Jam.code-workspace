@@ -1,10 +1,20 @@
 {
 	"folders": [
 		{
+			"name": "MVM2024Jam",
 			"path": "."
 		},
 		{
+			"name": "Assets",
+			"path": "Assets"
+		},
+		{
+			"name": "Scripts",
 			"path": "Assets/Scripts"
+		},
+		{
+			"name": "git",
+			"path": "git"
 		}
 	],
 	"settings": {
