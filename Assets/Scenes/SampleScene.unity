@@ -756,6 +756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 861095747}
   - component: {fileID: 861095748}
+  - component: {fileID: 861095749}
   m_Layer: 26
   m_Name: Ship
   m_TagString: Untagged

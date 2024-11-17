@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerShip : MonoBehaviour
 {
     new Camera camera;
+    Vector3 position;
     public PlayerData playerData;
     public InputAction playerMovement;
     public InputAction playerAiming;
@@ -60,6 +61,4 @@ public class PlayerShip : MonoBehaviour
         );
         // transform.rotation = playerData.rotation;
     }
-    void OnSkip()
-    {}
 }
