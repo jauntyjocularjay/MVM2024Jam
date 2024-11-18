@@ -58,7 +58,7 @@ public class PlayerShip : MonoBehaviour
         }
         else
         {
-            animator.SetTrigger("idles");
+            animator.SetTrigger("idle");
         }
         playerData.positionOnMap = transform.position;
         camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
