@@ -25,7 +25,6 @@ public class PlayerShip : MonoBehaviour
     {
         camera = Camera.main;
         animator = gameObject.GetComponent<Animator>();
-        animator = gameObject.GetComponent<Animator>();
         playerData.positionOnMap = gameObject.GetComponent<Transform>().position;
         animator.SetTrigger("idle");
     }
@@ -49,20 +48,18 @@ public class PlayerShip : MonoBehaviour
     {
         playerData.moveDirection = playerMovement.ReadValue<Vector2>();
         playerData.moveDirection.Normalize();
-
-        // if(playerData.moveDirection.x > 0.0f)
-        // {
-        //     animator.SetTrigger("bankleft");
-        // }
-        // else if(playerData.moveDirection.x < 0.0f)
-        // {
-        //     animator.SetTrigger("bankright");
-        // }
-        // else
-        // {
-        //     animator.SetTrigger("idle");
-        // }
-
+        if(playerData.moveDirection.x > 0.0f)
+        {
+            animator.SetTrigger("bankleft");
+        }
+        else if(playerData.moveDirection.x < 0.0f)
+        {
+            animator.SetTrigger("bankright");
+        }
+        else
+        {
+            animator.SetTrigger("idles");
+        }
         playerData.positionOnMap = transform.position;
         camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
 
