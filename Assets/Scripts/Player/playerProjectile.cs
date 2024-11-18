@@ -30,6 +30,19 @@ public class playerProjectile : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<enemyHealth>().takeDamage(Damage);
+            destroyProjectile();
+        }
+        if (collision.gameObject.tag == "Wall")
+        {
+            destroyProjectile();
+        }
+    }
+
     private void destroyProjectile()
     {
         parentBlaster.currentProjectiles.Remove(gameObject);
