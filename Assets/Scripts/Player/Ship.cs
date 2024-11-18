@@ -106,7 +106,7 @@ public class PlayerShip : MonoBehaviour
 
     }
 
-    public void takeDamage()
+    public  void takeDamage()
     {
         //Here we'll have captured fighters die in place of the player if there are fighters available.
 

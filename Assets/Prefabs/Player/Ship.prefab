@@ -326,6 +326,8 @@ GameObject:
   - component: {fileID: 7467802510441063774}
   - component: {fileID: 6589831632272163880}
   - component: {fileID: 8346154042462507792}
+  - component: {fileID: 3909388924065337721}
+  - component: {fileID: 4459438496977042528}
   m_Layer: 26
   m_Name: Ship
   m_TagString: Untagged
@@ -475,6 +477,39 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3909388924065337721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7314447411320132585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8117fd3f74725194d9894db087e3062b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons: []
+  primaryWeapon: {fileID: 4459438496977042528}
+  shotEmitter: {fileID: 5478423853415093065}
+  ROF: 0.2
+  TractorROF: 5
+--- !u!114 &4459438496977042528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7314447411320132585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e15c81be5cf5734cbbc82152b5325bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 3730315944908148375, guid: 69c3b38f4f5af084e9e70bdcefa23f4e, type: 3}
+  bulletSpd: 4
+  Damage: 4
+  lifetime: 3
 --- !u!1 &8672341035423565150
 GameObject:
   m_ObjectHideFlags: 0
