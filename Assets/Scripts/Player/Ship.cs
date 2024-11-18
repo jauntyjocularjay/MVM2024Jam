@@ -43,6 +43,7 @@ public class PlayerShip : MonoBehaviour
         ReadCursorPosition();
         LookAtMouse();
         HealingProccess();
+        
     }
     void ReadMovement()
     {
