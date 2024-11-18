@@ -22,7 +22,7 @@ public class Blaster : Weapon
         {
 
             GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
-            playerProjectile currentBullet = currentObject.GetComponent<playerProjectile>();
+            PlayerProjectile currentBullet = currentObject.GetComponent<PlayerProjectile>();
 
             currentBullet.CalibrateBullet(bulletSpd, Damage, lifetime, this);
 

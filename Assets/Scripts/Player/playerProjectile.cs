@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class playerProjectile : MonoBehaviour
+public class PlayerProjectile : MonoBehaviour
 {
 
 
