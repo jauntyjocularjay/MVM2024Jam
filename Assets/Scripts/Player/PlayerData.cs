@@ -10,7 +10,4 @@ public class PlayerData : ScriptableObject
     public float rotationSpeed = 1.0f;
 
     // Testing values
-    // public Quaternion rotation;
-
-
 }
