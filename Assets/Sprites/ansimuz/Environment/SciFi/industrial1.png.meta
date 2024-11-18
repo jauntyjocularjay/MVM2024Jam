@@ -151,78 +151,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sci-fi-environment-tileset_0
+      name: industrial1_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 17
-        height: 176
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f61a6d5a57e3ce9f0800000000000000
-      internalID: -437906388747378321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sci-fi-environment-tileset_1
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 127
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a5a4480ecc0cc0060800000000000000
-      internalID: 6921118713534237274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sci-fi-environment-tileset_2
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 127
-        width: 13
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 77bfd0e58d533bcc0800000000000000
-      internalID: -3696551665733862537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sci-fi-environment-tileset_3
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 97
-        width: 27
+        x: 32
+        y: 128
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -230,197 +164,43 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f6e5d828332905e10800000000000000
-      internalID: 2184406569205980783
+      spriteID: cd7cee312b59855428974025dff0bd7d
+      internalID: -711434167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sci-fi-environment-tileset_4
+      name: industrial1_2
       rect:
         serializedVersion: 2
-        x: 159
-        y: 111
-        width: 50
-        height: 34
+        x: 82
+        y: 128
+        width: 11
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c7a3dbae539d4f040800000000000000
-      internalID: 4680604738339551868
+      spriteID: eea7f52e77921a44e95908cfcd926835
+      internalID: 472221707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sci-fi-environment-tileset_5
+      name: industrial1_3
       rect:
         serializedVersion: 2
-        x: 223
-        y: 127
-        width: 34
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9fecb5726379cae70800000000000000
-      internalID: 9127836803617509113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sci-fi-environment-tileset_6
-      rect:
-        serializedVersion: 2
-        x: 271
-        y: 111
-        width: 50
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 53e2fd24c8342cef0800000000000000
-      internalID: -89434772897583563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sci-fi-environment-tileset_7
-      rect:
-        serializedVersion: 2
-        x: 335
-        y: 111
-        width: 18
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17401d7aefc37d980800000000000000
-      internalID: -8514269506085780367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sci-fi-environment-tileset_8
-      rect:
-        serializedVersion: 2
-        x: 367
-        y: 111
-        width: 18
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f563e0351f1e16900800000000000000
-      internalID: 676069845679093343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sci-fi-environment-tileset_9
-      rect:
-        serializedVersion: 2
-        x: 399
-        y: 111
-        width: 18
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ac66e8290d1bf5b0800000000000000
-      internalID: -5333637408512119642
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sci-fi-environment-tileset_10
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 79
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b3db9ede1782a8e40800000000000000
-      internalID: 5659380351532383547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sci-fi-environment-tileset_11
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 63
-        width: 18
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f2193451e8deae7d0800000000000000
-      internalID: -2888235016506863313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sci-fi-environment-tileset_12
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 64
-        width: 30
+        x: 115
+        y: 98
+        width: 25
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -428,120 +208,318 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8fd0f34522664ba50800000000000000
-      internalID: 6535961256849772024
+      spriteID: cc438f448b977ee4a913b642ea0c8444
+      internalID: -1180336104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sci-fi-environment-tileset_13
+      name: industrial1_4
       rect:
         serializedVersion: 2
-        x: 175
-        y: 31
-        width: 98
-        height: 70
+        x: 160
+        y: 112
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6c7ccd74616cb6ec0800000000000000
-      internalID: -3572544080391125050
+      spriteID: 4f8c431942b6e38469004edd5de8c3e0
+      internalID: -1509749493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sci-fi-environment-tileset_14
+      name: industrial1_5
       rect:
         serializedVersion: 2
-        x: 287
-        y: 31
-        width: 82
-        height: 70
+        x: 224
+        y: 128
+        width: 32
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 08d1c3e230d6a4330800000000000000
-      internalID: 3695886304638934400
+      spriteID: 0fe2c6297b083154ea9986f5f56d1556
+      internalID: -182506578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sci-fi-environment-tileset_15
+      name: industrial1_6
       rect:
         serializedVersion: 2
-        x: 31
-        y: 31
-        width: 34
-        height: 34
+        x: 272
+        y: 112
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 444127d0cac901fa0800000000000000
-      internalID: -5831989254670904252
+      spriteID: a8b3a487481a9e74abd192f097273b10
+      internalID: 1192786845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sci-fi-environment-tileset_16
+      name: industrial1_7
       rect:
         serializedVersion: 2
-        x: 96
-        y: 31
-        width: 78
-        height: 18
+        x: 336
+        y: 112
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b06b289fd500f2a90800000000000000
-      internalID: -7336644864345197045
+      spriteID: 0a5d4c8ec6d5c984d8df7bf7d291d0d9
+      internalID: 1365715120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sci-fi-environment-tileset_17
+      name: industrial1_8
       rect:
         serializedVersion: 2
-        x: 383
-        y: 31
-        width: 34
-        height: 34
+        x: 368
+        y: 112
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 76ccca2baaaf10bd0800000000000000
-      internalID: -2665573893377569689
+      spriteID: d7b88be003b3b344094f0aed1289479d
+      internalID: -1889700448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial1_9
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 112
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e4913b33711454f973f9ea92a9efe2
+      internalID: -11167207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial1_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505fa38f687dc84409feb86be2276b2c
+      internalID: -285864031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial1_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec57cc0a67e692b408770cb888b0ee06
+      internalID: -2145794040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial1_12
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 65
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e51ce734b7e2104f9af950c74c3b0da
+      internalID: 2034451947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial1_13
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 96
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9288c5facbc60d5448ec14014a8ba025
+      internalID: 2030822137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial1_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 80
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2812f74389b4e5499d596fcf33f940b
+      internalID: -663486688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial1_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b7542adcd8840468f41a6ac1ebb15b
+      internalID: 572883494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial1_16
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 32
+        width: 76
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78751b22b6007f2439b4a04f0f2b755f
+      internalID: 1752394743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial1_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e48988ce75e0d41b34f33124e9322d
+      internalID: -236902127
       vertices: []
       indices: 
       edges: []
@@ -550,7 +528,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fbcdab921201d2242bfea80528a0235b
     internalID: 0
     vertices: []
     indices: 
@@ -560,24 +538,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sci-fi-environment-tileset_0: -437906388747378321
-      sci-fi-environment-tileset_1: 6921118713534237274
-      sci-fi-environment-tileset_10: 5659380351532383547
-      sci-fi-environment-tileset_11: -2888235016506863313
-      sci-fi-environment-tileset_12: 6535961256849772024
-      sci-fi-environment-tileset_13: -3572544080391125050
-      sci-fi-environment-tileset_14: 3695886304638934400
-      sci-fi-environment-tileset_15: -5831989254670904252
-      sci-fi-environment-tileset_16: -7336644864345197045
-      sci-fi-environment-tileset_17: -2665573893377569689
-      sci-fi-environment-tileset_2: -3696551665733862537
-      sci-fi-environment-tileset_3: 2184406569205980783
-      sci-fi-environment-tileset_4: 4680604738339551868
-      sci-fi-environment-tileset_5: 9127836803617509113
-      sci-fi-environment-tileset_6: -89434772897583563
-      sci-fi-environment-tileset_7: -8514269506085780367
-      sci-fi-environment-tileset_8: 676069845679093343
-      sci-fi-environment-tileset_9: -5333637408512119642
+      industrial1_0: 478431467
+      industrial1_1: -711434167
+      industrial1_10: -285864031
+      industrial1_11: -2145794040
+      industrial1_12: 2034451947
+      industrial1_13: 2030822137
+      industrial1_14: -663486688
+      industrial1_15: 572883494
+      industrial1_16: 1752394743
+      industrial1_17: -236902127
+      industrial1_2: 472221707
+      industrial1_3: -1180336104
+      industrial1_4: -1509749493
+      industrial1_5: -182506578
+      industrial1_6: 1192786845
+      industrial1_7: 1365715120
+      industrial1_8: -1889700448
+      industrial1_9: -11167207
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

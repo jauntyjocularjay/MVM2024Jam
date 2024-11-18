@@ -127,221 +127,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tile-set-sci-fi-interior-platform_0
+      name: industrial2_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 17
-        height: 192
+        x: 32
+        y: 128
+        width: 96
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bba1a2505092177b0800000000000000
-      internalID: -5228352590862214469
+      spriteID: 13b4b929d94433441ab322dd44dd77c0
+      internalID: -1353151351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-set-sci-fi-interior-platform_1
+      name: industrial2_2
       rect:
         serializedVersion: 2
-        x: 31
-        y: 127
-        width: 98
-        height: 18
+        x: 144
+        y: 80
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e8aeea2471af13610800000000000000
-      internalID: 1599334320503188110
+      spriteID: 0cbb539434b890d40baa0295a9f59991
+      internalID: 1760337329
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-set-sci-fi-interior-platform_2
+      name: industrial2_3
       rect:
         serializedVersion: 2
-        x: 143
-        y: 79
-        width: 98
-        height: 98
+        x: 256
+        y: 96
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6664dcb7a4ebe67a0800000000000000
-      internalID: -6381954394823506330
+      spriteID: e662c71bde461bd4bb5c60468cbb9f7b
+      internalID: 1654141692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-set-sci-fi-interior-platform_3
+      name: industrial2_4
       rect:
         serializedVersion: 2
-        x: 255
-        y: 95
-        width: 65
-        height: 50
+        x: 32
+        y: 80
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5c5134b2513bad3a0800000000000000
-      internalID: -6639797797102873147
+      spriteID: e851eea0c548ff14e85da83fcf250395
+      internalID: 1830091520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-set-sci-fi-interior-platform_4
+      name: industrial2_5
       rect:
         serializedVersion: 2
-        x: 31
-        y: 79
-        width: 34
-        height: 34
+        x: 80
+        y: 80
+        width: 32
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6bc2ec9e1711689e0800000000000000
-      internalID: -1619587835041534794
+      spriteID: c411f3f645efa3f49a45df1eec33189f
+      internalID: -1772763901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-set-sci-fi-interior-platform_5
+      name: industrial2_6
       rect:
         serializedVersion: 2
-        x: 79
-        y: 79
-        width: 34
-        height: 18
+        x: 32
+        y: 32
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: daf9c6f0e80ae7890800000000000000
-      internalID: -7458347400874385491
+      spriteID: 3d96b9d2f139cda459bbb7eb1208c13d
+      internalID: 226485592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-set-sci-fi-interior-platform_6
+      name: industrial2_7
       rect:
         serializedVersion: 2
-        x: 31
+        x: 96
+        y: 32
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc4b60a5a4e1bc43bf87ff26c941c46
+      internalID: 813506604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: industrial2_8
+      rect:
+        serializedVersion: 2
+        x: 176
         y: 31
-        width: 50
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e3fbb3d6e5d6732e0800000000000000
-      internalID: -2146126445091766466
+      spriteID: 8f1a9209d7ab7aa4abddfd85e66d1471
+      internalID: -828935887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tile-set-sci-fi-interior-platform_7
+      name: industrial2_9
       rect:
         serializedVersion: 2
-        x: 95
-        y: 31
-        width: 66
-        height: 34
+        x: 224
+        y: 48
+        width: 48
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0a77488402b319f60800000000000000
-      internalID: 8039271819674679200
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile-set-sci-fi-interior-platform_8
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 30
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70512e5513f9ff500800000000000000
-      internalID: 432239123493950727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tile-set-sci-fi-interior-platform_9
-      rect:
-        serializedVersion: 2
-        x: 223
-        y: 47
-        width: 50
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1cdd9233ec8d9c6a0800000000000000
-      internalID: -6428368612961428031
+      spriteID: 34514ebcb09743e449c942456ed538c5
+      internalID: 334303918
       vertices: []
       indices: 
       edges: []
@@ -350,7 +328,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 34efee61e8fc925438701b59f2b0ee4d
     internalID: 0
     vertices: []
     indices: 
@@ -360,16 +338,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tile-set-sci-fi-interior-platform_0: -5228352590862214469
-      tile-set-sci-fi-interior-platform_1: 1599334320503188110
-      tile-set-sci-fi-interior-platform_2: -6381954394823506330
-      tile-set-sci-fi-interior-platform_3: -6639797797102873147
-      tile-set-sci-fi-interior-platform_4: -1619587835041534794
-      tile-set-sci-fi-interior-platform_5: -7458347400874385491
-      tile-set-sci-fi-interior-platform_6: -2146126445091766466
-      tile-set-sci-fi-interior-platform_7: 8039271819674679200
-      tile-set-sci-fi-interior-platform_8: 432239123493950727
-      tile-set-sci-fi-interior-platform_9: -6428368612961428031
+      industrial2_0: -1147337638
+      industrial2_1: -1353151351
+      industrial2_2: 1760337329
+      industrial2_3: 1654141692
+      industrial2_4: 1830091520
+      industrial2_5: -1772763901
+      industrial2_6: 226485592
+      industrial2_7: 813506604
+      industrial2_8: -828935887
+      industrial2_9: 334303918
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

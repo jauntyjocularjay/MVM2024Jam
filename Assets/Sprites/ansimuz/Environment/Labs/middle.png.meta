@@ -52,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,10 +109,10 @@ TextureImporter:
       name: middle_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 31
-        width: 50
-        height: 124
+        x: 41
+        y: 32
+        width: 48
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,10 +131,10 @@ TextureImporter:
       name: middle_1
       rect:
         serializedVersion: 2
-        x: 117
-        y: 30
-        width: 50
-        height: 124
+        x: 118
+        y: 31
+        width: 48
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +153,10 @@ TextureImporter:
       name: middle_2
       rect:
         serializedVersion: 2
-        x: 229
-        y: 30
-        width: 50
-        height: 124
+        x: 230
+        y: 31
+        width: 48
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
