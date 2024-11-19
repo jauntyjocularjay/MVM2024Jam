@@ -117,7 +117,9 @@ public class PlayerShip : MonoBehaviour
         {}
         else if(Mouse.current.rightButton.wasPressedThisFrame)
         // press the right mouse button
-        { WP.ShootTractor(); }
+        {
+            WP.ShootTractor();
+        }
     }
     void ReadMovement()
     /**
