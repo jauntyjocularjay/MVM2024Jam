@@ -47,8 +47,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b9aa40e492230045841389ea20605f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beams: []
+  beams:
+  - {fileID: 5837188053285489405}
+  - {fileID: 6474130830578936628}
   generatorInTact: 0
+  generator: {fileID: 5980745019503536162}
 --- !u!1 &1035882670034286352
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +173,7 @@ GameObject:
   - component: {fileID: 7456957422270039780}
   - component: {fileID: 5924670110710783373}
   - component: {fileID: 2902513142523335928}
+  - component: {fileID: 6474130830578936628}
   m_Layer: 0
   m_Name: Right
   m_TagString: Wall
@@ -267,6 +271,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6474130830578936628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2207355768165168499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bd50463bbb12746858a0131efe530a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3852380087146558435
 GameObject:
   m_ObjectHideFlags: 0

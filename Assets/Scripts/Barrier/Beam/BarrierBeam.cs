@@ -1,9 +1,11 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BeamBarrier : MonoBehaviour
 {
     public Beam[] beams;
     public bool generatorInTact;
+    public GameObject generator;
     void Start()
     {
         beams = gameObject.GetComponentsInChildren<Beam>();
