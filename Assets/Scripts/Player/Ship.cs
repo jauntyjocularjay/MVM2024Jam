@@ -14,6 +14,7 @@ public class PlayerShip : MonoBehaviour
     Vector2 cursorAngle = Vector2.zero;
     Animator animator;
     public GameObject cursor;
+    public float skipDriveDistance = 4.0f;
 
     bool damaged = false;
     [SerializeField] float DamageCooldown = 5f;
@@ -46,21 +47,26 @@ public class PlayerShip : MonoBehaviour
         SkipDrive();
     }
     void ReadMovement()
+    /**
+     * @todo Fix extremely janky movement
+     * We need to look at this very carefully. I really don't like the way our ships pivot around the 
+     * forward ship. It comes across extremely janky.
+     */
     {
         playerData.moveDirection = playerMovement.ReadValue<Vector2>();
         playerData.moveDirection.Normalize();
-        if(playerData.moveDirection.x > 0.0f)
-        {
-            animator.SetTrigger("bankleft");
-        }
-        else if(playerData.moveDirection.x < 0.0f)
-        {
-            animator.SetTrigger("bankright");
-        }
-        else
-        {
-            animator.SetTrigger("idle");
-        }
+        // if(playerData.moveDirection.x > 0.0f)
+        // {
+        //     animator.SetTrigger("bankleft");
+        // }
+        // else if(playerData.moveDirection.x < 0.0f)
+        // {
+        //     animator.SetTrigger("bankright");
+        // }
+        // else
+        // {
+        //     animator.SetTrigger("idle");
+        // }
         playerData.positionOnMap = transform.position;
         camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
 
@@ -82,9 +88,12 @@ public class PlayerShip : MonoBehaviour
     }
     void SkipDrive()
     {
-        if(Mouse.current.rightButton.isPressed)
+        if(Mouse.current.rightButton.wasPressedThisFrame)
         {
-            transform.position = cursorAngle * 2f;
+            transform.position = new Vector2(
+                (cursorAngle.x * skipDriveDistance) + transform.position.x,
+                (cursorAngle.y * skipDriveDistance) + transform.position.y
+            );
         }
     }
     void LookAtMouse()
@@ -96,7 +105,6 @@ public class PlayerShip : MonoBehaviour
 
         transform.up = direction;
     }
-
     void ReadThumbstickAngle()
     {
         Vector2 cursorPosition = Mouse.current.position.ReadValue() - screenCenter;
@@ -112,7 +120,6 @@ public class PlayerShip : MonoBehaviour
         );
 
     }
-
     public  void takeDamage()
     {
         //Here we'll have captured fighters die in place of the player if there are fighters available.
@@ -126,7 +133,6 @@ public class PlayerShip : MonoBehaviour
             //Die
         }
     }
-
     void HealingProccess()
     {
         if(damaged)

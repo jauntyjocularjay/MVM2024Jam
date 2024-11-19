@@ -6,7 +6,6 @@ public class Beam : MonoBehaviour
     SpriteRenderer[] renderers;
     BoxCollider2D[] colliders;
     Animator[] animators;
-    float increment = 1.0f/128.0f;
 
     void Start()
     {
