@@ -1,16 +1,30 @@
 using UnityEngine;
 
-public class BarrierBeam : MonoBehaviour
+public class BeamBarrier : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Beam[] beams;
+    public bool generatorInTact;
     void Start()
     {
-        
+        beams = gameObject.GetComponentsInChildren<Beam>();
+        generatorInTact = true;
     }
-
-    // Update is called once per frame
-    void Update()
+    bool Collision()
     {
         
+
+        return false;
     }
+    bool GeneratorInTact()
+    {
+        return generatorInTact;
+    }
+    void GeneratorDestruction()
+    {
+        foreach(Beam beam in beams)
+        {
+            beam.Deactivate();
+        }
+    }
+
 }
