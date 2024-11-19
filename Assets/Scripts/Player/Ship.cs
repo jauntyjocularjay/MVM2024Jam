@@ -43,6 +43,19 @@ public class PlayerShip : MonoBehaviour
         ReadCursorPosition();
         LookAtMouse();
         HealingProccess();
+        ReadInput();
+    }
+    void ReadInput()
+    {
+        if(Keyboard.current.eKey.wasPressedThisFrame)
+        // Press the use key
+        {}
+        else if(Mouse.current.leftButton.wasPressedThisFrame)
+        // press the left mouse button
+        {}
+        else if(Mouse.current.leftButton.wasPressedThisFrame)
+        // press the right mouse button
+        {}
     }
     void ReadMovement()
     /**
