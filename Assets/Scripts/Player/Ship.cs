@@ -12,18 +12,14 @@ public class PlayerShip : MonoBehaviour
     // public InputAction playerFire;
     Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
     Animator animator;
-<<<<<<< HEAD
-    EquippedGun current = EquippedGun.SingleFire;
-=======
+    EquippedGun equippedGun = EquippedGun.SingleFire;
     [SerializeField] WeaponsHandler WP;
->>>>>>> dev
     public GameObject cursor;
     HelperShip[] helperShips;
 
-    public bool hasRapidFire = true;
-    public bool isInRapidFire = false;
-    bool canRapid = true;
     public float maxRapidTime = 5f;
+    public bool isInRapidFire = false;
+    public bool canRapid = false;
     float rapidTime = 0f;
 
     public float rapidCooldown = 10f;
@@ -32,13 +28,12 @@ public class PlayerShip : MonoBehaviour
     bool damaged = false;
     [SerializeField] float DamageCooldown = 5f;
     float currentDamageCooldown = 0f;
-    //Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile. I'm thinking of creating a damaged state where the player will
-    //change color when they are hit, another hit and they die.
+    // Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile.
+    // I'm thinking of creating a damaged state where the player will change color when they are hit, another hit and they die.
 
     void RapidEngage()
     {
-        isInRapidFire = true;
-        canRapid = false;
+        equippedGun = EquippedGun.RapidFire;
         rapidTime = 0f;
         rapidCDTime = 0f;
 
@@ -52,7 +47,7 @@ public class PlayerShip : MonoBehaviour
 
     void ManageRapidTimers()
     {
-        if(isInRapidFire)
+        if(equippedGun == EquippedGun.RapidFire)
         {
             rapidTime += Time.deltaTime;
 
@@ -61,7 +56,7 @@ public class PlayerShip : MonoBehaviour
                 isInRapidFire = false;
                 Debug.Log("Cooling down now...");
             }
-        } else if (!isInRapidFire && !canRapid)
+        } else if (equippedGun != EquippedGun.RapidFire && !canRapid)
         {
             rapidCDTime += Time.deltaTime;
 
@@ -102,33 +97,24 @@ public class PlayerShip : MonoBehaviour
     {
         if(false && Keyboard.current.eKey.wasPressedThisFrame)
         // Press the use key
-<<<<<<< HEAD
         {}
         else if(Keyboard.current.eKey.wasPressedThisFrame)
         // Press the use key
         {}
-        else if(current == EquippedGun.RapidFire && Mouse.current.leftButton.isPressed)
+        else if(equippedGun == EquippedGun.RapidFire && Mouse.current.leftButton.isPressed)
         // press and hold the left mouse button
-        {}
-        else if(Mouse.current.leftButton.wasPressedThisFrame)
-        // press the left mouse button
-        {}
-        else if(false && Mouse.current.rightButton.isPressed)
-        // press and hold the right mouse button
-        {}
-=======
         {
-        
-            if(hasRapidFire && canRapid)
-            {
-                RapidEngage();
-            }
-        
+            
+            RapidEngage();
         }
         else if(Mouse.current.leftButton.wasPressedThisFrame)
         // press the left mouse button
-        { WP.ShootMain(); }
->>>>>>> dev
+        {
+            WP.ShootMain();
+        }
+        else if(false && Mouse.current.rightButton.isPressed)
+        // press and hold the right mouse button
+        {}
         else if(Mouse.current.rightButton.wasPressedThisFrame)
         // press the right mouse button
         { WP.ShootTractor(); }
