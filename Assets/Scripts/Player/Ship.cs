@@ -12,7 +12,7 @@ public class PlayerShip : MonoBehaviour
     // public InputAction playerFire;
     Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
     Animator animator;
-    EquippedGun equippedGun = EquippedGun.SingleFire;
+    EquippableGun equippedGun = EquippableGun.SingleFire;
     [SerializeField] WeaponsHandler WP;
     public GameObject cursor;
     HelperShip[] helperShips;
@@ -33,7 +33,7 @@ public class PlayerShip : MonoBehaviour
 
     void RapidEngage()
     {
-        equippedGun = EquippedGun.RapidFire;
+        equippedGun = EquippableGun.RapidFire;
         rapidTime = 0f;
         rapidCDTime = 0f;
 
@@ -47,7 +47,7 @@ public class PlayerShip : MonoBehaviour
 
     void ManageRapidTimers()
     {
-        if(equippedGun == EquippedGun.RapidFire)
+        if(equippedGun == EquippableGun.RapidFire)
         {
             rapidTime += Time.deltaTime;
 
@@ -56,7 +56,7 @@ public class PlayerShip : MonoBehaviour
                 isInRapidFire = false;
                 Debug.Log("Cooling down now...");
             }
-        } else if (equippedGun != EquippedGun.RapidFire && !canRapid)
+        } else if (equippedGun != EquippableGun.RapidFire && !canRapid)
         {
             rapidCDTime += Time.deltaTime;
 
@@ -101,7 +101,7 @@ public class PlayerShip : MonoBehaviour
         else if(Keyboard.current.eKey.wasPressedThisFrame)
         // Press the use key
         {}
-        else if(equippedGun == EquippedGun.RapidFire && Mouse.current.leftButton.isPressed)
+        else if(equippedGun == EquippableGun.RapidFire && Mouse.current.leftButton.isPressed)
         // press and hold the left mouse button
         {
             
@@ -210,7 +210,7 @@ public class PlayerShip : MonoBehaviour
     }
 }
 
-enum EquippedGun
+enum EquippableGun
 {
     RapidFire,
     SingleFire,
