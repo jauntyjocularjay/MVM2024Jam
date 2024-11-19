@@ -6,7 +6,6 @@ public class Button : MonoBehaviour
     public ButtonData data;
     SpriteRenderer buttonRenderer;
     public SpriteRenderer symbolRenderer;
-    Color color = Color.magenta;
     Animator buttonAnimator;
 
     void Start()
@@ -15,10 +14,10 @@ public class Button : MonoBehaviour
         buttonAnimator = GetComponent<Animator>();
 
         buttonRenderer.sprite = data.button;
-        buttonRenderer.color = color;
+        buttonRenderer.color = data.color;
 
         symbolRenderer.sprite = data.symbol;
-        symbolRenderer.color = color;
+        symbolRenderer.color = data.color;
         
         buttonAnimator.runtimeAnimatorController = data.buttonAnimator;
     }

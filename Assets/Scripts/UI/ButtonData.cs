@@ -7,5 +7,6 @@ public class ButtonData : ScriptableObject
     public Sprite button;
     public Sprite symbol;
     public RuntimeAnimatorController buttonAnimator;
+    public Color color = new Color(119, 0, 119, 256);
 
 }

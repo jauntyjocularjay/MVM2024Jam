@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: -1226226205, guid: 6d0b86bcfe6b3ae4b97956e6ffbcc245, type: 3}
   symbol: {fileID: 21300000, guid: 347ac3b2dea5893428511387ec459a55, type: 3}
-  buttonAnimator: {fileID: 0}
+  buttonAnimator: {fileID: 9100000, guid: 4d4b59f1f5e72e84a8be16711ab88ca3, type: 2}
+  color: {r: 119, g: 0, b: 119, a: 256}
