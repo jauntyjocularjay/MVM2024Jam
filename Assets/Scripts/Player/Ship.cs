@@ -13,6 +13,7 @@ public class PlayerShip : MonoBehaviour
     Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
     Animator animator;
     public GameObject cursor;
+    HelperShip[] helperShips;
 
     bool damaged = false;
     [SerializeField] float DamageCooldown = 5f;
@@ -42,32 +43,49 @@ public class PlayerShip : MonoBehaviour
         ReadCursorPosition();
         LookAtMouse();
         HealingProccess();
-        
+        ReadInput();
+    }
+    void ReadInput()
+    {
+        if(Keyboard.current.eKey.wasPressedThisFrame)
+        // Press the use key
+        {}
+        else if(Mouse.current.leftButton.wasPressedThisFrame)
+        // press the left mouse button
+        {}
+        else if(Mouse.current.leftButton.wasPressedThisFrame)
+        // press the right mouse button
+        {}
     }
     void ReadMovement()
+    /**
+     * @todo Fix extremely janky movement
+     * We need to look at this very carefully. I really don't like the way our ships pivot around the 
+     * forward ship. It comes across extremely janky.
+     */
     {
         playerData.moveDirection = playerMovement.ReadValue<Vector2>();
         playerData.moveDirection.Normalize();
-        if(playerData.moveDirection.x > 0.0f)
-        {
-            animator.SetTrigger("bankleft");
-        }
-        else if(playerData.moveDirection.x < 0.0f)
-        {
-            animator.SetTrigger("bankright");
-        }
-        else
-        {
-            animator.SetTrigger("idles");
-        }
+        // if(playerData.moveDirection.x > 0.0f)
+        // {
+        //     animator.SetTrigger("bankleft");
+        // }
+        // else if(playerData.moveDirection.x < 0.0f)
+        // {
+        //     animator.SetTrigger("bankright");
+        // }
+        // else
+        // {
+        //     animator.SetTrigger("idle");
+        // }
         playerData.positionOnMap = transform.position;
         camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
 
-        if(playerData.moveDirection != Vector3.zero)
-        {
+        // if(playerData.moveDirection != Vector3.zero)
+        // {
          //   Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, playerData.moveDirection);
          //   transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * playerData.rotationSpeed);
-        }
+        // }
     }
     void ReadCursorPosition()
     {
@@ -78,7 +96,6 @@ public class PlayerShip : MonoBehaviour
         );
         cursor.transform.position = cursorPosition + playerData.positionOnMap;
     }
-
     void LookAtMouse()
     {
         Vector2 direction = new Vector2(
@@ -88,7 +105,6 @@ public class PlayerShip : MonoBehaviour
 
         transform.up = direction;
     }
-
     void ReadThumbstickAngle()
     {
         Vector2 cursorPosition = Mouse.current.position.ReadValue() - screenCenter;
@@ -104,7 +120,6 @@ public class PlayerShip : MonoBehaviour
         );
 
     }
-
     public  void takeDamage()
     {
         //Here we'll have captured fighters die in place of the player if there are fighters available.
@@ -118,7 +133,6 @@ public class PlayerShip : MonoBehaviour
             //Die
         }
     }
-
     void HealingProccess()
     {
         if(damaged)
