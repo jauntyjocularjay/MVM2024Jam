@@ -106,7 +106,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -752995909
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 491223568, guid: 3847e18591d8a284aa15d78d9ccfe410, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -453,6 +453,7 @@ MonoBehaviour:
       m_Action: Player Movement
       m_Flags: 8
     m_Flags: 0
+  WP: {fileID: 3909388924065337721}
   cursor: {fileID: 5534213990405279015}
   DamageCooldown: 5
 --- !u!95 &8346154042462507792
@@ -507,9 +508,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 3730315944908148375, guid: 69c3b38f4f5af084e9e70bdcefa23f4e, type: 3}
-  bulletSpd: 4
+  bulletSpd: 20
   Damage: 4
   lifetime: 3
+  projectilesOnScreen: 2
+  currentProjectiles: []
 --- !u!1 &8672341035423565150
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,7 +29,29 @@ public class WeaponsHandler : MonoBehaviour
         
     }
 
-    void handleWeapons()
+    public void ShootMain()
+    {
+        if (canShoot == true)
+        {
+
+            primaryWeapon.OnShoot(shotEmitter);
+            ROFCooldown = 0f;
+            canShoot = false;
+        }
+    }
+
+    public void ShootTractor()
+    {
+        if (canTractor == true)
+        {
+            Debug.Log("WEWOWEWOWEWO");
+            tractorCooldown = 0f;
+            canTractor = false;
+            canShoot = false;
+        }
+    }
+
+    /*void handleWeapons()
     {
         if (Mouse.current.leftButton.isPressed && canShoot == true)
         {
@@ -44,7 +66,7 @@ public class WeaponsHandler : MonoBehaviour
             canTractor = false;
             canShoot = false;
         }
-    }
+    }*/
 
     void handleCooldowns()
     {
@@ -69,7 +91,7 @@ public class WeaponsHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        handleWeapons();
+        //handleWeapons();
         handleCooldowns();
     }
 }

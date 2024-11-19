@@ -18,6 +18,7 @@ public class Blaster : Weapon
 
     public override void OnShoot(Transform emitter)
     {
+        Debug.Log("This should shoot now!");
         if (currentProjectiles.Count < projectilesOnScreen)
         {
 
