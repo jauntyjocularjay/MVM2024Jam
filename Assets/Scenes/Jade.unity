@@ -254,6 +254,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6731697604133899201, guid: 41ef42dca93696244a5e3eb8949981ae, type: 3}
   m_PrefabInstance: {fileID: 159707238}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &252080212 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3909388924065337721, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+  m_PrefabInstance: {fileID: 1257139008}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8117fd3f74725194d9894db087e3062b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &313094549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -637,6 +648,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6589831632272163880, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+      propertyPath: WP
+      value: 
+      objectReference: {fileID: 252080212}
     - target: {fileID: 7314447411320132585, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
       propertyPath: m_Name
       value: Ship

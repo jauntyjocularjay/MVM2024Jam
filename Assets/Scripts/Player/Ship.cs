@@ -12,6 +12,7 @@ public class PlayerShip : MonoBehaviour
     // public InputAction playerFire;
     Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
     Animator animator;
+    [SerializeField] WeaponsHandler WP;
     public GameObject cursor;
     HelperShip[] helperShips;
 
@@ -52,10 +53,10 @@ public class PlayerShip : MonoBehaviour
         {}
         else if(Mouse.current.leftButton.wasPressedThisFrame)
         // press the left mouse button
-        {}
-        else if(Mouse.current.leftButton.wasPressedThisFrame)
+        { WP.ShootMain(); }
+        else if(Mouse.current.rightButton.wasPressedThisFrame)
         // press the right mouse button
-        {}
+        { WP.ShootTractor(); }
     }
     void ReadMovement()
     /**
