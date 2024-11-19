@@ -16,11 +16,58 @@ public class PlayerShip : MonoBehaviour
     public GameObject cursor;
     HelperShip[] helperShips;
 
+    public bool hasRapidFire = true;
+    public bool isInRapidFire = false;
+    bool canRapid = true;
+    public float maxRapidTime = 5f;
+    float rapidTime = 0f;
+
+    public float rapidCooldown = 10f;
+    float rapidCDTime = 0f;
+
     bool damaged = false;
     [SerializeField] float DamageCooldown = 5f;
     float currentDamageCooldown = 0f;
     //Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile. I'm thinking of creating a damaged state where the player will
     //change color when they are hit, another hit and they die.
+
+    void RapidEngage()
+    {
+        isInRapidFire = true;
+        canRapid = false;
+        rapidTime = 0f;
+        rapidCDTime = 0f;
+
+        Debug.Log("I'M IN RAPID FIRE NOW!");
+    }
+
+    public void IncreaseRapidMeter(float pickupValue)
+    {
+        rapidCDTime += pickupValue;
+    }
+
+    void ManageRapidTimers()
+    {
+        if(isInRapidFire)
+        {
+            rapidTime += Time.deltaTime;
+
+            if(rapidTime >= maxRapidTime)
+            {
+                isInRapidFire = false;
+                Debug.Log("Cooling down now...");
+            }
+        } else if (!isInRapidFire && !canRapid)
+        {
+            rapidCDTime += Time.deltaTime;
+
+            if (rapidCDTime >= rapidCooldown)
+            {
+                canRapid = true;
+                Debug.Log("Ready to Rapid again!");
+            }
+        }
+    }
 
 
     void Start()
@@ -44,13 +91,21 @@ public class PlayerShip : MonoBehaviour
         ReadCursorPosition();
         LookAtMouse();
         HealingProccess();
+        ManageRapidTimers();
         ReadInput();
     }
     void ReadInput()
     {
         if(Keyboard.current.eKey.wasPressedThisFrame)
         // Press the use key
-        {}
+        {
+        
+            if(hasRapidFire && canRapid)
+            {
+                RapidEngage();
+            }
+        
+        }
         else if(Mouse.current.leftButton.wasPressedThisFrame)
         // press the left mouse button
         { WP.ShootMain(); }
