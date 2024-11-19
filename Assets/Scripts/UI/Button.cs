@@ -4,17 +4,23 @@ using UnityEngine;
 public class Button : MonoBehaviour
 {
     public ButtonData data;
-    SpriteRenderer spriteRenderer;
-    Animator animator;
+    SpriteRenderer buttonRenderer;
+    public SpriteRenderer symbolRenderer;
+    Color color = Color.magenta;
+    Animator buttonAnimator;
 
     void Start()
     {
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = data.sprite;
+        buttonRenderer = GetComponent<SpriteRenderer>();
+        buttonAnimator = GetComponent<Animator>();
 
+        buttonRenderer.sprite = data.button;
+        buttonRenderer.color = color;
+
+        symbolRenderer.sprite = data.symbol;
+        symbolRenderer.color = color;
         
-        animator = gameObject.GetComponent<Animator>();
-        animator.runtimeAnimatorController = data.animatorController;
+        buttonAnimator.runtimeAnimatorController = data.buttonAnimator;
     }
 
 
