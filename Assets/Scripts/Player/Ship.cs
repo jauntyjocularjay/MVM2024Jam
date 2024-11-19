@@ -12,6 +12,7 @@ public class PlayerShip : MonoBehaviour
     // public InputAction playerFire;
     Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
     Animator animator;
+    EquippedGun current = EquippedGun.SingleFire;
     public GameObject cursor;
     HelperShip[] helperShips;
 
@@ -47,13 +48,22 @@ public class PlayerShip : MonoBehaviour
     }
     void ReadInput()
     {
-        if(Keyboard.current.eKey.wasPressedThisFrame)
+        if(false && Keyboard.current.eKey.wasPressedThisFrame)
         // Press the use key
+        {}
+        else if(Keyboard.current.eKey.wasPressedThisFrame)
+        // Press the use key
+        {}
+        else if(current == EquippedGun.RapidFire && Mouse.current.leftButton.isPressed)
+        // press and hold the left mouse button
         {}
         else if(Mouse.current.leftButton.wasPressedThisFrame)
         // press the left mouse button
         {}
-        else if(Mouse.current.leftButton.wasPressedThisFrame)
+        else if(false && Mouse.current.rightButton.isPressed)
+        // press and hold the right mouse button
+        {}
+        else if(Mouse.current.rightButton.wasPressedThisFrame)
         // press the right mouse button
         {}
     }
@@ -144,4 +154,11 @@ public class PlayerShip : MonoBehaviour
             }
         }
     }
+}
+
+enum EquippedGun
+{
+    RapidFire,
+    SingleFire,
+    BankShot
 }
