@@ -4,5 +4,10 @@ using UnityEngine;
 
 public class HelperShip : MonoBehaviour
 {
-    public HelperShipData helperShipsData;
+    public HelperShipData data;
+    void Start()
+    {
+        GetComponent<SpriteRenderer>().sprite = data.sprite;
+        GetComponent<Animator>().runtimeAnimatorController = data.animator;
+    }
 }
