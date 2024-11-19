@@ -11,6 +11,7 @@ public class PlayerShip : MonoBehaviour
     // public InputAction playerAiming;
     // public InputAction playerFire;
     Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
+    Vector2 cursorAngle = Vector2.zero;
     Animator animator;
     public GameObject cursor;
 
@@ -42,7 +43,7 @@ public class PlayerShip : MonoBehaviour
         ReadCursorPosition();
         LookAtMouse();
         HealingProccess();
-        
+        SkipDrive();
     }
     void ReadMovement()
     {
@@ -63,11 +64,11 @@ public class PlayerShip : MonoBehaviour
         playerData.positionOnMap = transform.position;
         camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
 
-        if(playerData.moveDirection != Vector3.zero)
-        {
+        // if(playerData.moveDirection != Vector3.zero)
+        // {
          //   Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, playerData.moveDirection);
          //   transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * playerData.rotationSpeed);
-        }
+        // }
     }
     void ReadCursorPosition()
     {
@@ -76,9 +77,16 @@ public class PlayerShip : MonoBehaviour
             cursorPosition.x / Screen.height * 10.0f,
             cursorPosition.y / Screen.height * 10.0f
         );
+        cursorAngle = cursorPosition.normalized;
         cursor.transform.position = cursorPosition + playerData.positionOnMap;
     }
-
+    void SkipDrive()
+    {
+        if(Mouse.current.rightButton.isPressed)
+        {
+            transform.position = cursorAngle * 2f;
+        }
+    }
     void LookAtMouse()
     {
         Vector2 direction = new Vector2(

@@ -12,11 +12,16 @@ public class Beam : MonoBehaviour
     {
         renderers = GetComponentsInChildren<SpriteRenderer>();
         colliders = GetComponentsInChildren<BoxCollider2D>();
+        animators = GetComponentsInChildren<Animator>();
     }
     void Update()
     {}
     public void Deactivate()
     {
+        foreach(BoxCollider2D collider in colliders)
+        {
+            collider.size = Vector2.zero;
+        }
         // beam falters and disappears
         foreach(Animator animator in animators)
         {
