@@ -22,6 +22,12 @@ public class WeaponsHandler : MonoBehaviour
 
     bool canShoot = true;
     bool canTractor = true;
+    bool isInRapidFire = false;
+
+    public void changeRapidFirePower(bool state)
+    {
+        isInRapidFire = state;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,7 +40,7 @@ public class WeaponsHandler : MonoBehaviour
         if (canShoot == true)
         {
 
-            primaryWeapon.OnShoot(shotEmitter);
+            primaryWeapon.OnShoot(shotEmitter, isInRapidFire);
             ROFCooldown = 0f;
             canShoot = false;
         }
@@ -47,7 +53,10 @@ public class WeaponsHandler : MonoBehaviour
             Debug.Log("WEWOWEWOWEWO");
             tractorCooldown = 0f;
             canTractor = false;
-            canShoot = false;
+            if (!isInRapidFire)
+            {
+                canShoot = false;
+            }
         }
     }
 
@@ -77,12 +86,25 @@ public class WeaponsHandler : MonoBehaviour
             {
                 canShoot = true;
             }
-        } else if (canShoot == false && canTractor == false)
+        } else if (canShoot == false && canTractor == false && !isInRapidFire)
         {
             tractorCooldown += Time.deltaTime;
             if (tractorCooldown >= TractorROF)
             {
                 canShoot = true;
+                canTractor = true;
+            }
+        } else if (canShoot == false && canTractor == false && isInRapidFire)
+        {
+            ROFCooldown += Time.deltaTime;
+            if (ROFCooldown >= ROF)
+            {
+                canShoot = true;
+            }
+
+            tractorCooldown += Time.deltaTime;
+            if (tractorCooldown >= TractorROF)
+            {
                 canTractor = true;
             }
         }
