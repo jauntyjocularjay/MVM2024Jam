@@ -43,7 +43,6 @@ public class tractorBeamProjectile : MonoBehaviour
                 }
             }
 
-            collision.gameObject.GetComponent<enemyHealth>().takeDamage(Damage);
             destroyProjectile();
         }
     }

@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class tractorBeam : MonoBehaviour
+public class tractorBeam : Weapon
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void OnShoot(Transform emitter, bool rapid)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        emitter.gameObject.SetActive(true);
     }
 }

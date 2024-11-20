@@ -10,7 +10,8 @@ public class WeaponsHandler : MonoBehaviour
 {
     [SerializeField] private List<Weapon> weapons;
     [SerializeField] private Weapon primaryWeapon;
-    //[SerializeField] private Weapon tractorBeam;
+    [SerializeField] private Weapon tractorBeamW;
+    [SerializeField] private Transform TBp;
 
     [SerializeField] Transform shotEmitter;
 
@@ -50,7 +51,7 @@ public class WeaponsHandler : MonoBehaviour
     {
         if (canTractor == true)
         {
-            Debug.Log("WEWOWEWOWEWO");
+            tractorBeamW.OnShoot(TBp, isInRapidFire);
             tractorCooldown = 0f;
             canTractor = false;
             if (!isInRapidFire)
