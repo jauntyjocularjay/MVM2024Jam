@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -15,12 +17,15 @@ public class PlayerShip : MonoBehaviour
     EquippableGun equippedGun = EquippableGun.SingleFire;
     [SerializeField] WeaponsHandler WP;
     public GameObject cursor;
-    HelperShip[] helperShips;
+    public int maxHelperShips = 2;
+    public List<HelperShip> helperShips;
 
     public float maxRapidTime = 5f;
+    public bool hasRapidPower = true;
     public bool isInRapidFire = false;
-    public bool canRapid = false;
+    public bool canRapid = true;
     float rapidTime = 0f;
+
 
     public float rapidCooldown = 10f;
     float rapidCDTime = 0f;
@@ -33,8 +38,10 @@ public class PlayerShip : MonoBehaviour
 
     void RapidEngage()
     {
-        equippedGun = EquippableGun.RapidFire;
+        canRapid = false;
+        isInRapidFire = true;
         rapidTime = 0f;
+        WP.changeRapidFirePower(true);
         rapidCDTime = 0f;
 
         Debug.Log("I'M IN RAPID FIRE NOW!");
@@ -47,16 +54,17 @@ public class PlayerShip : MonoBehaviour
 
     void ManageRapidTimers()
     {
-        if(equippedGun == EquippableGun.RapidFire)
+        if(isInRapidFire)
         {
             rapidTime += Time.deltaTime;
 
             if(rapidTime >= maxRapidTime)
             {
+                WP.changeRapidFirePower(false);
                 isInRapidFire = false;
                 Debug.Log("Cooling down now...");
             }
-        } else if (equippedGun != EquippableGun.RapidFire && !canRapid)
+        } else if (!isInRapidFire && !canRapid)
         {
             rapidCDTime += Time.deltaTime;
 
@@ -105,30 +113,19 @@ public class PlayerShip : MonoBehaviour
     }
     void ReadInput()
     {
-        float scrollDirection = Mouse.current.scroll.ReadValue().x;
-
-        if(scrollDirection > 0.00f)
-        {
-            NextWeaponMode();
-        }
-        else if(scrollDirection < 0.00f)
-        {
-            PrevWeaponMode();
-        }
-        else if(Keyboard.current.eKey.wasPressedThisFrame)
+        if(false && Keyboard.current.eKey.wasPressedThisFrame)
+        // Press the use key
+        {}
+        else if(Keyboard.current.eKey.wasPressedThisFrame && canRapid && hasRapidPower)
         // Press the use key
         {
-            WP.ShootTractor();
+            RapidEngage();
         }
-        else if(equippedGun == EquippableGun.SingleFire && Mouse.current.leftButton.isPressed)
+        else if(isInRapidFire && Mouse.current.leftButton.isPressed)
         // press and hold the left mouse button
         {
             WP.ShootMain();
-        }
-        else if(equippedGun == EquippableGun.RapidFire && Mouse.current.leftButton.isPressed)
-        // press and hold the left mouse button
-        {
-            RapidEngage();
+
         }
         else if(equippedGun == EquippableGun.BankShot && Mouse.current.leftButton.isPressed)
         // press and hold the left mouse button
@@ -227,11 +224,16 @@ public class PlayerShip : MonoBehaviour
             }
         }
     }
+
+    public void addHelperShip(enemyHealth hitEnemy)
+    {
+        helperShips.Add(hitEnemy.CapturedShip);
+        Destroy(hitEnemy.gameObject);
+    }
 }
 
 enum EquippableGun
 {
-    RapidFire,
     SingleFire,
     BankShot
 }

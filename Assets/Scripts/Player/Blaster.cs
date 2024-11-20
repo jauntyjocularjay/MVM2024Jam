@@ -16,21 +16,32 @@ public class Blaster : Weapon
     public int projectilesOnScreen;
     public List<GameObject> currentProjectiles;
 
-    public override void OnShoot(Transform emitter)
+    public override void OnShoot(Transform emitter, bool rapid)
     {
-        Debug.Log("This should shoot now!");
-        if (currentProjectiles.Count < projectilesOnScreen)
+        if (!rapid)
         {
+            if (currentProjectiles.Count < projectilesOnScreen)
+            {
 
+                GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
+                PlayerProjectile currentBullet = currentObject.GetComponent<PlayerProjectile>();
+
+                currentBullet.CalibrateBullet(bulletSpd, Damage, lifetime, this);
+
+                currentProjectiles.Add(currentObject);
+
+
+
+            }
+        } else
+        {
+            Debug.Log("Rapid Firing");
             GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
             PlayerProjectile currentBullet = currentObject.GetComponent<PlayerProjectile>();
 
             currentBullet.CalibrateBullet(bulletSpd, Damage, lifetime, this);
 
             currentProjectiles.Add(currentObject);
-
-
-
         }
     }
 }

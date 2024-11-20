@@ -6,6 +6,6 @@ using UnityEngine.InputSystem;
 public abstract class Weapon : MonoBehaviour
 {
 
-    public abstract void OnShoot(Transform emitter);
+    public abstract void OnShoot(Transform emitter, bool rapid);
 
 }
