@@ -1,12 +1,9 @@
-﻿using UnityEditor.Animations;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "Data", menuName = "Data/UI/Button", order = 0)]
-public class ButtonData : ScriptableObject
+public class LabelButtonData : ScriptableObject
 {
     public Sprite button;
     public Sprite symbol;
     public RuntimeAnimatorController buttonAnimator;
-    public Color color = new Color(119, 0, 119, 256);
-
 }
