@@ -3,12 +3,26 @@ using UnityEngine;
 
 public class Soldier : MonoBehaviour
 {
-    SoldierData data;
-    Sprite sprite;
-    Path path;
+    public SoldierData data;
+    public Sprite sprite;
+    public Path path;
+    new Transform transform;
 
-    void Start()
+    public void Start()
     {
         sprite = data.sprite;
+        path = GetComponent<Path>();
+        transform = GetComponent<Transform>();
+    }
+
+    public void Update()
+    {
+        foreach(Vector3 point in path.waypoints)
+        {
+            while(transform.position.x != point.x && transform.position.y != point.y)
+            {
+                transform.position = ;
+            }
+        }
     }
 }
