@@ -1857,7 +1857,7 @@ PrefabInstance:
       objectReference: {fileID: 3671909152549973722, guid: 1daee5f7aef024b46ad7a4c2d30cf5d2, type: 3}
     - target: {fileID: 1674761798686905376, guid: 08b46330d58cafe41ac9750edc5de53e, type: 3}
       propertyPath: captureThreshold
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3375859868200193240, guid: 08b46330d58cafe41ac9750edc5de53e, type: 3}
       propertyPath: m_LocalPosition.x
