@@ -14,9 +14,9 @@ public class PlayerShip : MonoBehaviour
     // public InputAction playerFire;
     Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
     Animator animator;
+    public GameObject cursor;
     EquippableGun equippedGun = EquippableGun.SingleFire;
     [SerializeField] WeaponsHandler WP;
-    public GameObject cursor;
     public int maxHelperShips = 2;
     public List<HelperShip> helperShips;
 
@@ -154,6 +154,18 @@ public class PlayerShip : MonoBehaviour
     {
         playerData.moveDirection = playerMovement.ReadValue<Vector2>();
         playerData.moveDirection.Normalize();
+        if(playerData.moveDirection.x > 0.0f)
+        {
+            animator.SetTrigger("bankleft");
+        }
+        else if(playerData.moveDirection.x < 0.0f)
+        {
+            animator.SetTrigger("bankright");
+        }
+        else
+        {
+            animator.SetTrigger("idles");
+        }
         playerData.positionOnMap = transform.position;
         camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
 
