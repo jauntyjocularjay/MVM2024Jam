@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Wall
   - EnergyField
+  - Undefined
+  - TractorBeam
   layers:
   - Default
   - TransparentFX
