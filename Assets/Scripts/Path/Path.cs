@@ -1,11 +1,15 @@
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class Path : MonoBehaviour
 {
-    public Waypoint origin;
+    public List<Waypoint> waypoints;
+    new Transform transform;
 
-    void Awake()
+    void Start()
     {
+        transform = GetComponent<Transform>();
     }
+
 }

@@ -1,30 +1,17 @@
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class Waypoint : MonoBehaviour
+[CreateAssetMenu(fileName = "Data", menuName = "Data/Enemy/Waypoint", order = 7)]
+public class Waypoint : ScriptableObject
 {
-    [SerializeField] int index = 0;
-    public Waypoint origin;
-    public Waypoint nextNode;
+    public Vector2 waypoint;
     public Waypoint()
     {
-        index += 1;
-    }
-    public Waypoint(Waypoint origin, Vector2 position) : base()
-    {
-        gameObject.name = $"{index}";
+        waypoint = new Vector2(0.0f, 0.0f);
     }
 
-    void Awake()
+    public Waypoint(Transform transform)
     {
-        
-        Waypoint currentNode = origin;
-        for(int i = 0; i < index - 1; i++)
-        {
-            currentNode = currentNode.nextNode;
-        }
-        this.index = currentNode.index + 1;
-
-        currentNode.nextNode = this;
+        waypoint = transform.position;
     }
 }
