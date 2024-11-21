@@ -22,6 +22,27 @@ public class enemyHealth : MonoBehaviour
         
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "TractorBeam")
+        {
+            Debug.Log("hit an enemy");
+            PlayerShip player = FindFirstObjectByType<PlayerShip>();
+
+            if (canBeCaptured)
+            {
+                if (checkCapture())
+                {
+                    if (player.helperShips.Count < player.maxHelperShips)
+                    {
+                        player.addHelperShip(this);
+                    }
+                }
+            }
+
+        }
+    }
+
     public bool checkCapture()
     {
         return HP <= captureThreshold;
