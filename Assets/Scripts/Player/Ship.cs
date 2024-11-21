@@ -121,11 +121,10 @@ public class PlayerShip : MonoBehaviour
         {
             RapidEngage();
         }
-        else if(isInRapidFire && Mouse.current.leftButton.isPressed)
+        else if(Mouse.current.leftButton.isPressed)
         // press and hold the left mouse button
         {
             WP.ShootMain();
-
         }
         else if(equippedGun == EquippableGun.BankShot && Mouse.current.leftButton.isPressed)
         // press and hold the left mouse button
@@ -143,6 +142,7 @@ public class PlayerShip : MonoBehaviour
         else if(Mouse.current.rightButton.wasPressedThisFrame)
         // press the right mouse button
         {
+            WP.ShootTractor();
         }
     }
     void ReadMovement()

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class enemyHealth : MonoBehaviour
 {
@@ -26,7 +26,7 @@ public class enemyHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == "TractorBeam")
         {
-            Debug.Log("hit an enemy");
+            Debug.Log("Tractor beam an enemy");
             PlayerShip player = FindFirstObjectByType<PlayerShip>();
 
             if (canBeCaptured)
