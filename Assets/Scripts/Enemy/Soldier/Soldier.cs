@@ -1,4 +1,4 @@
-using Unity.VisualScripting;
+using FractionScale;
 using UnityEngine;
 
 public class Soldier : MonoBehaviour
@@ -6,6 +6,7 @@ public class Soldier : MonoBehaviour
     public SoldierData data;
     public Sprite sprite;
     public Path path;
+    UFractionScale progress = new UFractionScale(0,512);
     new Transform transform;
 
     public void Start()
@@ -21,7 +22,7 @@ public class Soldier : MonoBehaviour
         {
             while(transform.position.x != point.x && transform.position.y != point.y)
             {
-                transform.position = ;
+                // transform.position = ;
             }
         }
     }
