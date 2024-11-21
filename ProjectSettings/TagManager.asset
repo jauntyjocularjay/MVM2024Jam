@@ -2,8 +2,12 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Enemy
+  - Wall
+  - EnergyField
+  - TractorBeam
   layers:
   - Default
   - TransparentFX
@@ -11,6 +15,7 @@ TagManager:
   - 
   - Water
   - UI
+  - Background
   - 
   - 
   - 
@@ -30,9 +35,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Action
+  - Bullets
   - 
   - 
   - 
@@ -41,3 +45,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1782188563
+    locked: 0
+  - name: Character
+    uniqueID: 3198005807
+    locked: 0
+  - name: UI
+    uniqueID: 3541971387
+    locked: 0
+  - name: Props
+    uniqueID: 1569864525
+    locked: 0
+  m_RenderingLayers:
+  - Default
