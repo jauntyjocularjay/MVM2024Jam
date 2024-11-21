@@ -3,7 +3,8 @@ using UnityEngine;
 public class tractorBeamProjectile : MonoBehaviour
 {
     private float bulletSpd;
-    public float lifeTime;
+    public float maxLifeTime;
+    float lifeTime;
     tractorBeam parentBlaster;
     [SerializeField] Rigidbody2D rb;
 
@@ -25,27 +26,12 @@ public class tractorBeamProjectile : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void refillLife()
     {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            enemyHealth hitEnemy = collision.gameObject.GetComponent<enemyHealth>();
-            PlayerShip player = FindFirstObjectByType<PlayerShip>();
-
-            if(hitEnemy.canBeCaptured)
-            {
-                if(hitEnemy.checkCapture())
-                {
-                    if(player.helperShips.Count < player.maxHelperShips)
-                    {
-                        player.addHelperShip(hitEnemy);
-                    }
-                }
-            }
-
-            destroyProjectile();
-        }
+        lifeTime = maxLifeTime;
     }
+
+
 
     private void destroyProjectile()
     {
