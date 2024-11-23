@@ -26,7 +26,7 @@ public class PlayerProjectile : MonoBehaviour
 
         if(lifeTime <= 0)
         {
-            destroyProjectile();
+            DestroyProjectile();
         }
     }
 
@@ -35,15 +35,15 @@ public class PlayerProjectile : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<enemyHealth>().takeDamage(Damage);
-            destroyProjectile();
+            DestroyProjectile();
         }
         if (collision.gameObject.tag == "Wall")
         {
-            destroyProjectile();
+            DestroyProjectile();
         }
     }
 
-    private void destroyProjectile()
+    private void DestroyProjectile()
     {
         parentBlaster.currentProjectiles.Remove(gameObject);
         Destroy(gameObject);

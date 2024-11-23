@@ -12,7 +12,6 @@ public class Blaster : Weapon
     public float bulletSpd;
     public float Damage;
     public float lifetime;
-
     public int projectilesOnScreen;
     public List<GameObject> currentProjectiles;
 
