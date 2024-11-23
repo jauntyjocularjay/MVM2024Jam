@@ -13,6 +13,8 @@ public class WeaponsHandler : MonoBehaviour
     private Weapon tractorBeamW;
     private Transform weaponOrigin;
 
+    private tractorBeamProjectile tractorBeamObject;
+
     public float fireRate = 0.2f;
     public float tractorBeamFireRate = 5;
 
@@ -25,6 +27,7 @@ public class WeaponsHandler : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        tractorBeamObject = GetComponentInChildren<tractorBeamProjectile>();
         primaryWeapon = GetComponent<Blaster>();
         tractorBeamW = GetComponent<TractorBeam>();
         weaponOrigin = GetComponentInParent<Transform>();
@@ -38,7 +41,7 @@ public class WeaponsHandler : MonoBehaviour
     public void ShootMain()
     {
         if (primaryWeaponEnabled
- == true)
+         == true)
         {
 
             primaryWeapon.OnShoot(weaponOrigin, isInRapidFire);
@@ -52,7 +55,7 @@ public class WeaponsHandler : MonoBehaviour
     {
         if (tractorBeamEnabled == true)
         {
-            tractorBeamW.OnShoot(weaponOrigin, isInRapidFire);
+            tractorBeamW.OnShoot(tractorBeamObject.gameObject.transform, isInRapidFire);
             tractorBeamCooldown = 0f;
             tractorBeamEnabled = false;
             if (!isInRapidFire)
