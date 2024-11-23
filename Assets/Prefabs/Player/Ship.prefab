@@ -399,15 +399,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7467802510441063774}
   - component: {fileID: 8346154042462507792}
-<<<<<<< HEAD
-  - component: {fileID: 3909388924065337721}
-  - component: {fileID: 4459438496977042528}
-  - component: {fileID: 8456714734934488145}
-  - component: {fileID: 7832168186252233696}
-  - component: {fileID: 3026047781366973452}
-  - component: {fileID: 7460542160022013243}
-=======
->>>>>>> c0f7818778e241314f75ccee815ff691d31ad83a
   m_Layer: 26
   m_Name: Ship
   m_TagString: Untagged
