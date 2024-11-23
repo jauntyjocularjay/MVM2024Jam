@@ -9,104 +9,118 @@ using UnityEngine.InputSystem;
 public class WeaponsHandler : MonoBehaviour
 {
     [SerializeField] private List<Weapon> weapons;
-    [SerializeField] private Weapon primaryWeapon;
-    [SerializeField] private Weapon tractorBeamW;
-    [SerializeField] private Transform TBp;
+    private Weapon primaryWeapon;
+    private Weapon tractorBeamW;
+    private Transform weaponOrigin;
 
-    [SerializeField] Transform shotEmitter;
+    private tractorBeamProjectile tractorBeamObject;
 
-    public float ROF = 0.2f;
-    public float TractorROF = 5;
+    public float fireRate = 0.2f;
+    public float tractorBeamFireRate = 5;
 
-    float ROFCooldown = 0f;
-    float tractorCooldown = 0f;
+    float primaryWeaponCooldown = 0f;
+    float tractorBeamCooldown = 0f;
 
-    bool canShoot = true;
-    bool canTractor = true;
+    bool primaryWeaponEnabled = true;
+    bool tractorBeamEnabled = true;
     bool isInRapidFire = false;
-
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        tractorBeamObject = GetComponentInChildren<tractorBeamProjectile>();
+        primaryWeapon = GetComponent<Blaster>();
+        tractorBeamW = GetComponent<TractorBeam>();
+        weaponOrigin = GetComponentInParent<Transform>();
+    }
     public void changeRapidFirePower(bool state)
     {
         isInRapidFire = state;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
     public void ShootMain()
     {
-        if (canShoot == true)
+        if (primaryWeaponEnabled
+         == true)
         {
 
-            primaryWeapon.OnShoot(shotEmitter, isInRapidFire);
-            ROFCooldown = 0f;
-            canShoot = false;
+            primaryWeapon.OnShoot(weaponOrigin, isInRapidFire);
+            primaryWeaponCooldown = 0f;
+            primaryWeaponEnabled
+     = false;
         }
     }
 
     public void ShootTractor()
     {
-        if (canTractor == true)
+        if (tractorBeamEnabled == true)
         {
-            tractorBeamW.OnShoot(TBp, isInRapidFire);
-            tractorCooldown = 0f;
-            canTractor = false;
+            tractorBeamW.OnShoot(tractorBeamObject.gameObject.transform, isInRapidFire);
+            tractorBeamCooldown = 0f;
+            tractorBeamEnabled = false;
             if (!isInRapidFire)
             {
-                canShoot = false;
+                primaryWeaponEnabled
+         = false;
             }
         }
     }
 
     /*void handleWeapons()
     {
-        if (Mouse.current.leftButton.isPressed && canShoot == true)
+        if (Mouse.current.leftButton.isPressed && primaryWeaponEnabled
+ == true)
         {
             primaryWeapon.OnShoot(shotEmitter);
             ROFCooldown = 0f;
-            canShoot = false;
+            primaryWeaponEnabled
+     = false;
         }
         if (Mouse.current.rightButton.isPressed && canTractor == true)
         {
             Debug.Log("WEWOWEWOWEWO");
             tractorCooldown = 0f;
             canTractor = false;
-            canShoot = false;
+            primaryWeaponEnabled
+     = false;
         }
     }*/
 
     void handleCooldowns()
     {
-        if (canShoot == false && canTractor == true)
+        if (primaryWeaponEnabled
+ == false && tractorBeamEnabled == true)
         {
-            ROFCooldown += Time.deltaTime;
-            if (ROFCooldown >= ROF)
+            primaryWeaponCooldown += Time.deltaTime;
+            if (primaryWeaponCooldown >= fireRate)
             {
-                canShoot = true;
+                primaryWeaponEnabled
+         = true;
             }
-        } else if (canShoot == false && canTractor == false && !isInRapidFire)
+        } else if (primaryWeaponEnabled
+ == false && tractorBeamEnabled == false && !isInRapidFire)
         {
-            tractorCooldown += Time.deltaTime;
-            if (tractorCooldown >= TractorROF)
+            tractorBeamCooldown += Time.deltaTime;
+            if (tractorBeamCooldown >= tractorBeamFireRate)
             {
-                canShoot = true;
-                canTractor = true;
+                primaryWeaponEnabled
+         = true;
+                tractorBeamEnabled = true;
             }
-        } else if (canShoot == false && canTractor == false && isInRapidFire)
+        } else if (primaryWeaponEnabled
+ == false && tractorBeamEnabled == false && isInRapidFire)
         {
-            ROFCooldown += Time.deltaTime;
-            if (ROFCooldown >= ROF)
+            primaryWeaponCooldown += Time.deltaTime;
+            if (primaryWeaponCooldown >= fireRate)
             {
-                canShoot = true;
+                primaryWeaponEnabled
+         = true;
             }
 
-            tractorCooldown += Time.deltaTime;
-            if (tractorCooldown >= TractorROF)
+            tractorBeamCooldown += Time.deltaTime;
+            if (tractorBeamCooldown >= tractorBeamFireRate)
             {
-                canTractor = true;
+                tractorBeamEnabled = true;
             }
         }
     }
