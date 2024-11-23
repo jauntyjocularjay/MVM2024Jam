@@ -19,23 +19,38 @@ public class PlayerShip : MonoBehaviour
     [SerializeField] WeaponsHandler WP;
     public int maxHelperShips = 2;
     public List<HelperShip> helperShips;
-
     public float maxRapidTime = 5f;
     public bool hasRapidPower = true;
     public bool isInRapidFire = false;
     public bool canRapid = true;
     float rapidTime = 0f;
-
-
     public float rapidCooldown = 10f;
     float rapidCDTime = 0f;
-
     bool damaged = false;
     [SerializeField] float DamageCooldown = 5f;
     float currentDamageCooldown = 0f;
     // Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile.
     // I'm thinking of creating a damaged state where the player will change color when they are hit, another hit and they die.
 
+
+    void Start()
+    {
+        camera = Camera.main;
+        animator = gameObject.GetComponent<Animator>();
+        playerData.positionOnMap = gameObject.GetComponent<Transform>().position;
+        animator.SetTrigger("idle");
+        WP = gameObject.GetComponent<WeaponsHandler>();
+    }
+    void Update()
+    {
+        ReadMovement();
+        ReadCursorPosition();
+        LookAtMouse();
+        HealingProccess();
+        ManageRapidTimers();
+        ReadInput();
+        // LookInMovementDirection()
+    }
     void RapidEngage()
     {
         canRapid = false;
@@ -46,12 +61,10 @@ public class PlayerShip : MonoBehaviour
 
         Debug.Log("I'M IN RAPID FIRE NOW!");
     }
-
     public void IncreaseRapidMeter(float pickupValue)
     {
         rapidCDTime += pickupValue;
     }
-
     void ManageRapidTimers()
     {
         if(isInRapidFire)
@@ -75,15 +88,6 @@ public class PlayerShip : MonoBehaviour
             }
         }
     }
-
-
-    void Start()
-    {
-        camera = Camera.main;
-        animator = gameObject.GetComponent<Animator>();
-        playerData.positionOnMap = gameObject.GetComponent<Transform>().position;
-        animator.SetTrigger("idle");
-    }
     private void OnEnable()
     {
         playerMovement.Enable();
@@ -91,16 +95,6 @@ public class PlayerShip : MonoBehaviour
     private void OnDisable()
     {
         playerMovement.Disable();
-    }
-    void Update()
-    {
-        ReadMovement();
-        ReadCursorPosition();
-        LookAtMouse();
-        HealingProccess();
-        ManageRapidTimers();
-        ReadInput();
-        // LookInMovementDirection()
     }
     void LookInMovementDirection()
     // rotate player ship in travel direction
@@ -179,7 +173,6 @@ public class PlayerShip : MonoBehaviour
         );
         cursor.transform.position = cursorPosition + playerData.positionOnMap;
     }
-
     void NextWeaponMode()
     {
         Debug.Log("Scrolling up...");
@@ -212,7 +205,7 @@ public class PlayerShip : MonoBehaviour
         );
 
     }
-    public  void takeDamage()
+    public void takeDamage()
     {
         //Here we'll have captured fighters die in place of the player if there are fighters available.
 
@@ -236,7 +229,6 @@ public class PlayerShip : MonoBehaviour
             }
         }
     }
-
     public void addHelperShip(enemyHealth hitEnemy)
     {
         helperShips.Add(hitEnemy.CapturedShip);
