@@ -14,9 +14,9 @@ public class PlayerShip : MonoBehaviour
     // public InputAction playerFire;
     Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
     Animator animator;
+    public GameObject cursor;
     EquippableGun equippedGun = EquippableGun.SingleFire;
     [SerializeField] WeaponsHandler WP;
-    public GameObject cursor;
     public int maxHelperShips = 2;
     public List<HelperShip> helperShips;
 
@@ -100,6 +100,16 @@ public class PlayerShip : MonoBehaviour
         HealingProccess();
         ManageRapidTimers();
         ReadInput();
+        // LookInMovementDirection()
+    }
+    void LookInMovementDirection()
+    // rotate player ship in travel direction
+    {
+        if(playerData.moveDirection != Vector3.zero)
+        {
+           Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, playerData.moveDirection);
+           transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * playerData.rotationSpeed);
+        }
     }
     void ReadInput()
     {
@@ -111,16 +121,20 @@ public class PlayerShip : MonoBehaviour
         {
             RapidEngage();
         }
-        else if(isInRapidFire && Mouse.current.leftButton.isPressed)
+        else if(Mouse.current.leftButton.isPressed)
         // press and hold the left mouse button
         {
             WP.ShootMain();
-
+        }
+        else if(equippedGun == EquippableGun.BankShot && Mouse.current.leftButton.isPressed)
+        // press and hold the left mouse button
+        {
+            Debug.Log("BankShotEngage()");
         }
         else if(Mouse.current.leftButton.wasPressedThisFrame)
         // press the left mouse button
         {
-            WP.ShootMain();
+            
         }
         else if(false && Mouse.current.rightButton.isPressed)
         // press and hold the right mouse button
@@ -140,26 +154,21 @@ public class PlayerShip : MonoBehaviour
     {
         playerData.moveDirection = playerMovement.ReadValue<Vector2>();
         playerData.moveDirection.Normalize();
-        // if(playerData.moveDirection.x > 0.0f)
-        // {
-        //     animator.SetTrigger("bankleft");
-        // }
-        // else if(playerData.moveDirection.x < 0.0f)
-        // {
-        //     animator.SetTrigger("bankright");
-        // }
-        // else
-        // {
-        //     animator.SetTrigger("idle");
-        // }
+        if(playerData.moveDirection.x > 0.0f)
+        {
+            animator.SetTrigger("bankleft");
+        }
+        else if(playerData.moveDirection.x < 0.0f)
+        {
+            animator.SetTrigger("bankright");
+        }
+        else
+        {
+            animator.SetTrigger("idle");
+        }
         playerData.positionOnMap = transform.position;
         camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
 
-        // if(playerData.moveDirection != Vector3.zero)
-        // {
-         //   Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, playerData.moveDirection);
-         //   transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * playerData.rotationSpeed);
-        // }
     }
     void ReadCursorPosition()
     {
@@ -169,6 +178,15 @@ public class PlayerShip : MonoBehaviour
             cursorPosition.y / Screen.height * 10.0f
         );
         cursor.transform.position = cursorPosition + playerData.positionOnMap;
+    }
+
+    void NextWeaponMode()
+    {
+        Debug.Log("Scrolling up...");
+    }
+    void PrevWeaponMode()
+    {
+        Debug.Log("Scrolling Down...");
     }
     void LookAtMouse()
     {
