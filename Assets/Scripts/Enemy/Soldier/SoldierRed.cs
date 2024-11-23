@@ -16,8 +16,9 @@ public class RedSoldier : Soldier
         p = waypoints.Count;
     }
     
-    void Update()
+    new void Update()
     {
+        base.Update();
     }
     void FixedUpdate() 
     {
