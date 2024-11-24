@@ -13,6 +13,7 @@ abstract public class HelperShipData : ScriptableObject
     public PlayerData data;
     public Sprite sprite;
     public AnimatorController animator;
+    public Vector3 waypoint;
     abstract public void Ability();
 }
 

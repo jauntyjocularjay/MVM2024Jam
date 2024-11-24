@@ -8,6 +8,5 @@ public class PlayerData : ScriptableObject
     public float cursorRadius; // For Thumbstick controls
     public float moveSpeed;
     public float rotationSpeed = 1.0f;
-
     // Testing values
 }

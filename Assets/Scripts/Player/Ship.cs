@@ -31,7 +31,7 @@ public class PlayerShip : MonoBehaviour
     float currentDamageCooldown = 0f;
     // Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile.
     // I'm thinking of creating a damaged state where the player will change color when they are hit, another hit and they die.
-
+    public float damageKnockback = 0.0f;
 
     void Start()
     {
