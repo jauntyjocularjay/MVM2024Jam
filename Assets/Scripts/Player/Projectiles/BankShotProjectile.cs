@@ -11,13 +11,12 @@ public class BankShotProjectile : PlayerProjectile
         }
         if (collision.gameObject.tag == "Wall")
         {
-            Richochet(collision.gameObject.GetComponent<Transform>());
+            Ricochet(collision.gameObject.GetComponent<Transform>());
         }
     }
-
-    private void Richochet(Transform target)
+    private void Ricochet(Transform target)
+    // Ricochet inverts the trajectory of the projectile in response to being banked off of a barrier.
     {
         float targetAngle = target.rotation.eulerAngles.z;
-        
     }
 }
