@@ -1,10 +1,5 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
-
 
 public class WeaponsHandler : MonoBehaviour
 {
@@ -12,15 +7,11 @@ public class WeaponsHandler : MonoBehaviour
     private Weapon primaryWeapon;
     private Weapon tractorBeamW;
     private Transform weaponOrigin;
-
     private tractorBeamProjectile tractorBeamObject;
-
     public float fireRate = 0.2f;
     public float tractorBeamFireRate = 5;
-
     float primaryWeaponCooldown = 0f;
     float tractorBeamCooldown = 0f;
-
     bool primaryWeaponEnabled = true;
     bool tractorBeamEnabled = true;
     bool isInRapidFire = false;
@@ -32,51 +23,95 @@ public class WeaponsHandler : MonoBehaviour
         tractorBeamW = GetComponent<TractorBeam>();
         weaponOrigin = GetComponentInParent<Transform>();
     }
+    void Update()
+    {
+        //handleWeapons();
+        handleCooldowns();
+    }
     public void changeRapidFirePower(bool state)
     {
         isInRapidFire = state;
     }
-
-
     public void ShootMain()
     {
-        if (primaryWeaponEnabled
-         == true)
+        if (primaryWeaponEnabled)
         {
-
             primaryWeapon.OnShoot(weaponOrigin, isInRapidFire);
             primaryWeaponCooldown = 0f;
-            primaryWeaponEnabled
-     = false;
+            primaryWeaponEnabled = false;
         }
     }
-
     public void ShootTractor()
     {
-        if (tractorBeamEnabled == true)
+        if (tractorBeamEnabled)
         {
             tractorBeamW.OnShoot(tractorBeamObject.gameObject.transform, isInRapidFire);
             tractorBeamCooldown = 0f;
             tractorBeamEnabled = false;
             if (!isInRapidFire)
+            /*
+            The rapid fire applies to the weapons handler itself currently.  The reason why this is a factor is that while the tractor beam is active and on cooldown, you cannot shoot the primary weapon.
+            Otherwise you would be able to use the blaster in rapid fire while the tractor beam is in cooldown
+            @todo This block should be unecessary. We should separate the tractor beam and the blasters.
+            */
             {
-                primaryWeaponEnabled
-         = false;
+                primaryWeaponEnabled = false;
             }
         }
     }
-
-    /*void handleWeapons()
+    void handleCooldowns()
     {
-        if (Mouse.current.leftButton.isPressed && primaryWeaponEnabled
- == true)
+        if (
+            primaryWeaponEnabled && 
+            tractorBeamEnabled
+        )
+        {
+            primaryWeaponCooldown += Time.deltaTime;
+            if (primaryWeaponCooldown >= fireRate)
+            {
+                primaryWeaponEnabled = true;
+            }
+        } else if (
+            primaryWeaponEnabled && 
+            tractorBeamEnabled && 
+            !isInRapidFire
+        )
+        {
+            tractorBeamCooldown += Time.deltaTime;
+            if (tractorBeamCooldown >= tractorBeamFireRate)
+            {
+                primaryWeaponEnabled = true;
+                tractorBeamEnabled = true;
+            }
+        } else if (
+            primaryWeaponEnabled && 
+            tractorBeamEnabled &&
+            isInRapidFire
+        )
+        {
+            primaryWeaponCooldown += Time.deltaTime;
+            if (primaryWeaponCooldown >= fireRate)
+            {
+                primaryWeaponEnabled = true;
+            }
+
+            tractorBeamCooldown += Time.deltaTime;
+            if (tractorBeamCooldown >= tractorBeamFireRate)
+            {
+                tractorBeamEnabled = true;
+            }
+        }
+    }
+        /*void handleWeapons()
+    {
+        if (Mouse.current.leftButton.isPressed && primaryWeaponEnabled)
         {
             primaryWeapon.OnShoot(shotEmitter);
             ROFCooldown = 0f;
             primaryWeaponEnabled
      = false;
         }
-        if (Mouse.current.rightButton.isPressed && canTractor == true)
+        if (Mouse.current.rightButton.isPressed && canTractor)
         {
             Debug.Log("WEWOWEWOWEWO");
             tractorCooldown = 0f;
@@ -85,50 +120,4 @@ public class WeaponsHandler : MonoBehaviour
      = false;
         }
     }*/
-
-    void handleCooldowns()
-    {
-        if (primaryWeaponEnabled
- == false && tractorBeamEnabled == true)
-        {
-            primaryWeaponCooldown += Time.deltaTime;
-            if (primaryWeaponCooldown >= fireRate)
-            {
-                primaryWeaponEnabled
-         = true;
-            }
-        } else if (primaryWeaponEnabled
- == false && tractorBeamEnabled == false && !isInRapidFire)
-        {
-            tractorBeamCooldown += Time.deltaTime;
-            if (tractorBeamCooldown >= tractorBeamFireRate)
-            {
-                primaryWeaponEnabled
-         = true;
-                tractorBeamEnabled = true;
-            }
-        } else if (primaryWeaponEnabled
- == false && tractorBeamEnabled == false && isInRapidFire)
-        {
-            primaryWeaponCooldown += Time.deltaTime;
-            if (primaryWeaponCooldown >= fireRate)
-            {
-                primaryWeaponEnabled
-         = true;
-            }
-
-            tractorBeamCooldown += Time.deltaTime;
-            if (tractorBeamCooldown >= tractorBeamFireRate)
-            {
-                tractorBeamEnabled = true;
-            }
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //handleWeapons();
-        handleCooldowns();
-    }
 }
