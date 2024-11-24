@@ -7,7 +7,7 @@ public class WeaponsHandler : MonoBehaviour
     private Weapon primaryWeapon;
     private Weapon tractorBeamW;
     private Transform weaponOrigin;
-    private tractorBeamProjectile tractorBeamObject;
+    private TractorBeamProjectile tractorBeamObject;
     public float fireRate = 0.2f;
     public float tractorBeamFireRate = 5;
     float primaryWeaponCooldown = 0f;
@@ -18,7 +18,7 @@ public class WeaponsHandler : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        tractorBeamObject = GetComponentInChildren<tractorBeamProjectile>();
+        tractorBeamObject = GetComponentInChildren<TractorBeamProjectile>();
         primaryWeapon = GetComponent<Blaster>();
         tractorBeamW = GetComponent<TractorBeam>();
         weaponOrigin = GetComponentInParent<Transform>();
