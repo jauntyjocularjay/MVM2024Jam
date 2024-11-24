@@ -26,7 +26,7 @@ public class WeaponsHandler : MonoBehaviour
     void Update()
     {
         //handleWeapons();
-        handleCooldowns();
+        HandleCooldowns();
     }
     public void ChangeRapidFirePower(bool state)
     {
@@ -42,7 +42,6 @@ public class WeaponsHandler : MonoBehaviour
             primaryWeaponEnabled = false;
         }
     }
-
     public void ShootTractor()
     {
         if (tractorBeamEnabled)
@@ -56,9 +55,7 @@ public class WeaponsHandler : MonoBehaviour
             }
         }
     }
-
-
-    void handleCooldowns()
+    void HandleCooldowns()
     {
         if (
             tractorBeamEnabled &&
