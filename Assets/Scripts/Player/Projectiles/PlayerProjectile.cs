@@ -7,7 +7,6 @@ public class PlayerProjectile : MonoBehaviour
     private float lifeTime;
     Blaster parentBlaster;
     [SerializeField] Rigidbody2D rb;
-
     private void Update()
     {
         lifeTime -= Time.deltaTime;

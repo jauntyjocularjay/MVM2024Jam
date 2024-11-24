@@ -56,7 +56,7 @@ public class PlayerShip : MonoBehaviour
         canRapid = false;
         isInRapidFire = true;
         rapidTime = 0f;
-        WP.changeRapidFirePower(true);
+        WP.ChangeRapidFirePower(true);
         rapidCDTime = 0f;
 
         Debug.Log("I'M IN RAPID FIRE NOW!");
@@ -73,7 +73,7 @@ public class PlayerShip : MonoBehaviour
 
             if(rapidTime >= maxRapidTime)
             {
-                WP.changeRapidFirePower(false);
+                WP.ChangeRapidFirePower(false);
                 isInRapidFire = false;
                 Debug.Log("Cooling down now...");
             }

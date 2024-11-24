@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BankShot : PlayerProjectile
+public class BankShotProjectile : PlayerProjectile
 {
     new public void OnCollisionEnter2D(Collision2D collision)
     {
