@@ -15,7 +15,7 @@ public class PlayerShip : MonoBehaviour
     Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
     Animator animator;
     public GameObject cursor;
-    EquippableGun equippedGun = EquippableGun.SingleFire;
+    EquippableGun equippedGun = EquippableGun.Blaster;
     [SerializeField] WeaponsHandler WP;
     public int maxHelperShips = 2;
     public List<HelperShip> helperShips;
@@ -238,6 +238,6 @@ public class PlayerShip : MonoBehaviour
 
 enum EquippableGun
 {
-    SingleFire,
-    BankShot
+    BankShot,
+    Blaster
 }
