@@ -8,7 +8,6 @@ using UnityEngine.InputSystem;
 public class Blaster : Weapon
 {
     public GameObject projectilePrefab;
-
     public float bulletSpd;
     public float Damage;
     public float lifetime;
@@ -17,22 +16,16 @@ public class Blaster : Weapon
 
     public override void OnShoot(Transform emitter, bool rapid)
     {
-        if (!rapid)
+        if (!rapid && currentProjectiles.Count < projectilesOnScreen)
         {
-            if (currentProjectiles.Count < projectilesOnScreen)
-            {
+            GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
+            PlayerProjectile currentBullet = currentObject.GetComponent<PlayerProjectile>();
 
-                GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
-                PlayerProjectile currentBullet = currentObject.GetComponent<PlayerProjectile>();
+            currentBullet.CalibrateBullet(bulletSpd, Damage, lifetime, this);
 
-                currentBullet.CalibrateBullet(bulletSpd, Damage, lifetime, this);
-
-                currentProjectiles.Add(currentObject);
-
-
-
-            }
-        } else
+            currentProjectiles.Add(currentObject);
+        }
+        else
         {
             Debug.Log("Rapid Firing");
             GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
