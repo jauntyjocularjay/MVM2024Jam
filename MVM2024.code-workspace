@@ -13,14 +13,16 @@
 			"path": "Assets/Scripts"
 		},
 		{
-			"name": "git",
-			"path": "git"
+			"name": "FractionScale",
+			"path": "Assets/Scripts/FractionScale"
 		},
 		{
+			"name": "Pathwinder",
 			"path": "Assets/Scripts/Pathwinder"
 		},
 		{
-			"path": "Assets/Scripts/FractionScale"
+			"name": "git",
+			"path": "git"
 		}
 	],
 	"settings": {
