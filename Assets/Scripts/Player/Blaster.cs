@@ -8,11 +8,10 @@ using UnityEngine.InputSystem;
 public class Blaster : Weapon
 {
     public GameObject projectilePrefab;
-
-    public float bulletSpd;
-    public float Damage;
-    public float lifetime;
-    public int projectilesOnScreen;
+    public float bulletSpd = 20;
+    public float Damage = 4;
+    public float lifetime = 3;
+    public int projectilesOnScreen = 2;
     public List<GameObject> currentProjectiles;
 
     public override void OnShoot(Transform emitter, bool rapid)

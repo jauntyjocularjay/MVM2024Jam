@@ -136,6 +136,16 @@ public class PlayerShip : MonoBehaviour
         {
             WP.ShootTractor();
         }
+        else if(Mouse.current.scroll.ReadValue().y > 0)
+        {
+            Debug.Log("Next Weapon...");
+            NextWeapon();
+        }
+        else if(Mouse.current.scroll.ReadValue().y < 0)
+        {
+            Debug.Log("Previous Weapon...");
+            PrevWeapon();
+        }
     }
     void ReadMovement()
     /**
@@ -171,13 +181,13 @@ public class PlayerShip : MonoBehaviour
         );
         cursor.transform.position = cursorPosition + playerData.positionOnMap;
     }
-    void NextWeaponMode()
+    void NextWeapon()
     {
-        Debug.Log("Scrolling up...");
+        GetComponent<WeaponsHandler>().IncrementWeaponSelector(true);
     }
-    void PrevWeaponMode()
+    void PrevWeapon()
     {
-        Debug.Log("Scrolling Down...");
+        GetComponent<WeaponsHandler>().IncrementWeaponSelector(false);
     }
     void LookAtMouse()
     {

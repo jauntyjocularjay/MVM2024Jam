@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
 public class WeaponsHandler : MonoBehaviour
 {
     [SerializeField] private List<Weapon> weapons;
-    int weaponsIndex;
+    [SerializeField] private int weaponsIndex;
     private Weapon primaryWeapon;
     private Weapon tractorBeamW;
     private Transform weaponOrigin;
@@ -35,6 +35,24 @@ public class WeaponsHandler : MonoBehaviour
         //handleWeapons();
         handleCooldowns();
     }
+    public void IncrementWeaponSelector(bool positive)
+    {
+        if(positive && weaponsIndex + 1 < weapons.Count)
+        {
+            weaponsIndex++;
+            primaryWeapon = weapons[weaponsIndex];
+        }
+        else if(!positive && weaponsIndex -1 < weapons.Count)
+        {
+            weaponsIndex--;
+            primaryWeapon = weapons[weaponsIndex];
+        }
+        else
+        {
+            weaponsIndex = 0;
+            primaryWeapon = weapons[weaponsIndex];
+        }
+    }
     public void changeRapidFirePower(bool state)
     {
         isInRapidFire = state;
@@ -46,6 +64,15 @@ public class WeaponsHandler : MonoBehaviour
 
             primaryWeapon.OnShoot(weaponOrigin, isInRapidFire);
             primaryWeaponCooldown = 0f;
+            primaryWeaponEnabled = false;
+        }
+    }
+    public void ShootBankShot()
+    {
+        if(primaryWeaponEnabled)
+        {
+            primaryWeapon.OnShoot(weaponOrigin, false);
+            primaryWeaponCooldown = 0.0f;
             primaryWeaponEnabled = false;
         }
     }
