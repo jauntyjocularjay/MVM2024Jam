@@ -17,19 +17,19 @@ public class Blaster : Weapon
 
     public override void OnShoot(Transform emitter, bool rapid)
     {
-        if (!rapid)
+        if (
+            currentProjectiles.Count < projectilesOnScreen && 
+            !rapid
+        )
         {
-            if (currentProjectiles.Count < projectilesOnScreen)
-            {
+            GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
+            PlayerProjectile currentBullet = currentObject.GetComponent<PlayerProjectile>();
 
-                GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
-                PlayerProjectile currentBullet = currentObject.GetComponent<PlayerProjectile>();
+            currentBullet.CalibrateBullet(bulletSpd, Damage, lifetime, this);
 
-                currentBullet.CalibrateBullet(bulletSpd, Damage, lifetime, this);
-
-                currentProjectiles.Add(currentObject);
-            }
-        } else
+            currentProjectiles.Add(currentObject);
+        }
+        else
         {
             Debug.Log("Rapid Firing");
             GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
