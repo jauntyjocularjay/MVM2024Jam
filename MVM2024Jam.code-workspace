@@ -15,6 +15,9 @@
 		{
 			"name": "git",
 			"path": "git"
+		},
+		{
+			"path": "Assets/Scripts/Pathwinder"
 		}
 	],
 	"settings": {
