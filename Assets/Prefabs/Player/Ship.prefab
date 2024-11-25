@@ -814,6 +814,7 @@ GameObject:
   - component: {fileID: 3984170689932762171}
   - component: {fileID: 7663821787899805271}
   - component: {fileID: 8857669662148864002}
+  - component: {fileID: 7057853401955690686}
   - component: {fileID: 5023370892684456368}
   m_Layer: 26
   m_Name: Ship
@@ -1042,13 +1043,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8117fd3f74725194d9894db087e3062b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapons: []
-  primaryWeapon: {fileID: 0}
-  tractorBeamW: {fileID: 0}
-  TBp: {fileID: 0}
-  shotEmitter: {fileID: 5478423853415093065}
-  ROF: 0.2
-  TractorROF: 5
+  weapons:
+  - {fileID: 8857669662148864002}
+  - {fileID: 7057853401955690686}
+  fireRate: 0.2
+  tractorBeamFireRate: 5
 --- !u!114 &8857669662148864002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1067,6 +1066,19 @@ MonoBehaviour:
   lifetime: 3
   projectilesOnScreen: 2
   currentProjectiles: []
+--- !u!114 &7057853401955690686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8672341035423565150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c140bc47b6d0d4e82c04e3defe461a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 0}
 --- !u!114 &5023370892684456368
 MonoBehaviour:
   m_ObjectHideFlags: 0

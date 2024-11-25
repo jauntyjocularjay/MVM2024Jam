@@ -12,15 +12,11 @@ public class WeaponsHandler : MonoBehaviour
     private Weapon primaryWeapon;
     private Weapon tractorBeamW;
     private Transform weaponOrigin;
-
     private tractorBeamProjectile tractorBeamObject;
-
     public float fireRate = 0.2f;
     public float tractorBeamFireRate = 5;
-
     float primaryWeaponCooldown = 0f;
     float tractorBeamCooldown = 0f;
-
     bool primaryWeaponEnabled = true;
     bool tractorBeamEnabled = true;
     bool isInRapidFire = false;
@@ -50,8 +46,7 @@ public class WeaponsHandler : MonoBehaviour
 
             primaryWeapon.OnShoot(weaponOrigin, isInRapidFire);
             primaryWeaponCooldown = 0f;
-            primaryWeaponEnabled
-     = false;
+            primaryWeaponEnabled = false;
         }
     }
 
@@ -64,31 +59,11 @@ public class WeaponsHandler : MonoBehaviour
             tractorBeamEnabled = false;
             if (!isInRapidFire)
             {
-                primaryWeaponEnabled
-         = false;
+                primaryWeaponEnabled = false;
             }
         }
     }
 
-    /*void handleWeapons()
-    {
-        if (Mouse.current.leftButton.isPressed && primaryWeaponEnabled
-)
-        {
-            primaryWeapon.OnShoot(shotEmitter);
-            ROFCooldown = 0f;
-            primaryWeaponEnabled
-     = false;
-        }
-        if (Mouse.current.rightButton.isPressed && canTractor)
-        {
-            Debug.Log("WEWOWEWOWEWO");
-            tractorCooldown = 0f;
-            canTractor = false;
-            primaryWeaponEnabled
-     = false;
-        }
-    }*/
 
     void handleCooldowns()
     {
@@ -100,10 +75,10 @@ public class WeaponsHandler : MonoBehaviour
             primaryWeaponCooldown += Time.deltaTime;
             if (primaryWeaponCooldown >= fireRate)
             {
-                primaryWeaponEnabled
-         = true;
+                primaryWeaponEnabled = true;
             }
-        } else if (
+        }
+        else if (
             !primaryWeaponEnabled && 
             tractorBeamEnabled && 
             !isInRapidFire
@@ -134,5 +109,23 @@ public class WeaponsHandler : MonoBehaviour
             }
         }
     }
-
+    /*void handleWeapons()
+    {
+        if (
+            Mouse.current.leftButton.isPressed && 
+            primaryWeaponEnabled
+        )
+        {
+            primaryWeapon.OnShoot(shotEmitter);
+            ROFCooldown = 0f;
+            primaryWeaponEnabled = false;
+        }
+        if (Mouse.current.rightButton.isPressed && canTractor)
+        {
+            Debug.Log("WEWOWEWOWEWO");
+            tractorCooldown = 0f;
+            canTractor = false;
+            primaryWeaponEnabled = false;
+        }
+    }*/
 }
