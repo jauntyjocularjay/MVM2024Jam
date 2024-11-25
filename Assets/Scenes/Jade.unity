@@ -637,10 +637,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6589831632272163880, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
-      propertyPath: WP
+    - target: {fileID: 7057853401955690686, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+      propertyPath: projectilePrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8052553702505973572, guid: a398725113bd75941a08b88798312c70, type: 3}
     - target: {fileID: 7314447411320132585, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
       propertyPath: m_Name
       value: Ship
@@ -684,10 +684,6 @@ PrefabInstance:
     - target: {fileID: 7467802510441063774, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8389607112626219144, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
-      propertyPath: data
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1386,75 +1382,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3477977230382717721, guid: d8b5e3e94133d8b40860a37d7d721821, type: 3}
   m_PrefabInstance: {fileID: 1439185243634445014}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3592376002065839115
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8052553702505973572, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_Name
-      value: BankShotProjectile
-      objectReference: {fileID: 0}
-    - target: {fileID: 8616678521933280487, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8616678521933280487, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8616678521933280487, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8676632243959955940, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.893
-      objectReference: {fileID: 0}
-    - target: {fileID: 8676632243959955940, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 8676632243959955940, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8676632243959955940, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8676632243959955940, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8676632243959955940, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8676632243959955940, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8676632243959955940, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8676632243959955940, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8676632243959955940, guid: a398725113bd75941a08b88798312c70, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a398725113bd75941a08b88798312c70, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1462,4 +1389,3 @@ SceneRoots:
   - {fileID: 1898170739}
   - {fileID: 1084035182}
   - {fileID: 1257139008}
-  - {fileID: 3592376002065839115}

@@ -28,9 +28,6 @@ public class Blaster : Weapon
                 currentBullet.CalibrateBullet(bulletSpd, Damage, lifetime, this);
 
                 currentProjectiles.Add(currentObject);
-
-
-
             }
         } else
         {

@@ -9,6 +9,7 @@ using UnityEngine.InputSystem;
 public class WeaponsHandler : MonoBehaviour
 {
     [SerializeField] private List<Weapon> weapons;
+    int weaponsIndex;
     private Weapon primaryWeapon;
     private Weapon tractorBeamW;
     private Transform weaponOrigin;
@@ -24,7 +25,8 @@ public class WeaponsHandler : MonoBehaviour
     void Start()
     {
         tractorBeamObject = GetComponentInChildren<tractorBeamProjectile>();
-        primaryWeapon = GetComponent<Blaster>();
+        weaponsIndex = 0;
+        primaryWeapon = weapons[weaponsIndex];
         tractorBeamW = GetComponent<TractorBeam>();
         weaponOrigin = GetComponentInParent<Transform>();
     }
@@ -37,8 +39,6 @@ public class WeaponsHandler : MonoBehaviour
     {
         isInRapidFire = state;
     }
-
-
     public void ShootMain()
     {
         if (primaryWeaponEnabled)
@@ -49,7 +49,6 @@ public class WeaponsHandler : MonoBehaviour
             primaryWeaponEnabled = false;
         }
     }
-
     public void ShootTractor()
     {
         if (tractorBeamEnabled)
@@ -63,8 +62,6 @@ public class WeaponsHandler : MonoBehaviour
             }
         }
     }
-
-
     void handleCooldowns()
     {
         if (
