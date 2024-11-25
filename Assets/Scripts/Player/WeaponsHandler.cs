@@ -69,6 +69,7 @@ public class WeaponsHandler : MonoBehaviour
     }
     public void ShootBankShot()
     {
+        Debug.Log("Bank shot: boing, boing!");
         if(primaryWeaponEnabled)
         {
             primaryWeapon.OnShoot(weaponOrigin, false);
