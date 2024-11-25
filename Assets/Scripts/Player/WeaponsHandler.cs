@@ -32,6 +32,11 @@ public class WeaponsHandler : MonoBehaviour
         tractorBeamW = GetComponent<TractorBeam>();
         weaponOrigin = GetComponentInParent<Transform>();
     }
+    void Update()
+    {
+        //handleWeapons();
+        handleCooldowns();
+    }
     public void changeRapidFirePower(bool state)
     {
         isInRapidFire = state;
@@ -40,8 +45,7 @@ public class WeaponsHandler : MonoBehaviour
 
     public void ShootMain()
     {
-        if (primaryWeaponEnabled
-         == true)
+        if (primaryWeaponEnabled)
         {
 
             primaryWeapon.OnShoot(weaponOrigin, isInRapidFire);
@@ -53,7 +57,7 @@ public class WeaponsHandler : MonoBehaviour
 
     public void ShootTractor()
     {
-        if (tractorBeamEnabled == true)
+        if (tractorBeamEnabled)
         {
             tractorBeamW.OnShoot(tractorBeamObject.gameObject.transform, isInRapidFire);
             tractorBeamCooldown = 0f;
@@ -69,14 +73,14 @@ public class WeaponsHandler : MonoBehaviour
     /*void handleWeapons()
     {
         if (Mouse.current.leftButton.isPressed && primaryWeaponEnabled
- == true)
+)
         {
             primaryWeapon.OnShoot(shotEmitter);
             ROFCooldown = 0f;
             primaryWeaponEnabled
      = false;
         }
-        if (Mouse.current.rightButton.isPressed && canTractor == true)
+        if (Mouse.current.rightButton.isPressed && canTractor)
         {
             Debug.Log("WEWOWEWOWEWO");
             tractorCooldown = 0f;
@@ -88,8 +92,10 @@ public class WeaponsHandler : MonoBehaviour
 
     void handleCooldowns()
     {
-        if (primaryWeaponEnabled
- == false && tractorBeamEnabled == true)
+        if (
+            !primaryWeaponEnabled && 
+            tractorBeamEnabled
+        )
         {
             primaryWeaponCooldown += Time.deltaTime;
             if (primaryWeaponCooldown >= fireRate)
@@ -97,24 +103,28 @@ public class WeaponsHandler : MonoBehaviour
                 primaryWeaponEnabled
          = true;
             }
-        } else if (primaryWeaponEnabled
- == false && tractorBeamEnabled == false && !isInRapidFire)
+        } else if (
+            !primaryWeaponEnabled && 
+            tractorBeamEnabled && 
+            !isInRapidFire
+        )
         {
             tractorBeamCooldown += Time.deltaTime;
             if (tractorBeamCooldown >= tractorBeamFireRate)
             {
-                primaryWeaponEnabled
-         = true;
+                primaryWeaponEnabled = true;
                 tractorBeamEnabled = true;
             }
-        } else if (primaryWeaponEnabled
- == false && tractorBeamEnabled == false && isInRapidFire)
+        } else if (
+            !primaryWeaponEnabled && 
+            !tractorBeamEnabled && 
+            isInRapidFire
+        )
         {
             primaryWeaponCooldown += Time.deltaTime;
             if (primaryWeaponCooldown >= fireRate)
             {
-                primaryWeaponEnabled
-         = true;
+                primaryWeaponEnabled = true;
             }
 
             tractorBeamCooldown += Time.deltaTime;
@@ -125,10 +135,4 @@ public class WeaponsHandler : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //handleWeapons();
-        handleCooldowns();
-    }
 }
