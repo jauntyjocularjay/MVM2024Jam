@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class PlayerProjectile : MonoBehaviour
 {
-
-
     private float bulletSpd;
     private float Damage;
     private float lifeTime;
