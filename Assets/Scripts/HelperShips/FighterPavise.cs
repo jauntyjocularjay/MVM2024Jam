@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Bomber : MonoBehaviour
+public class Pavise : HelperShip
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
