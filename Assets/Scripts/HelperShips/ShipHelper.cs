@@ -20,12 +20,28 @@ public class HelperShip : MonoBehaviour
  */
 {
     public HelperShipData data;
-    public Sprite bank_left_;
-    public Sprite bank_right_;
-    public Sprite idle_;
+    private Sprite bank_left_;
+    private Sprite bank_right_;
+    private Sprite idle_;
+    private GameObject projectilePrefab;
 
     void Start()
     {
+        idle_ = data.idle_;
+        bank_left_ = data.bank_left_;
+        bank_right_ = data.bank_right_;
+        projectilePrefab = data.projectilePrefab;
+    }
+    void Idle()
+    {
         GetComponent<SpriteRenderer>().sprite = data.idle_;
+    }
+    void MoveLeft()
+    {
+        GetComponent<SpriteRenderer>().sprite = data.bank_left_;
+    }
+    void MoveRight()
+    {
+        GetComponent<SpriteRenderer>().sprite = data.bank_right_;
     }
 }

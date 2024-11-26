@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 8502747859396978931}
   - component: {fileID: 8307196289853578155}
   - component: {fileID: 5969862646785580991}
-  - component: {fileID: 7680174101898433628}
+  - component: {fileID: 9081685479133903234}
   m_Layer: 26
   m_Name: FormationPos1
   m_TagString: Untagged
@@ -429,7 +429,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7680174101898433628
+--- !u!114 &9081685479133903234
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
