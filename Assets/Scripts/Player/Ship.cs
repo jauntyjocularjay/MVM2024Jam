@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 public class PlayerShip : MonoBehaviour
 {
     new Camera camera;
-    public Vector3 cameraPosition;
     public PlayerData playerData;
     public InputAction playerMovement;
     // public InputAction playerAiming;
@@ -39,7 +38,6 @@ public class PlayerShip : MonoBehaviour
     }
     void Update()
     {
-        cameraPosition = camera.transform.position;
         ReadMovement();
         ReadCursorPosition();
         LookAtMouse();
