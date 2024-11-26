@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 public class PlayerShip : MonoBehaviour
 {
     new Camera camera;
+    public Vector3 cameraPosition;
     public PlayerData playerData;
     public InputAction playerMovement;
     // public InputAction playerAiming;
@@ -41,6 +42,7 @@ public class PlayerShip : MonoBehaviour
     }
     void Update()
     {
+        cameraPosition = camera.transform.position;
         ReadMovement();
         ReadCursorPosition();
         LookAtMouse();
@@ -169,7 +171,8 @@ public class PlayerShip : MonoBehaviour
             animator.SetTrigger("idle");
         }
         playerData.positionOnMap = transform.position;
-        camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
+        /* Trying out attaching camera to the cursor instead */
+        // camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
 
     }
     void ReadCursorPosition()
@@ -180,6 +183,11 @@ public class PlayerShip : MonoBehaviour
             cursorPosition.y / Screen.height * 10.0f
         );
         cursor.transform.position = cursorPosition + playerData.positionOnMap;
+        camera.transform.position = new Vector3(
+            GetComponent<Transform>().position.x + (cursorPosition.x/6),
+            GetComponent<Transform>().position.y + (cursorPosition.y/6),
+            -10.0f
+        );
     }
     void NextWeapon()
     {
