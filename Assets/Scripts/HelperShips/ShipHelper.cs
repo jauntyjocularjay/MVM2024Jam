@@ -31,6 +31,7 @@ public class HelperShip : MonoBehaviour
         bank_left_ = data.bank_left_;
         bank_right_ = data.bank_right_;
         projectilePrefab = data.projectilePrefab;
+        gameObject.GetComponent<SpriteRenderer>().sprite = idle_;
     }
     void Idle()
     {

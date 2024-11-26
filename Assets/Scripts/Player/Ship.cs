@@ -12,6 +12,7 @@ public class PlayerShip : MonoBehaviour
     Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
     Animator animator;
     public GameObject cursor;
+    private new CircleCollider2D collider;
     EquippableGun equippedGun = EquippableGun.SingleFire;
     [SerializeField] WeaponsHandler WP;
     public int maxHelperShips = 2;
@@ -31,10 +32,11 @@ public class PlayerShip : MonoBehaviour
     void Start()
     {
         camera = Camera.main;
-        animator = gameObject.GetComponent<Animator>();
-        playerData.positionOnMap = gameObject.GetComponent<Transform>().position;
+        collider = GetComponent<CircleCollider2D>();
+        animator = GetComponent<Animator>();
+        playerData.positionOnMap = GetComponent<Transform>().position;
         animator.SetTrigger("idle");
-        WP = gameObject.GetComponent<WeaponsHandler>();
+        WP = GetComponent<WeaponsHandler>();
     }
     void Update()
     {
@@ -46,6 +48,41 @@ public class PlayerShip : MonoBehaviour
         ReadInput();
         // LookInMovementDirection()
     }
+    void FixedUpdate()
+    {
+        transform.position = new Vector2(
+            transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
+            transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
+        );
+
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            ContactPoint2D[] contacts = new ContactPoint2D[collision.contactCount];
+            collision.GetContacts(contacts);
+            Vector2 angleOfContact = new Vector2(
+                contacts[0].point.x - playerData.positionOnMap.x,
+                contacts[0].point.y - playerData.positionOnMap.y
+            );
+            angleOfContact.Normalize();
+
+            Knockback(angleOfContact, collision.gameObject.GetComponent<Rigidbody2D>());
+
+        }
+    }
+    void Knockback(Vector2 angleOfContact, Rigidbody2D enemyRB)
+    {
+        animator.SetTrigger("hit");
+        transform.position = new Vector2(
+            transform.position.x - (enemyRB.mass * angleOfContact.x),
+            transform.position.y - (enemyRB.mass * angleOfContact.y)
+        );
+    }
+
+
+
     void RapidEngage()
     {
         canRapid = false;
@@ -201,9 +238,14 @@ public class PlayerShip : MonoBehaviour
 
         transform.up = direction;
         // the helper ships look at the cursor
-        helperShips[0].transform.up = direction;
+        if(helperShips.Count < 0)
+        {
+            helperShips[0].transform.up = direction;
+        }
+        if(helperShips.Count == 2)
+        {
         helperShips[1].transform.up = -direction;
-
+        }
     }
     void ReadThumbstickAngle()
     {
@@ -211,14 +253,6 @@ public class PlayerShip : MonoBehaviour
         cursorPosition = cursorPosition.normalized;
         cursorPosition *= playerData.cursorRadius;
         cursor.transform.position = cursorPosition + playerData.positionOnMap;
-    }
-    void FixedUpdate()
-    {
-        transform.position = new Vector2(
-            transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
-            transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
-        );
-
     }
     public void takeDamage()
     {

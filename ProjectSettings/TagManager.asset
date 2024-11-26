@@ -51,7 +51,7 @@ TagManager:
   - name: Environment
     uniqueID: 2059313747
     locked: 0
-  - name: Character
+  - name: Action
     uniqueID: 3198005807
     locked: 0
   - name: Props

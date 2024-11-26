@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -8702195539476745835, guid: a9dabace4ad50874d88287e788f938b1, type: 3}
-  m_Color: {r: 0.8584906, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.2690126, g: 0, b: 0.85882354, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -124,3 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 8052553702505973572}
+  bulletSpd: 0
+  Damage: 0
+  lifetime: 0
+  projectilesOnScreen: 0
+  currentProjectiles: []
