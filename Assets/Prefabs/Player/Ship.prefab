@@ -1046,6 +1046,7 @@ MonoBehaviour:
   weapons:
   - {fileID: 8857669662148864002}
   - {fileID: 7057853401955690686}
+  weaponsIndex: 1
   fireRate: 0.2
   tractorBeamFireRate: 5
 --- !u!114 &8857669662148864002
@@ -1079,6 +1080,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 8052553702505973572, guid: a398725113bd75941a08b88798312c70, type: 3}
+  bulletSpd: 0
+  Damage: 0
+  lifetime: 0
+  projectilesOnScreen: 0
+  currentProjectiles: []
 --- !u!114 &5023370892684456368
 MonoBehaviour:
   m_ObjectHideFlags: 0

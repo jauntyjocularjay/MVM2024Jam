@@ -16,9 +16,9 @@ public class Blaster : Weapon
 
     public override void OnShoot(Transform emitter, bool rapid)
     {
-        if (
-            currentProjectiles.Count < projectilesOnScreen && 
-            !rapid
+        if ( 
+            !rapid &&
+            currentProjectiles.Count < projectilesOnScreen
         )
         {
             GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);

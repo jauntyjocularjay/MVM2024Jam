@@ -10,6 +10,7 @@ public class BankShotBlaster : Weapon
     public int projectilesOnScreen;
     public List<GameObject> currentProjectiles;
     public override void OnShoot(Transform emitter, bool rapid)
+    // do we want the bank shot to have a rapid fire option? 
     {
         if (currentProjectiles.Count < projectilesOnScreen)
         {
