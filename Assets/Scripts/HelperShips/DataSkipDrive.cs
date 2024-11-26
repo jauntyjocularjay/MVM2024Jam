@@ -21,4 +21,6 @@ public class SkipDriveData : HelperShipData
             (data.moveDirection.y * skipDriveDistance) + data.positionOnMap.y
         );
     }
+    override public void Behavior()
+    {}
 }

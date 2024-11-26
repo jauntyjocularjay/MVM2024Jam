@@ -7,6 +7,8 @@ public class FighterPaviseData : HelperShipData
     {
         type = ShipType.Pavise;
     }
+    override public void Behavior()
+    {}
     override public void Ability()
     {}
 }

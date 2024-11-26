@@ -8,5 +8,14 @@ public class FighterData : HelperShipData
         type = ShipType.Fighter;
     }
     override public void Ability()
+    {
+        Shoot();
+    }
+    override public void Behavior()
+    {
+        
+    }
+    public void Shoot()
     {}
+
 }

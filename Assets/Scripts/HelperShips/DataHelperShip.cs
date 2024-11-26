@@ -17,5 +17,6 @@ abstract public class HelperShipData : ScriptableObject
     public GameObject projectilePrefab;
     public ShipType type;
     abstract public void Ability();
+    abstract public void Behavior();
 }
 

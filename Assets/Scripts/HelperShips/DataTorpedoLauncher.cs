@@ -9,4 +9,6 @@ public class DataTorpedoLauncher : HelperShipData
     }
     override public void Ability()
     {}
+    override public void Behavior()
+    {}
 }

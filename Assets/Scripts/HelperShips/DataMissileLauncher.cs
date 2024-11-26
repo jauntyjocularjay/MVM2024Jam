@@ -7,6 +7,8 @@ public class DataMissileLauncher : HelperShipData
     {
         type = ShipType.MissileLauncher;
     }
+    override public void Behavior()
+    {}
     override public void Ability()
     {}
 }

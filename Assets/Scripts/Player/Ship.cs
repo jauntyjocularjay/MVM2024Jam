@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -68,16 +68,16 @@ public class PlayerShip : MonoBehaviour
             );
             angleOfContact.Normalize();
 
-            Knockback(angleOfContact, collision.gameObject.GetComponent<Rigidbody2D>());
+            Knockback(angleOfContact, collision.gameObject.GetComponent<EnemyShip>());
 
         }
     }
-    void Knockback(Vector2 angleOfContact, Rigidbody2D enemyRB)
+    void Knockback(Vector2 angleOfContact, EnemyShip enemyShip)
     {
         animator.SetTrigger("hit");
         transform.position = new Vector2(
-            transform.position.x - (enemyRB.mass * angleOfContact.x),
-            transform.position.y - (enemyRB.mass * angleOfContact.y)
+            transform.position.x - (enemyShip.knockback * angleOfContact.x),
+            transform.position.y - (enemyShip.knockback * angleOfContact.y)
         );
     }
 
