@@ -197,9 +197,13 @@ public class PlayerShip : MonoBehaviour
         Vector2 direction = new Vector2(
             cursor.transform.position.x - transform.position.x,
             cursor.transform.position.y - transform.position.y
-            );
+        );
 
         transform.up = direction;
+        // the helper ships look at the cursor
+        helperShips[0].transform.up = direction;
+        helperShips[1].transform.up = -direction;
+
     }
     void ReadThumbstickAngle()
     {
