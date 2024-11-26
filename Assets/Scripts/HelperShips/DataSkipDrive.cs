@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Data", menuName = "Data/Helper/SkipDrive", order = 0)]
+[CreateAssetMenu(fileName = "Data", menuName = "Helper/SkipDrive", order = 0)]
 public class SkipDriveData : HelperShipData
 /*
     SkipDriveData contains the logic, sprites (by inheritance), animator (by inheritance), Ability()

@@ -11,8 +11,9 @@ abstract public class HelperShipData : ScriptableObject
 */
 {
     public PlayerData data;
-    public Sprite sprite;
-    public AnimatorController animator;
+    public Sprite idle_;
+    public Sprite bank_left_;
+    public Sprite bank_right_;
     abstract public void Ability();
 }
 

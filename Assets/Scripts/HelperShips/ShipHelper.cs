@@ -20,9 +20,12 @@ public class HelperShip : MonoBehaviour
  */
 {
     public HelperShipData data;
+    public Sprite bank_left_;
+    public Sprite bank_right_;
+    public Sprite idle_;
+
     void Start()
     {
-        GetComponent<SpriteRenderer>().sprite = data.sprite;
-        GetComponent<Animator>().runtimeAnimatorController = data.animator;
+        GetComponent<SpriteRenderer>().sprite = data.idle_;
     }
 }

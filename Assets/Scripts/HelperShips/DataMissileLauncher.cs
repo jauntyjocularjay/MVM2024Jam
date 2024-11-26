@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class DataMissileLauncher : MonoBehaviour
+[CreateAssetMenu(fileName = "MissileLauncherData", menuName = "Helper/Missile", order = 4)]
+public class DataMissileLauncher : HelperShipData
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject projectilePrefab;    
+    override public void Ability()
+    {}
 }

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5563169b3dce32845a2d4b3cf20a3e0c, type: 3}
+  m_Name: PaviseData
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 302ed5bcd259c3d44ba603fab3828df5, type: 2}
+  idle_: {fileID: -2076308358, guid: 1fbc03d83851d3b49ac6144be0c0c646, type: 3}
+  bank_left_: {fileID: 1075545681, guid: 1fbc03d83851d3b49ac6144be0c0c646, type: 3}
+  bank_right_: {fileID: 1759840677, guid: 1fbc03d83851d3b49ac6144be0c0c646, type: 3}
+  projectilePrefab: {fileID: 6221380747307253325, guid: 2c9e7d3593b01b846a8e53bd9eb741e3, type: 3}

@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class FighterPaviseData : MonoBehaviour
+[CreateAssetMenu(fileName = "PaviseData", menuName = "Helper/Pavise", order = 2)]
+public class FighterPaviseData : HelperShipData
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject projectilePrefab;    
+    override public void Ability()
+    {}
 }

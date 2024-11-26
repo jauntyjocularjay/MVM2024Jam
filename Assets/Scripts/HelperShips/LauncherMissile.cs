@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Torpedo : HelperShip
+public class MissileLauncher : HelperShip
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,3 +14,4 @@ public class Torpedo : HelperShip
         
     }
 }
+
