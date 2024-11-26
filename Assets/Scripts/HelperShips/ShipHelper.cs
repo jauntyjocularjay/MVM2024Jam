@@ -45,3 +45,11 @@ public class HelperShip : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = data.bank_right_;
     }
 }
+
+public enum ShipType
+{
+    Fighter,
+    Pavise,
+    TorpedoLauncher,
+    MissileLauncher
+}

@@ -6,6 +6,7 @@ public class SkipDriveData : HelperShipData
     SkipDriveData contains the logic, sprites (by inheritance), animator (by inheritance), Ability()
         The ability in this case jumps the player in the direction of the mouse cursor by the 
         float skipDriveDistance.
+    @todo change the skip drive type, it no longer makes sense for it to be a HelperShipData
 */
 {
     public float skipDriveDistance = 2.0f;

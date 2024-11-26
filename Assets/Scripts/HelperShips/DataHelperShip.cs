@@ -15,6 +15,7 @@ abstract public class HelperShipData : ScriptableObject
     public Sprite bank_left_;
     public Sprite bank_right_;
     public GameObject projectilePrefab;
+    public ShipType type;
     abstract public void Ability();
 }
 
