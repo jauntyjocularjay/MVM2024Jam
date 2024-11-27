@@ -5,8 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-
-public class WeaponsHandler : MonoBehaviour
+public class WeaponsHandler : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private List<Weapon> weapons;
     [SerializeField] private int weaponsIndex;

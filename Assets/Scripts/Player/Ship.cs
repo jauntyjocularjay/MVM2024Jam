@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerShip : MonoBehaviour
+public class PlayerShip : MonoBehaviour, IDataPersistence
 {
     new Camera camera;
     public PlayerData playerData;
@@ -27,8 +27,29 @@ public class PlayerShip : MonoBehaviour
     bool damaged = false;
     [SerializeField] float DamageCooldown = 5f;
     float currentDamageCooldown = 0f;
-    // jade: Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile.
+// jade: Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile.
     // greatoni: I'm thinking of creating a damaged state where the player will change color when they are hit, another hit and they die.
+
+    //Powerups for Save Data Script
+    public bool hasTractor;
+    public bool hasRapid;
+    public bool hasBank;
+
+    public void LoadData(EventFlags data)
+    {
+        hasTractor = data.hasTractor;
+        hasRapid = data.hasRapid;
+        hasBank = data.hasBank;
+    }
+
+    public void SaveData(ref EventFlags data)
+    {
+        data.hasTractor = hasTractor;
+        data.hasRapid = hasRapid;
+        data.hasBank = hasBank;
+    }
+
+
     void Start()
     {
         camera = Camera.main;
