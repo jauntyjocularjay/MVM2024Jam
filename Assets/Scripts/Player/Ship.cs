@@ -34,12 +34,14 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     public bool hasTractor;
     public bool hasRapid;
     public bool hasBank;
+    public bool hasSlip;
 
     public void LoadData(EventFlags data)
     {
         hasTractor = data.hasTractor;
         hasRapid = data.hasRapid;
         hasBank = data.hasBank;
+        hasSlip = data.hasSlip;
     }
 
     public void SaveData(ref EventFlags data)
@@ -47,6 +49,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         data.hasTractor = hasTractor;
         data.hasRapid = hasRapid;
         data.hasBank = hasBank;
+        data.hasSlip = hasSlip;
     }
 
 
