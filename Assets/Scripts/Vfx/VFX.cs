@@ -1,17 +1,27 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class VFX : MonoBehaviour
 {
-    public VFXLibrary data;
-    Animator animator;
-    public List<string> triggers;
+    private new SpriteRenderer renderer;
+    public new Animation animation;
+    private Animator animator;
+    public VFXLibrary library;
+    public string trigger;
     void Start()
     {
+        renderer = GetComponent<SpriteRenderer>();
+        animation = GetComponent<Animation>();
         animator = GetComponent<Animator>();
-        animator.runtimeAnimatorController = data.animatorController;
-
-        triggers = data.triggers;
+        animator.runtimeAnimatorController = library.animatorController;
     }
+    public void Play()
+    {
+        animator.SetTrigger(trigger);
+    }
+    public void Stop()
+    {
+        animator.SetTrigger("idle");
+    }
+
 }
 

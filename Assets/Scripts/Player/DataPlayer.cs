@@ -4,7 +4,8 @@ using UnityEngine;
 public class PlayerData : ScriptableObject
 {
     public Vector2 positionOnMap;
-    public Vector3 moveDirection = new Vector3(0,0,0);
+    public Vector3 moveDirection = Vector3.zero;
+    public Vector3 nextWaypoint;
     public float cursorRadius; // For Thumbstick controls
     public float moveSpeed;
     public float rotationSpeed = 1.0f;

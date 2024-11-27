@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6799418004378596789}
   - component: {fileID: 6856692554544987009}
+  - component: {fileID: 8691024580100282400}
   - component: {fileID: 8272049848520537715}
   - component: {fileID: 7005739797495879874}
   m_Layer: 0
@@ -89,6 +90,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &8691024580100282400
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3467818886544472587}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!95 &8272049848520537715
 Animator:
   serializedVersion: 7
@@ -123,4 +140,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04413710b2cf9e148aa4842a7cb33d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 0}
+  library: {fileID: 11400000, guid: c589b2afbf67aca42bb5b049a29e9701, type: 2}
+  trigger: spark

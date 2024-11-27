@@ -10,18 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17bba936feaba2044b2490a8f5698578, type: 3}
-  m_Name: Propulsion
+  m_Name: ShipDamage
   m_EditorClassIdentifier: 
   triggers:
   - idle
-  - a
-  - b
-  - c
-  - d
-  - e
-  - f
-  - g
-  - h
+  - spark1
+  - spark2
   - exit
-  animatorController: {fileID: 9100000, guid: ad2de3259678a9944a14cf60114d6c4a, type: 2}
-  _Author: GVitruvi
+  animatorController: {fileID: 9100000, guid: 3da12f8375c5b514986041a43ac497da, type: 2}
+  _Author: Roland

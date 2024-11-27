@@ -32,7 +32,7 @@ public class PlayerProjectile : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            collision.gameObject.GetComponent<enemyHealth>().takeDamage(Damage);
+            collision.gameObject.GetComponent<EnemyHealth>().takeDamage(Damage);
             DestroyProjectile();
         }
         if (collision.gameObject.tag == "Wall")

@@ -10,12 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17bba936feaba2044b2490a8f5698578, type: 3}
-  m_Name: Explosions
+  m_Name: Fire
   m_EditorClassIdentifier: 
   triggers:
   - idle
-  - teal
-  - violet
-  - orange
-  - blue
-  animatorController: {fileID: 9100000, guid: 9b02df34d858f4e449bea1ff4b5d7e42, type: 2}
+  - a
+  - arrow
+  - b
+  - ball
+  - beam
+  - beam_start1
+  - beam_start2
+  - c
+  - crescent
+  - cross1
+  - cross2
+  - cross3
+  - diamond1
+  - ring
+  animatorController: {fileID: 9100000, guid: f8d78ab0c6ce5034dba87fe7bbff616e, type: 2}
+  _Author: BDragon

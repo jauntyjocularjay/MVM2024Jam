@@ -1,17 +1,27 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class EnemyShip : MonoBehaviour
 {
     public float knockback;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public List<VFX> sparks;
+    private EnemyHealth enemyHealth;
+    private VFX vfx;
     void Start()
     {
-        
+        vfx = GetComponent<VFX>();
+        enemyHealth = GetComponent<EnemyHealth>();
     }
-
-    // Update is called once per frame
     void Update()
     {
+        if(enemyHealth.GetHP() <= 3.0f)
+        {
+            sparks[0].Play();
+        }
         
+        if(enemyHealth.GetHP() <= 2.0f)
+        {
+            sparks[1].Play();
+        }
     }
 }
