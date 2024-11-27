@@ -3,7 +3,14 @@
     <Style src="project://database/Assets/UI/InGame/InGameStyles.uss?fileID=7433441132597879392&amp;guid=be0d140a132af954e903553ebb0413b2&amp;type=3#InGameStyles" />
     <engine:VisualElement name="uiframe" class="ui-tint" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/jadedrakerider/UIFrame.png?fileID=2800000&amp;guid=79a05e76860e71f46928dc5f2c95202b&amp;type=3#UIFrame&quot;);">
         <engine:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row; background-color: rgba(0, 0, 0, 0.63);">
-            <engine:VisualElement style="flex-grow: 7; flex-shrink: 1;" />
+            <engine:VisualElement style="flex-grow: 7; flex-shrink: 1; flex-direction: row;">
+                <engine:VisualElement class="ui-tint" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/WenRexa/holoui/Sprites/icons/menu.png?fileID=21300000&amp;guid=ffe366ce3f1b77047997588f59a6e35e&amp;type=3#menu&quot;);" />
+                <engine:VisualElement class="ui-tint" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/WenRexa/holoui/Sprites/icons/settings.png?fileID=21300000&amp;guid=5e3723d90ee79ca409f09bcd6ace3a73&amp;type=3#settings&quot;);" />
+                <engine:VisualElement style="flex-grow: 1;" />
+                <engine:VisualElement style="flex-grow: 1;" />
+                <engine:VisualElement style="flex-grow: 1;" />
+                <engine:VisualElement style="flex-grow: 1;" />
+            </engine:VisualElement>
             <engine:VisualElement name="map" class="panel" style="flex-grow: 1;" />
             <engine:VisualElement name="projectile" style="flex-grow: 1; flex-shrink: 1; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
                 <engine:Instance template="weapon_display" class="panel" />

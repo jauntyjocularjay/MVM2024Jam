@@ -4,19 +4,30 @@ using UnityEngine.InputSystem;
 
 public class PlayerShip : MonoBehaviour
 {
+    // Scene Objects
     new Camera camera;
+    Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
+
+    // Player Values
     public PlayerData playerData;
+    bool damaged = false;
+    [SerializeField] float DamageCooldown = 5f;
+
+    // // Input
     public InputAction playerMovement;
     // public InputAction playerAiming;
     // public InputAction playerFire;
-    Vector2 screenCenter = new Vector2(Screen.width/2, Screen.height/2);
     Animator animator;
-    public GameObject cursor;
     private new CircleCollider2D collider;
-    EquippableGun equippedGun = EquippableGun.SingleFire;
+
+
+    // Child Objects
+    // // Cursor
+    public GameObject cursor;
+
+    // // Weapons
     [SerializeField] WeaponsHandler WP;
-    public int maxHelperShips = 2;
-    public List<HelperShip> helperShips;
+    EquippableGun equippedGun = EquippableGun.Blaster;
     public float maxRapidTime = 5f;
     public bool hasRapidPower = true;
     public bool isInRapidFire = false;
@@ -24,8 +35,10 @@ public class PlayerShip : MonoBehaviour
     float rapidTime = 0f;
     public float rapidCooldown = 10f;
     float rapidCDTime = 0f;
-    bool damaged = false;
-    [SerializeField] float DamageCooldown = 5f;
+
+    // // Helper Ships
+    public int maxHelperShips = 2;
+    public List<HelperShip> helperShips;
     float currentDamageCooldown = 0f;
     // jade: Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile.
     // greatoni: I'm thinking of creating a damaged state where the player will change color when they are hit, another hit and they die.
@@ -56,6 +69,8 @@ public class PlayerShip : MonoBehaviour
         );
 
     }
+
+    // Collision Methods
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Enemy"))
@@ -81,8 +96,7 @@ public class PlayerShip : MonoBehaviour
         );
     }
 
-
-
+    // Weapon Methods
     void RapidEngage()
     {
         canRapid = false;
@@ -120,6 +134,21 @@ public class PlayerShip : MonoBehaviour
             }
         }
     }
+    public void takeDamage()
+    {
+        //Here we'll have captured fighters die in place of the player if there are fighters available.
+
+        if (!damaged)
+        {
+            damaged = true;
+            currentDamageCooldown = 0f;
+        } else
+        {
+            //Die
+        }
+    }
+
+    // Input Methods
     private void OnEnable()
     {
         playerMovement.Enable();
@@ -254,19 +283,8 @@ public class PlayerShip : MonoBehaviour
         cursorPosition *= playerData.cursorRadius;
         cursor.transform.position = cursorPosition + playerData.positionOnMap;
     }
-    public void takeDamage()
-    {
-        //Here we'll have captured fighters die in place of the player if there are fighters available.
 
-        if (!damaged)
-        {
-            damaged = true;
-            currentDamageCooldown = 0f;
-        } else
-        {
-            //Die
-        }
-    }
+    // Healing Methods
     void HealingProccess()
     {
         if(damaged)
@@ -278,6 +296,8 @@ public class PlayerShip : MonoBehaviour
             }
         }
     }
+
+    // Helper Ship Methods
     public void addHelperShip(EnemyHealth hitEnemy)
     {
         helperShips.Add(hitEnemy.CapturedShip);
@@ -287,6 +307,6 @@ public class PlayerShip : MonoBehaviour
 
 enum EquippableGun
 {
-    SingleFire,
+    Blaster,
     BankShot
 }
