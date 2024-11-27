@@ -5,8 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-
-public class WeaponsHandler : MonoBehaviour
+public class WeaponsHandler : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private List<Weapon> weapons;
     private Weapon primaryWeapon;
@@ -32,6 +31,31 @@ public class WeaponsHandler : MonoBehaviour
         tractorBeamW = GetComponent<TractorBeam>();
         weaponOrigin = GetComponentInParent<Transform>();
     }
+
+
+    //These Booleans will be used to determine if the player has or doesn't have certain weapons. 
+
+    bool hasTractorBeam;
+    bool hasRapidFire;
+    bool hasBankShot;
+
+
+    //These are the save and loadData methods used in IDataPersistance, it will be used to change
+    public void SaveData(ref EventFlags flags)
+    {
+        flags.hasTractor = hasTractorBeam;
+        flags.hasRapid = hasRapidFire;
+        flags.hasBank = hasBankShot;
+    }
+
+    public void LoadData(EventFlags flags)
+    {
+        hasTractorBeam = flags.hasTractor;
+        hasRapidFire = flags.hasRapid;
+        hasBankShot = flags.hasBank;
+    }
+
+
     public void changeRapidFirePower(bool state)
     {
         isInRapidFire = state;
