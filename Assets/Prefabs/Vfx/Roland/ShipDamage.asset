@@ -17,5 +17,8 @@ MonoBehaviour:
   - spark1
   - spark2
   - exit
+  animationClips:
+  - {fileID: 7400000, guid: 0aa2b011b55688842bbbc1d688b3c6ac, type: 2}
+  - {fileID: 7400000, guid: b0b1ffc8ee8341f46a0aad9aedd89d54, type: 2}
   animatorController: {fileID: 9100000, guid: 3da12f8375c5b514986041a43ac497da, type: 2}
   _Author: Roland

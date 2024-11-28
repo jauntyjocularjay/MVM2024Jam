@@ -18,6 +18,9 @@
 		},
 		{
 			"path": "Assets/Scripts/Pathwinder"
+		},
+		{
+			"path": "Assets/Scripts/FractionScale"
 		}
 	],
 	"settings": {

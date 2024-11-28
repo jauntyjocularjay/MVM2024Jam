@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class EnemyShip : MonoBehaviour
 {
-    public float knockback;
+    public int knockback;
     public List<VFX> sparks;
     private EnemyHealth enemyHealth;
     private VFX vfx;
@@ -26,7 +26,7 @@ public class EnemyShip : MonoBehaviour
     }
     bool DiesOnContact()
     {
-        if(knockback <= 2.0f)
+        if(knockback <= 2)
         {
             return true;
         }

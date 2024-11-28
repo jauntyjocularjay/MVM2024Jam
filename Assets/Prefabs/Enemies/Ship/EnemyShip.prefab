@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2661529987451177231}
   - component: {fileID: 5534619551653206441}
   - component: {fileID: 5671607416222215053}
-  - component: {fileID: 5177234216369634572}
+  - component: {fileID: 3192423465024693518}
   m_Layer: 26
   m_Name: Ship
   m_TagString: Enemy
@@ -172,7 +172,7 @@ MonoBehaviour:
   sparks:
   - {fileID: 8186510395140949651}
   - {fileID: 433787592455067322}
---- !u!114 &5177234216369634572
+--- !u!114 &3192423465024693518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -181,13 +181,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 675256613722583259}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e062ad7406465c498b838a133891dab, type: 3}
+  m_Script: {fileID: 11500000, guid: 8324b3f3902590249a525d486ecf2f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHP: 5
+  MaxHP: 0
   explosionClip: {fileID: 0}
-  canBeCaptured: 1
-  captureThreshold: 2
+  canBeCaptured: 0
+  captureThreshold: 0
   CapturedShip: {fileID: 0}
 --- !u!1 &8610918887902604243
 GameObject:

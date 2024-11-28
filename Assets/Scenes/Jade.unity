@@ -171,11 +171,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7663821787899805271, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+      propertyPath: weaponsIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663821787899805271, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+      propertyPath: weapons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663821787899805271, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+      propertyPath: 'weapons.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1553433617}
+    - target: {fileID: 7663821787899805271, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+      propertyPath: 'weapons.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1553433616}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+--- !u!114 &1190936232 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6276986922561778803, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+  m_PrefabInstance: {fileID: 8983725914346918157}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04413710b2cf9e148aa4842a7cb33d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1553433616 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7057853401955690686, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+  m_PrefabInstance: {fileID: 372754962}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c140bc47b6d0d4e82c04e3defe461a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1553433617 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8857669662148864002, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+  m_PrefabInstance: {fileID: 372754962}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e15c81be5cf5734cbbc82152b5325bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1839921634 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2343307809946068058, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+  m_PrefabInstance: {fileID: 8983725914346918157}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04413710b2cf9e148aa4842a7cb33d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1898170736
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,10 +400,34 @@ PrefabInstance:
       propertyPath: trigger
       value: spark2
       objectReference: {fileID: 0}
+    - target: {fileID: 3192423465024693518, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: MaxHP
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192423465024693518, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: canBeCaptured
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192423465024693518, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: explosionClip
+      value: 
+      objectReference: {fileID: 3671909152549973722, guid: 1daee5f7aef024b46ad7a4c2d30cf5d2, type: 3}
+    - target: {fileID: 3192423465024693518, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: captureThreshold
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4965514227360848578, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3da12f8375c5b514986041a43ac497da, type: 2}
+    - target: {fileID: 5671607416222215053, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: 'sparks.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1839921634}
+    - target: {fileID: 5671607416222215053, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: 'sparks.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1190936232}
     - target: {fileID: 5672720983284184209, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
       propertyPath: m_Animation
       value: 

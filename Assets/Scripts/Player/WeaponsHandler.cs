@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -56,7 +56,7 @@ public class WeaponsHandler : MonoBehaviour
     {
         isInRapidFire = state;
     }
-    public void ShootMain()
+    public void ShootBlaster()
     {
         if (primaryWeaponEnabled)
         {

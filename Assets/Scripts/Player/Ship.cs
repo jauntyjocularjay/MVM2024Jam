@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -40,7 +41,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     public int maxHelperShips = 2;
     public List<HelperShip> helperShips;
     float currentDamageCooldown = 0f;
-// jade: Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile.
+    // jade: Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile.
     // greatoni: I'm thinking of creating a damaged state where the player will change color when they are hit, another hit and they die.
 
     //Powerups for Save Data Script
@@ -48,7 +49,9 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     public bool hasRapid;
     public bool hasBank;
     public bool hasSlip;
-
+    public bool wasKnockedBack = false;
+    public Vector2 knockbackPosition = Vector2.zero;
+    private UFractionScale knockbackIntervals = new UFractionScale(0,0);
     public void LoadData(EventFlags data)
     {
         hasTractor = data.hasTractor;
@@ -87,11 +90,31 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     }
     void FixedUpdate()
     {
-        transform.position = new Vector2(
-            transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
-            transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
-        );
-
+        UpdatePosition();
+    }
+    void UpdatePosition()
+    {
+        if(wasKnockedBack && !knockbackIntervals.Full())
+        {
+            transform.position = new Vector2(
+                knockbackPosition.x * knockbackIntervals.ToFloat(),
+                knockbackPosition.y * knockbackIntervals.ToFloat()
+            );
+            knockbackIntervals.Increment();
+        }
+        else if(wasKnockedBack && knockbackIntervals.Full())
+        {
+            wasKnockedBack = false;
+            knockbackPosition = Vector2.zero;
+            knockbackIntervals = UFractionScale.zero;
+        }
+        else
+        {
+            transform.position = new Vector2(
+                transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
+                transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
+            );
+        }
     }
 
     // Collision Methods
@@ -114,10 +137,12 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     void Knockback(Vector2 angleOfContact, EnemyShip enemyShip)
     {
         animator.SetTrigger("hit");
-        transform.position = new Vector2(
-            transform.position.x - (enemyShip.knockback * angleOfContact.x),
-            transform.position.y - (enemyShip.knockback * angleOfContact.y)
+        knockbackPosition = new Vector2(
+                transform.position.x - enemyShip.knockback * angleOfContact.x,
+                transform.position.y - enemyShip.knockback * angleOfContact.y
         );
+        wasKnockedBack = true;
+        knockbackIntervals = new UFractionScale(0, enemyShip.knockback);
     }
 
     // Weapon Methods
@@ -158,7 +183,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
             }
         }
     }
-    public void takeDamage()
+    public void TakeDamage()
     {
         //Here we'll have captured fighters die in place of the player if there are fighters available.
 
@@ -203,7 +228,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         else if(Mouse.current.leftButton.isPressed)
         // press and hold the left mouse button
         {
-            WP.ShootMain();
+            WP.ShootBlaster();
         }
         else if(equippedGun == EquippableGun.BankShot && Mouse.current.leftButton.isPressed)
         // press and hold the left mouse button
