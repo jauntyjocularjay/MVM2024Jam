@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-
 public class WeaponsHandler : MonoBehaviour
 {
     [SerializeField] private List<Weapon> weapons;
