@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 
-public class enemyHealth : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     public float MaxHP;
     public GameObject explosionClip;
     private float HP;
-
     public bool canBeCaptured;
     public float captureThreshold;
     public HelperShip CapturedShip;
@@ -41,6 +40,11 @@ public class enemyHealth : MonoBehaviour
             }
 
         }
+    }
+
+    public float GetHP()
+    {
+        return HP;
     }
 
     public bool checkCapture()

@@ -302,7 +302,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
             }
         }
     }
-    public void addHelperShip(enemyHealth hitEnemy)
+    public void addHelperShip(EnemyHealth hitEnemy)
     {
         helperShips.Add(hitEnemy.CapturedShip);
         Destroy(hitEnemy.gameObject);

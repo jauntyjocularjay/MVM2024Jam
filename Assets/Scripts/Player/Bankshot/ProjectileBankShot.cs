@@ -33,7 +33,7 @@ public class BankShotProjectile : MonoBehaviour
         // if (collision.gameObject.tag == "Enemy")
         if (collision.gameObject.tag.Equals("Enemy"))
         {
-            collision.gameObject.GetComponent<enemyHealth>().takeDamage(Damage);
+            collision.gameObject.GetComponent<EnemyHealth>().takeDamage(Damage);
             DestroyProjectile();
         }
         if (collision.gameObject.tag.Equals("Wall"))

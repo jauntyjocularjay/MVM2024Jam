@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class eneAnim : MonoBehaviour
 {
-    private enemyHealth localHealth;
+    private EnemyHealth localHealth;
     private Animator localAnimator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -12,7 +12,7 @@ public class eneAnim : MonoBehaviour
 
     private void Awake()
     {
-        localHealth = gameObject.GetComponent<enemyHealth>();
+        localHealth = gameObject.GetComponent<EnemyHealth>();
         localAnimator = gameObject.GetComponent<Animator>();
     }
 
