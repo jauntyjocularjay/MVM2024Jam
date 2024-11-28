@@ -13,6 +13,7 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         HP = MaxHP;
+        canBeCaptured = true;
     }
 
     // Update is called once per frame

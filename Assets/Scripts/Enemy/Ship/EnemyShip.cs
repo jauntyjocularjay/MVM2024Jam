@@ -24,4 +24,15 @@ public class EnemyShip : MonoBehaviour
             sparks[1].Play();
         }
     }
+    bool DiesOnContact()
+    {
+        if(knockback <= 2.0f)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
