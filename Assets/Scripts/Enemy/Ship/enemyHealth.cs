@@ -4,9 +4,9 @@ public class EnemyHealth : MonoBehaviour
 {
     public float MaxHP;
     public GameObject explosionClip;
-    private float HP;
-    public bool canBeCaptured;
-    public float captureThreshold;
+    private float HP = 5;
+    public bool canBeCaptured = true;
+    public float captureThreshold = 2;
     public HelperShip CapturedShip;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
