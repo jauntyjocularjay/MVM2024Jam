@@ -421,6 +421,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: 3da12f8375c5b514986041a43ac497da, type: 2}
     - target: {fileID: 5671607416222215053, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: knockback
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671607416222215053, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
       propertyPath: 'sparks.Array.data[0]'
       value: 
       objectReference: {fileID: 1839921634}

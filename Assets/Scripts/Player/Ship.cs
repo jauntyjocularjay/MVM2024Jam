@@ -49,9 +49,13 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     public bool hasRapid;
     public bool hasBank;
     public bool hasSlip;
-    public bool wasKnockedBack = false;
-    public Vector2 knockbackPosition = Vector2.zero;
-    private UFractionScale knockbackIntervals = new UFractionScale(0,0);
+
+    // Knockback Lerp
+    private bool wasKnockedBack = false;
+    private float elapsedTime = 0f;
+    private float knockbackDuration = 0.3f;
+    private Vector3 knockbackStartPosition;
+    private Vector3 knockbackEndPosition;
     public void LoadData(EventFlags data)
     {
         hasTractor = data.hasTractor;
@@ -80,6 +84,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     }
     void Update()
     {
+        if(wasKnockedBack) KnockbackLerp();
         ReadMovement();
         ReadCursorPosition();
         LookAtMouse();
@@ -94,27 +99,10 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     }
     void UpdatePosition()
     {
-        if(wasKnockedBack && !knockbackIntervals.Full())
-        {
-            transform.position = new Vector2(
-                knockbackPosition.x * knockbackIntervals.ToFloat(),
-                knockbackPosition.y * knockbackIntervals.ToFloat()
-            );
-            knockbackIntervals.Increment();
-        }
-        else if(wasKnockedBack && knockbackIntervals.Full())
-        {
-            wasKnockedBack = false;
-            knockbackPosition = Vector2.zero;
-            knockbackIntervals = UFractionScale.zero;
-        }
-        else
-        {
-            transform.position = new Vector2(
-                transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
-                transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
-            );
-        }
+        transform.position = new Vector2(
+            transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
+            transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
+        );
     }
 
     // Collision Methods
@@ -134,15 +122,28 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
 
         }
     }
+    void KnockbackLerp()
+    {
+        elapsedTime += Time.deltaTime;
+        float percentageComplete = elapsedTime / knockbackDuration;
+        transform.position = Vector3.Lerp(knockbackStartPosition, knockbackEndPosition, percentageComplete);
+        if(percentageComplete >= 1.0f)
+        {
+            knockbackStartPosition = Vector3.zero;
+            wasKnockedBack = false;
+            elapsedTime = 0.0f;
+        }
+
+    }
     void Knockback(Vector2 angleOfContact, EnemyShip enemyShip)
     {
         animator.SetTrigger("hit");
-        knockbackPosition = new Vector2(
+        knockbackStartPosition = transform.position;
+        knockbackEndPosition = new Vector3(
                 transform.position.x - enemyShip.knockback * angleOfContact.x,
                 transform.position.y - enemyShip.knockback * angleOfContact.y
         );
         wasKnockedBack = true;
-        knockbackIntervals = new UFractionScale(0, enemyShip.knockback);
     }
 
     // Weapon Methods
