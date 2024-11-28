@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
     public void newGame()
     {
         Flags = new EventFlags();
+        SceneManager.LoadScene(0);
     }
 
     public void saveGame()
@@ -50,7 +52,7 @@ public class GameManager : MonoBehaviour
     {
         this.dataHandler = new FileDataHandler(fileName);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
-        loadGame();
+        //loadGame();
     }
 
     public void loadGame()
@@ -68,6 +70,7 @@ public class GameManager : MonoBehaviour
         {
             dataPersistenceObj.LoadData(Flags);
         }
+        SceneManager.LoadScene(0);
     }
 
     private List<IDataPersistence> FindAllDataPersistenceObjects()
@@ -80,6 +83,6 @@ public class GameManager : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        saveGame();
+        //saveGame();
     }
 }

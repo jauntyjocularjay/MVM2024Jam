@@ -320,8 +320,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
             }
         }
     }
-
-    // Helper Ship Methods
     public void addHelperShip(EnemyHealth hitEnemy)
     {
         helperShips.Add(hitEnemy.CapturedShip);
