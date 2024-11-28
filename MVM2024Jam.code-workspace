@@ -21,6 +21,9 @@
 		},
 		{
 			"path": "Assets/Scripts/FractionScale"
+		},
+		{
+			"path": "Assets/StudioDMB/EZLerp"
 		}
 	],
 	"settings": {
