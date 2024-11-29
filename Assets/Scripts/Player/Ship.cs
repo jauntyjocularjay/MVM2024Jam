@@ -39,7 +39,8 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
 
     // // Helper Ships
     public int maxHelperShips = 2;
-    public List<HelperShipV1> helperShips;
+    /* @todo: Refactoring Helpership -jade*/
+    public List<HelperShip> helperShips;
     float currentDamageCooldown = 0f;
     // jade: Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile.
     // greatoni: I'm thinking of creating a damaged state where the player will change color when they are hit, another hit and they die.
