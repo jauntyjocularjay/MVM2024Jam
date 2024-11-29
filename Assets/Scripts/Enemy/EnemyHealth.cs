@@ -7,7 +7,7 @@ public class EnemyHealth : MonoBehaviour
     private float HP;
     public bool canBeCaptured;
     public float captureThreshold;
-    public HelperShip CapturedShip;
+    public HelperShipV1 CapturedShip;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

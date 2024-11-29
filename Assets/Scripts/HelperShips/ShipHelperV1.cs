@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class HelperShip : MonoBehaviour
+public class HelperShipV1 : MonoBehaviour
 /* HelperShip holds a reference to the HelperShip data and uses it to assign sprite and
  * AnimationController to the gameObject.
     Helper Ship Data includes:
@@ -49,12 +48,4 @@ public class HelperShip : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().sprite = data.bank_right_;
     }
-}
-
-public enum ShipType
-{
-    Fighter,
-    Pavise,
-    TorpedoLauncher,
-    MissileLauncher
 }
