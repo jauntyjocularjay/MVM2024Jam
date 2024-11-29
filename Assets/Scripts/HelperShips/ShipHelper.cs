@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,10 +20,12 @@ public class HelperShip : MonoBehaviour
  */
 {
     public HelperShipData data;
+    public List<Path> paths;
     private Sprite bank_left_;
     private Sprite bank_right_;
     private Sprite idle_;
     private GameObject projectilePrefab;
+    private Pathwinder pathwinder;
 
     void Start()
     {
@@ -32,6 +34,8 @@ public class HelperShip : MonoBehaviour
         bank_right_ = data.bank_right_;
         projectilePrefab = data.projectilePrefab;
         gameObject.GetComponent<SpriteRenderer>().sprite = idle_;
+        pathwinder = GetComponent<Pathwinder>();
+        pathwinder.Go();
     }
     void Idle()
     {
