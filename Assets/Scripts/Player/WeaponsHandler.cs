@@ -11,7 +11,7 @@ public class WeaponsHandler : MonoBehaviour
     [SerializeField] private int weaponsIndex;
     private Weapon primaryWeapon;
     private Weapon tractorBeamW;
-    private Transform weaponOrigin;
+    [SerializeField] Transform weaponOrigin; //THere are a LOT of transforms to sort through when searching for them within an object. Best to leave this one serialized for now.
     private tractorBeamProjectile tractorBeamObject;
     public float fireRate = 0.2f;
     public float tractorBeamFireRate = 5;
@@ -27,7 +27,7 @@ public class WeaponsHandler : MonoBehaviour
         weaponsIndex = 0;
         primaryWeapon = weapons[weaponsIndex];
         tractorBeamW = GetComponent<TractorBeam>();
-        weaponOrigin = GetComponentInParent<Transform>();
+        //weaponOrigin = GetComponentInParent<Transform>();
     }
     void Update()
     {
