@@ -10,21 +10,21 @@ public class HelperShip : MonoBehaviour
     private GameObject projectilePrefab;
     private Pathwinder pathwinder;
 
-    void Start()
+    public void Start()
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = idle_;
         pathwinder = GetComponent<Pathwinder>();
         pathwinder.Go();
     }
-    void Idle()
+    public void Idle()
     {
         GetComponent<SpriteRenderer>().sprite = idle_;
     }
-    void MoveLeft()
+    public void MoveLeft()
     {
         GetComponent<SpriteRenderer>().sprite = bank_left_;
     }
-    void MoveRight()
+    public void MoveRight()
     {
         GetComponent<SpriteRenderer>().sprite = bank_right_;
     }
