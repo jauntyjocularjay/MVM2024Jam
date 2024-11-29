@@ -14,7 +14,7 @@ public class EventFlags
     public bool hasBank;
     public bool hasSlip;
 
-    int currentSavePoint;
+    public int currentSavePoint;
 
     public EventFlags()
     {

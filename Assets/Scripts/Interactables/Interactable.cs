@@ -22,7 +22,7 @@ public abstract class Interactable : MonoBehaviour
 
     void RegisterInteraction()
     {
-        if(hasPlayer && !hasInteracted && Input.GetKeyDown("e"))
+        if(hasPlayer && !hasInteracted && Input.GetKeyDown("f"))
         {
             interactEffect();
             Debug.Log("I have interacted with the player!!!");

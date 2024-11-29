@@ -16,10 +16,8 @@ public class Blaster : Weapon
 
     public override void OnShoot(Transform emitter, bool rapid)
     {
-        if ( 
-            !rapid &&
-            currentProjectiles.Count < projectilesOnScreen
-        )
+        Debug.Log($"isInRapidFire before shooting:" + rapid);
+        if ( currentProjectiles.Count < projectilesOnScreen )
         {
             GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
             PlayerProjectile currentBullet = currentObject.GetComponent<PlayerProjectile>();
@@ -28,7 +26,7 @@ public class Blaster : Weapon
 
             currentProjectiles.Add(currentObject);
         }
-        else
+        else if (rapid)
         {
             Debug.Log("Rapid Firing");
             GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
