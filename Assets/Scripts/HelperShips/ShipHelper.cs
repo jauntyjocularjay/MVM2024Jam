@@ -7,7 +7,7 @@ public class HelperShip : MonoBehaviour
     public Sprite idle_;
     public Sprite bank_left_;
     public Sprite bank_right_;
-    public float HP;
+    public int HP;
     private GameObject projectilePrefab;
     private Pathwinder pathwinder;
 

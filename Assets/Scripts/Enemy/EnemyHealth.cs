@@ -2,9 +2,9 @@
 
 public class EnemyHealth : MonoBehaviour
 {
-    public float MaxHP;
+    public int MaxHP;
     public GameObject explosionClip;
-    private float HP;
+    private int HP;
     public bool canBeCaptured;
     public float captureThreshold;
     /* @todo Jade is refactoring HelperShip */
@@ -53,7 +53,7 @@ public class EnemyHealth : MonoBehaviour
         return HP <= captureThreshold;
     }
 
-    public void takeDamage(float Damage)
+    public void takeDamage(int Damage)
     {
         HP -= Damage;
 
