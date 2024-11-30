@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
     {
         this.dataHandler = new FileDataHandler(fileName);
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
-        //loadGame();
+        loadGame();
     }
 
     public void loadGame()
@@ -70,7 +70,29 @@ public class GameManager : MonoBehaviour
         {
             dataPersistenceObj.LoadData(Flags);
         }
-        SceneManager.LoadScene(0);
+
+        switch(Flags.currentSavePoint)
+        {
+            case 0: { SceneManager.LoadScene(0); break; }
+            case 1: { 
+                    SceneManager.LoadScene(0);
+                    StartCoroutine(SetPlayerPosition(new Vector3(5.523644f, -1.779757f, 0)));
+                    break; 
+                }
+
+            default: { SceneManager.LoadScene(0); break; }
+        }
+
+    }
+
+    private IEnumerator SetPlayerPosition(Vector3 position)
+    {
+        yield return null; // Wait for the next frame
+        PlayerShip playerShip = FindFirstObjectByType<PlayerShip>();
+        if (playerShip != null)
+        {
+            playerShip.InitializePosition(position);
+        }
     }
 
     private List<IDataPersistence> FindAllDataPersistenceObjects()

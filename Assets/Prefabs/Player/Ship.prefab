@@ -173,7 +173,7 @@ Transform:
   m_GameObject: {fileID: 4802809052400564288}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.462, z: 0}
+  m_LocalPosition: {x: 0, y: 0.556, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -664,7 +664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2905993522851833489
 Transform:
   m_ObjectHideFlags: 0
@@ -911,7 +911,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 15
-  m_Sprite: {fileID: 1744459107, guid: 9b37607a38857e54cb1a189170346ed3, type: 3}
+  m_Sprite: {fileID: -1131993220, guid: 9b37607a38857e54cb1a189170346ed3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1138,9 +1138,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapons:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8857669662148864002}
+  - {fileID: 7057853401955690686}
   weaponsIndex: 1
+  weaponOrigin: {fileID: 5478423853415093065}
   fireRate: 0.2
   tractorBeamFireRate: 5
 --- !u!114 &8857669662148864002
@@ -1156,7 +1157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 3730315944908148375, guid: 69c3b38f4f5af084e9e70bdcefa23f4e, type: 3}
-  bulletSpd: 20
+  bulletSpd: 30
   Damage: 4
   lifetime: 3
   projectilesOnScreen: 2
