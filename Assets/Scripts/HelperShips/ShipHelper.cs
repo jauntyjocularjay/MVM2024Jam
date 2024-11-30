@@ -4,17 +4,18 @@ using UnityEngine;
 public class HelperShip : MonoBehaviour
 {
     public List<Vector3> destinations;
-    private Sprite bank_left_;
-    private Sprite bank_right_;
-    private Sprite idle_;
+    public Sprite idle_;
+    public Sprite bank_left_;
+    public Sprite bank_right_;
     private GameObject projectilePrefab;
-    private Pathwinder pathwinder;
+    private Pathwinder path;
+    public PathData pathData;
 
     public void Start()
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = idle_;
-        pathwinder = GetComponent<Pathwinder>();
-        pathwinder.Go();
+        path = GetComponent<Pathwinder>();
+        path.Go();
     }
     public void Idle()
     {

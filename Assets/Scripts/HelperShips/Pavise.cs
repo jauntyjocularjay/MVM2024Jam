@@ -5,7 +5,7 @@ public class Pavise : HelperShip
 {
     ShipType shipType = ShipType.Pavise;
 
-    void Start()
+    new void Start()
     {
         base.Start();
     }
