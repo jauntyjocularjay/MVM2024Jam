@@ -10,7 +10,6 @@ public class HelperShip : MonoBehaviour
     public float HP;
     private GameObject projectilePrefab;
     private Pathwinder pathwinder;
-    public PathData pathData;
 
     public void Start()
     {
