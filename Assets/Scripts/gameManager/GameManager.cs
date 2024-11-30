@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager GM;
 
-    private EventFlags Flags;
+    public EventFlags Flags;
     private List<IDataPersistence> dataPersistenceObjects;
 
     FileDataHandler dataHandler;
