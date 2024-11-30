@@ -135,9 +135,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.88
       objectReference: {fileID: 0}
+    - target: {fileID: 1936092496780396191, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+      propertyPath: m_Name
+      value: Pavise
+      objectReference: {fileID: 0}
+    - target: {fileID: 3984170689932762171, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+      propertyPath: helperShips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3984170689932762171, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
+      propertyPath: 'helperShips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 372754965}
     - target: {fileID: 4840265048697085765, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4840265048697085765, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
       propertyPath: m_LocalScale.y
@@ -262,6 +274,7 @@ MonoBehaviour:
   idle_: {fileID: -2076308358, guid: 1fbc03d83851d3b49ac6144be0c0c646, type: 3}
   bank_left_: {fileID: 1075545681, guid: 1fbc03d83851d3b49ac6144be0c0c646, type: 3}
   bank_right_: {fileID: 1759840677, guid: 1fbc03d83851d3b49ac6144be0c0c646, type: 3}
+  HP: 0
   pathData: {fileID: 0}
 --- !u!212 &372754967
 SpriteRenderer:
@@ -340,9 +353,10 @@ MonoBehaviour:
   currentPosition: {x: 0, y: 0, z: 0}
   currentTimeElapse: 0
   waypoints: []
-  path: {fileID: 11400000, guid: fac2521ce9cc46540a8416de59927b0f, type: 2}
+  path: {fileID: 11400000, guid: 08de605954403024f923d9f061b833ff, type: 2}
   index: 0
   velocity: 1
+  loop: 1
 --- !u!114 &1553433616 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7057853401955690686, guid: b04e24b8a05a8b2429ba57609d720d35, type: 3}
@@ -488,11 +502,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.63
+      value: 6.99
       objectReference: {fileID: 0}
     - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.84
+      value: 4.26
       objectReference: {fileID: 0}
     - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
       propertyPath: m_LocalPosition.z
@@ -526,6 +540,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 925543033323422728, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: knockback
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5431272268968934755, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
       propertyPath: path
       value: 
@@ -555,12 +573,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7835991243527189983, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835991243527189983, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
       propertyPath: path
       value: 
-      objectReference: {fileID: 11400000, guid: 343a4f61b190bdf4db3fc44ad39590c1, type: 2}
+      objectReference: {fileID: 11400000, guid: a512a5a0b28ba0947af962b215552e47, type: 2}
     - target: {fileID: 7835991243527189983, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
       propertyPath: velocity
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7835991243527189983, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
       propertyPath: waypoints.Array.size

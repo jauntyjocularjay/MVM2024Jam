@@ -8,5 +8,9 @@ public class Pavise : HelperShip
     new void Start()
     {
         base.Start();
+        HP = 7;
     }
+
+    
+
 }
