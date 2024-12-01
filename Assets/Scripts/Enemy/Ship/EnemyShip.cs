@@ -8,6 +8,7 @@ public class EnemyShip : MonoBehaviour
     private EnemyHealth enemyHealth;
     private VFX vfx;
     private Pathwinder pathfinder;
+    private HelperShip helperShip;
     void Start()
     {
         vfx = GetComponent<VFX>();
