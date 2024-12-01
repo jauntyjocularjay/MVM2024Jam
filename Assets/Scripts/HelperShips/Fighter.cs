@@ -1,11 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Fighter : HelperShip
 {
     new void Start()
     {
         base.Start();
-        HP = 5;
+        HP = 3;
     }
 
     void Update()
