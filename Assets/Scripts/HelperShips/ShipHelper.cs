@@ -10,7 +10,6 @@ public class HelperShip : MonoBehaviour
     public int HP;
     private GameObject projectilePrefab;
     private Pathwinder pathwinder;
-
     public void Start()
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = idle_;
