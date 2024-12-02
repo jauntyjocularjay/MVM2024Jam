@@ -39,6 +39,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
 
     // // Helper Ships
     public int maxHelperShips = 2;
+    /* @todo: Refactoring Helpership -jade*/
     public List<HelperShip> helperShips;
     float currentDamageCooldown = 0f;
     // jade: Here's what I'm thinking, with the way things are designed right now, without the tractor beam, the player's ship is really fragile.
@@ -50,12 +51,34 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     public bool hasBank;
     public bool hasSlip;
 
-    // Knockback Lerp
-    private bool wasKnockedBack = false;
-    private float elapsedTime = 0f;
-    private float knockbackDuration = 0.3f;
-    private Vector3 knockbackStartPosition;
-    private Vector3 knockbackEndPosition;
+    void Start()
+    {
+        camera = Camera.main;
+        collider = GetComponent<CircleCollider2D>();
+        animator = GetComponent<Animator>();
+        playerData.positionOnMap = GetComponent<Transform>().position;
+        animator.SetTrigger("idle");
+        WP = GetComponent<WeaponsHandler>();
+    }
+    void Update()
+    {
+        ReadMovement();
+        ReadCursorPosition();
+        LookAtMouse();
+        HealingProccess();
+        ManageRapidTimers();
+        ReadInput();
+        // LookInMovementDirection()
+    }
+    void FixedUpdate()
+    {
+        transform.position = new Vector2(
+            transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
+            transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
+        );
+    }
+
+    // Game State Data
     public void LoadData(EventFlags data)
     {
         hasTractor = data.hasTractor;
@@ -70,39 +93,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         data.hasRapid = hasRapid;
         data.hasBank = hasBank;
         data.hasSlip = hasSlip;
-    }
-
-
-    void Start()
-    {
-        camera = Camera.main;
-        collider = GetComponent<CircleCollider2D>();
-        animator = GetComponent<Animator>();
-        playerData.positionOnMap = GetComponent<Transform>().position;
-        animator.SetTrigger("idle");
-        WP = GetComponent<WeaponsHandler>();
-    }
-    void Update()
-    {
-        if(wasKnockedBack) KnockbackLerp();
-        ReadMovement();
-        ReadCursorPosition();
-        LookAtMouse();
-        HealingProccess();
-        ManageRapidTimers();
-        ReadInput();
-        // LookInMovementDirection()
-    }
-    void FixedUpdate()
-    {
-        UpdatePosition();
-    }
-    void UpdatePosition()
-    {
-        transform.position = new Vector2(
-            transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
-            transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
-        );
     }
 
     // Collision Methods
@@ -122,28 +112,16 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
 
         }
     }
-    void KnockbackLerp()
-    {
-        elapsedTime += Time.deltaTime;
-        float percentageComplete = elapsedTime / knockbackDuration;
-        transform.position = Vector3.Lerp(knockbackStartPosition, knockbackEndPosition, percentageComplete);
-        if(percentageComplete >= 1.0f)
-        {
-            knockbackStartPosition = Vector3.zero;
-            wasKnockedBack = false;
-            elapsedTime = 0.0f;
-        }
-
-    }
     void Knockback(Vector2 angleOfContact, EnemyShip enemyShip)
     {
         animator.SetTrigger("hit");
-        knockbackStartPosition = transform.position;
-        knockbackEndPosition = new Vector3(
+        Vector3 knockbackEndPosition = new Vector3(
                 transform.position.x - enemyShip.knockback * angleOfContact.x,
                 transform.position.y - enemyShip.knockback * angleOfContact.y
         );
-        wasKnockedBack = true;
+        float duration = enemyShip.knockback * 0.35f;
+        
+        GetComponent<EZLerp>().Lerp(knockbackEndPosition, duration);
     }
 
     // Weapon Methods

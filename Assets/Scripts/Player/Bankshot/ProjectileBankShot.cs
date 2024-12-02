@@ -4,12 +4,12 @@ using UnityEngine;
 public class BankShotProjectile : MonoBehaviour
 {
     private float bulletSpd;
-    private float Damage;
+    private int Damage;
     private float lifeTime;
     BankShotBlaster parentBlaster;
     [SerializeField] Rigidbody2D rb;
 
-    public void CalibrateBullet(float Speed, float bDamage, float life, BankShotBlaster blaster)
+    public void CalibrateBullet(float Speed, int bDamage, float life, BankShotBlaster blaster)
     {
         bulletSpd = Speed;
         Damage = bDamage;
