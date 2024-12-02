@@ -7,10 +7,14 @@ public class EnemyShip : MonoBehaviour
     public List<VFX> sparks;
     private EnemyHealth enemyHealth;
     private VFX vfx;
+    private Pathwinder pathfinder;
+    private HelperShip helperShip;
     void Start()
     {
         vfx = GetComponent<VFX>();
         enemyHealth = GetComponent<EnemyHealth>();
+        pathfinder = GetComponent<Pathwinder>();
+        pathfinder.Go();
     }
     void Update()
     {
