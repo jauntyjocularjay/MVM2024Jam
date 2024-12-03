@@ -11,6 +11,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/titleScene.unity
     guid: 741f12204db17c2479e9ff845ff3f9e7
+  - enabled: 1
+    path: Assets/Scenes/Research And Development/RD_1.unity
+    guid: 7d20b7934e3670545829294b15f0da41
+  - enabled: 1
+    path: Assets/Scenes/Research And Development/RD_2.unity
+    guid: 8cf6830e81a21e642a25c4ae85bea917
+  - enabled: 1
+    path: Assets/Scenes/Research And Development/RD_3.unity
+    guid: 7ebbd596e4d5e7141a81aa9602b02939
+  - enabled: 1
+    path: Assets/Scenes/Research And Development/RD_4.unity
+    guid: 9f024ec1a30ad934eafee4e9cdd0ea04
+  - enabled: 1
+    path: Assets/Scenes/Research And Development/RD_5.unity
+    guid: ad646a483b9783f44915e86709c8a7a7
+  - enabled: 1
+    path: Assets/Scenes/Research And Development/RD_6.unity
+    guid: ed668ac3e73e2f64eb8eeb5226e61645
+  - enabled: 1
+    path: Assets/Scenes/Research And Development/RD_7.unity
+    guid: 55cad0215c561894c9b5adbdc32f2405
+  - enabled: 1
+    path: Assets/Scenes/Research And Development/RD_SV.unity
+    guid: 2d8472d978ed13f429ad519452eb8de3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -329,6 +329,12 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         helperShips.Add(hitEnemy.CapturedShip);
         Destroy(hitEnemy.gameObject);
     }
+
+    public void InitializePosition(Vector3 pos)
+    {
+        Transform parent = GetComponentInParent<Transform>();
+        parent.transform.position = pos;
+    }
 }
 
 enum EquippableGun
