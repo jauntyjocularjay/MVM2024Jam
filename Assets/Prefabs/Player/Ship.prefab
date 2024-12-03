@@ -699,7 +699,7 @@ MonoBehaviour:
   weapons:
   - {fileID: 8857669662148864002}
   weaponsIndex: 0
-  weaponOrigin: {fileID: 0}
+  weaponOrigin: {fileID: 5478423853415093065}
   fireRate: 0.2
   tractorBeamFireRate: 5
 --- !u!114 &8857669662148864002
