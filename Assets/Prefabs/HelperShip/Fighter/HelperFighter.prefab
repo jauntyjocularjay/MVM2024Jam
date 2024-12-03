@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2090231459372669339, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2090231459372669339, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2090231459372669339, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2090231459372669339, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -63,7 +63,7 @@ PrefabInstance:
     - target: {fileID: 8570360806978616338, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
       propertyPath: path
       value: 
-      objectReference: {fileID: 11400000, guid: d1e1186ef8ee76f4eac8ea1bf3a8cc4c, type: 2}
+      objectReference: {fileID: 11400000, guid: 5b4d63c03169b20459e3a5f2e644e483, type: 2}
     - target: {fileID: 8570360806978616338, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
       propertyPath: velocity
       value: 1
@@ -79,7 +79,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: -5730589595812015131, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
     - {fileID: 4263693946041405136, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
-    - {fileID: 2875876449182241066, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6336464351307544434, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
     m_AddedGameObjects: []
@@ -105,5 +104,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7b0e569085236a419e93a91e75cfc1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinations: []
   HP: 0
+  shipType: 0

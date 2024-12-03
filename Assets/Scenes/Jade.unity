@@ -132,10 +132,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 197178882}
     m_Modifications:
-    - target: {fileID: 2707900666920167601, guid: 6862bcfaea4ee20468b81cc1657f5c3e, type: 3}
-      propertyPath: path
-      value: 
-      objectReference: {fileID: 11400000, guid: 5b4d63c03169b20459e3a5f2e644e483, type: 2}
     - target: {fileID: 4515787510834624189, guid: 6862bcfaea4ee20468b81cc1657f5c3e, type: 3}
       propertyPath: m_Name
       value: HelperFighter
@@ -537,10 +533,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7265311932338797867, guid: 2231c6f3535404d488ea6f8c5472e49f, type: 3}
-      propertyPath: velocity
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9217948328394056487, guid: 2231c6f3535404d488ea6f8c5472e49f, type: 3}
       propertyPath: m_Name
       value: HelperMissileLauncher
@@ -565,7 +557,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4597506114085443017, guid: 05f4ecee96373fb498bc4e6cf276da8f, type: 3}
       propertyPath: velocity
-      value: 1
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069841557205102656, guid: 05f4ecee96373fb498bc4e6cf276da8f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069841557205102656, guid: 05f4ecee96373fb498bc4e6cf276da8f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6069841557205102656, guid: 05f4ecee96373fb498bc4e6cf276da8f, type: 3}
       propertyPath: m_LocalPosition.x

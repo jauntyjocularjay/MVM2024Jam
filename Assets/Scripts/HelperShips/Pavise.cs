@@ -2,15 +2,12 @@ using UnityEngine;
 
 public class Pavise : HelperShip
 {
-    ShipType shipType = ShipType.Pavise;
-    // private Pathwinder pathwinder;
+    public ShipType shipType = ShipType.Pavise;
 
     new void Start()
     {
-        // pathwinder = GetComponent<Pathwinder>();
         base.Start();
         HP = 7;
-        // pathwinder.Go();
     }
 
     

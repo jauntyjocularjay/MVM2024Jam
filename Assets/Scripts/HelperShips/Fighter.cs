@@ -2,14 +2,11 @@
 
 public class Fighter : HelperShip
 {
-    ShipType shipType = ShipType.Fighter;
-    // private Pathwinder pathwinder;
+    public ShipType shipType = ShipType.Fighter;
     new void Start()
     {
-        // pathwinder = GetComponent<Pathwinder>();
         base.Start();
         HP = 3;
-        // pathwinder.Go();
     }
 
     /*

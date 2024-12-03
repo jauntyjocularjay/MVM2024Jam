@@ -279,6 +279,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 9999b05e24f698f49b613b10aae3a5ed, type: 2}
     - target: {fileID: 4469827356923038620, guid: 204db5e891a5e144486e86aed6edf50e, type: 3}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469827356923038620, guid: 204db5e891a5e144486e86aed6edf50e, type: 3}
       propertyPath: waypoints.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -332,7 +336,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8003221543300638372, guid: 204db5e891a5e144486e86aed6edf50e, type: 3}
-    - {fileID: 9210944100544138647, guid: 204db5e891a5e144486e86aed6edf50e, type: 3}
     - {fileID: 3043608504218486836, guid: 204db5e891a5e144486e86aed6edf50e, type: 3}
     - {fileID: 8346193747537787230, guid: 204db5e891a5e144486e86aed6edf50e, type: 3}
     - {fileID: 7388822126305530391, guid: 204db5e891a5e144486e86aed6edf50e, type: 3}
@@ -346,7 +349,7 @@ PrefabInstance:
       addedObject: {fileID: 448467068380391945}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2681662489297950096, guid: 204db5e891a5e144486e86aed6edf50e, type: 3}
-      insertIndex: -1
+      insertIndex: 2
       addedObject: {fileID: 6684490186787103751}
   m_SourcePrefab: {fileID: 100100000, guid: 204db5e891a5e144486e86aed6edf50e, type: 3}
 --- !u!4 &1644124445321283453 stripped
@@ -371,5 +374,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b04b9d5056781478cfb9157d886a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinations: []
   HP: 7
+  shipType: 3

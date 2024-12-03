@@ -101,7 +101,6 @@ PrefabInstance:
     - {fileID: 8811556800571416524, guid: eccbacd8be2ac614dbfe13d1d356d985, type: 3}
     - {fileID: 1033456692748965008, guid: eccbacd8be2ac614dbfe13d1d356d985, type: 3}
     - {fileID: 7388847125374681142, guid: eccbacd8be2ac614dbfe13d1d356d985, type: 3}
-    - {fileID: 2016770965348141650, guid: eccbacd8be2ac614dbfe13d1d356d985, type: 3}
     m_RemovedGameObjects:
     - {fileID: 742670199807506836, guid: eccbacd8be2ac614dbfe13d1d356d985, type: 3}
     m_AddedGameObjects: []
@@ -127,5 +126,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438d69702b8bd5e40b1ffea470bc7eaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinations: []
   HP: 0
+  shipType: 1
