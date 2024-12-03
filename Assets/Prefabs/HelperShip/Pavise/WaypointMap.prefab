@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 164123054180542284}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1, y: 1.6037841, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 3842553801972176812}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2.103784, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -263,7 +263,7 @@ Transform:
   m_GameObject: {fileID: 6161136213209910126}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1, y: 1.6037841, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -366,12 +366,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2481457526977160295, guid: 06b9806f50cf8a044ac01da3e6c15130, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481457526977160295, guid: 06b9806f50cf8a044ac01da3e6c15130, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.75
       objectReference: {fileID: 0}
     - target: {fileID: 2481457526977160295, guid: 06b9806f50cf8a044ac01da3e6c15130, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.39621592
       objectReference: {fileID: 0}
     - target: {fileID: 2481457526977160295, guid: 06b9806f50cf8a044ac01da3e6c15130, type: 3}
       propertyPath: m_LocalPosition.z
@@ -383,15 +387,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2481457526977160295, guid: 06b9806f50cf8a044ac01da3e6c15130, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2481457526977160295, guid: 06b9806f50cf8a044ac01da3e6c15130, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2481457526977160295, guid: 06b9806f50cf8a044ac01da3e6c15130, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2481457526977160295, guid: 06b9806f50cf8a044ac01da3e6c15130, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -410,8 +414,12 @@ PrefabInstance:
       value: WaypointMap
       objectReference: {fileID: 0}
     - target: {fileID: 8614727938115180173, guid: 06b9806f50cf8a044ac01da3e6c15130, type: 3}
+      propertyPath: path
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f68361eb1eb13642a42c843b5ae3abf, type: 2}
+    - target: {fileID: 8614727938115180173, guid: 06b9806f50cf8a044ac01da3e6c15130, type: 3}
       propertyPath: filePath
-      value: Assets/Prefabs/HelperShip/Pavise
+      value: Assets/Prefabs/HelperShip/Pavise/Pavise
       objectReference: {fileID: 0}
     - target: {fileID: 8614727938115180173, guid: 06b9806f50cf8a044ac01da3e6c15130, type: 3}
       propertyPath: 'waypointTransforms.Array.data[0]'
