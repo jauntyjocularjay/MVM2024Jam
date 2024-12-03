@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2090231459372669339, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.57
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2090231459372669339, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2090231459372669339, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -52,14 +52,40 @@ PrefabInstance:
       propertyPath: m_Name
       value: HelperFighter
       objectReference: {fileID: 0}
+    - target: {fileID: 7912578396188795422, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570360806978616338, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
+      propertyPath: loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570360806978616338, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
+      propertyPath: path
+      value: 
+      objectReference: {fileID: 11400000, guid: d1e1186ef8ee76f4eac8ea1bf3a8cc4c, type: 2}
+    - target: {fileID: 8570360806978616338, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570360806978616338, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8586481955585868530, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5730589595812015131, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
     - {fileID: 4263693946041405136, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
-    m_RemovedGameObjects: []
+    - {fileID: 2875876449182241066, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 6336464351307544434, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7912578396188795422, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
-      insertIndex: 3
+      insertIndex: 2
       addedObject: {fileID: -5200519119425277204}
   m_SourcePrefab: {fileID: 100100000, guid: dafddf177e79a38488449ac3faa8c96a, type: 3}
 --- !u!1 &4515787510834624189 stripped
@@ -80,7 +106,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinations: []
-  idle_: {fileID: 0}
-  bank_left_: {fileID: 0}
-  bank_right_: {fileID: 0}
   HP: 0
