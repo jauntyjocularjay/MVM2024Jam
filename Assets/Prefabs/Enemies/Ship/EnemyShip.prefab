@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 7883074937267604287}
   - component: {fileID: 4442285770913011943}
   - component: {fileID: 2406239648438912797}
+  - component: {fileID: 874788234591859606}
   - component: {fileID: 7835991243527189983}
   m_Layer: 26
   m_Name: EnemyShip
@@ -425,6 +426,43 @@ MonoBehaviour:
   canBeCaptured: 1
   captureThreshold: 2
   CapturedShip: {fileID: 0}
+--- !u!70 &874788234591859606
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8610918887902604243}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 1
 --- !u!114 &7835991243527189983
 MonoBehaviour:
   m_ObjectHideFlags: 0
