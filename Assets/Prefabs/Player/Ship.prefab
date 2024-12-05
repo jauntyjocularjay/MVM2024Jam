@@ -403,7 +403,6 @@ GameObject:
   - component: {fileID: 8857669662148864002}
   - component: {fileID: 7057853401955690686}
   - component: {fileID: 5023370892684456368}
-  - component: {fileID: 4273896640739729040}
   m_Layer: 26
   m_Name: Ship
   m_TagString: Player
@@ -754,27 +753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e4ad31fffe26684ca7dbb01c3a266b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4273896640739729040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8672341035423565150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfb065b300c6e914ca6d21b2bbbec648, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transform: {fileID: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
-  timeElapsed: 0
-  lerpDuration: 0
-  progress: 0
-  condition: 0
-  currentPosition: {x: 0, y: 0, z: 0}
-  currentTimeElapse: 0
 --- !u!1001 &3554809549930166474
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - EnergyField
   - TractorBeam
+  - RailBlock
+  - Rail
   layers:
   - Default
   - TransparentFX
