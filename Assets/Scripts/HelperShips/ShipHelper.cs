@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class HelperShip : MonoBehaviour
+public abstract class HelperShip : MonoBehaviour
 {
     public List<Vector3> destinations;
     public int HP;
@@ -13,17 +13,14 @@ public class HelperShip : MonoBehaviour
         animator = GetComponent<Animator>();
         pathwinder = GetComponent<Pathwinder>();
         pathwinder.Go();
+        Debug.Log("Going");
     }
     public void Idle()
-    {
-        
-    }
+    {}
     public void MoveLeft()
-    {
-    }
+    {}
     public void MoveRight()
-    {
-    }
+    {}
 }
 
 public enum ShipType
