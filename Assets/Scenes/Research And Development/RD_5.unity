@@ -389,8 +389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51510ce6921edb840b086f085741b953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetingScenePath: 
-  sceneEnterance: 0
+  targetingScenePath: Assets/Scenes/Research And Development/RD_10.unity
+  sceneEnterance: 3
 --- !u!4 &646021468
 Transform:
   m_ObjectHideFlags: 0
@@ -527,7 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51510ce6921edb840b086f085741b953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetingScenePath: 
+  targetingScenePath: Assets/Scenes/Research And Development/RD_13.unity
   sceneEnterance: 0
 --- !u!4 &1099337585
 Transform:

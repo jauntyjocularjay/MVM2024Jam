@@ -3,13 +3,7 @@ using UnityEngine;
 
 public class BankShotBlaster : Weapon
 {
-    public GameObject projectilePrefab;
     public bool rapid;
-    public float bulletSpd;
-    public int Damage;
-    public float lifetime;
-    public int projectilesOnScreen;
-    public List<GameObject> currentProjectiles;
     
     void Start()
     {
