@@ -554,8 +554,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: WaypointMap
       objectReference: {fileID: 0}
+    - target: {fileID: 8534056500589026144, guid: 8be91741990c7a64b991ccfb5ab75b72, type: 3}
+      propertyPath: filePath
+      value: Assets/Scenes/1BugOps/EnemyPaths/MissileLauncherA/
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 497059737276299035, guid: 8be91741990c7a64b991ccfb5ab75b72, type: 3}
+    - {fileID: 5267957978596788803, guid: 8be91741990c7a64b991ccfb5ab75b72, type: 3}
+    - {fileID: 7775863355910925551, guid: 8be91741990c7a64b991ccfb5ab75b72, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8be91741990c7a64b991ccfb5ab75b72, type: 3}

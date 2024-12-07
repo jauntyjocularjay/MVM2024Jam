@@ -32,16 +32,14 @@ public class WeaponsHandler : MonoBehaviour
         //handleWeapons();
         handleCooldowns();
     }
-    public void IncrementWeaponSelector(bool positive) // Increment in positive
+    public void IncrementWeaponSelector(bool positive) // Incrementing in positive
     {
         if(positive && weaponsIndex + 1 < weapons.Count)
         {
             weaponsIndex++;
-            // if()
-            // {}
             primaryWeapon = weapons[weaponsIndex];
         }
-        else if(!positive && weaponsIndex > 0) // Increment in negative
+        else if(!positive && weaponsIndex > 0) // Incrementing in negative
         {
             weaponsIndex--;
             primaryWeapon = weapons[weaponsIndex];
