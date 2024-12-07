@@ -239,11 +239,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         }
     }
     void ReadMovement()
-    /**
-     * @todo Fix extremely janky movement
-     * We need to look at this very carefully. I really don't like the way our ships pivot around the 
-     * forward ship. It comes across extremely janky.
-     */
     {
         playerData.moveDirection = playerMovement.ReadValue<Vector2>();
         playerData.moveDirection.Normalize();
@@ -260,9 +255,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
             animator.SetTrigger("idle");
         }
         playerData.positionOnMap = transform.position;
-        /* Trying out attaching camera to the cursor instead */
-        // camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
-
     }
     void ReadCursorPosition()
     {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RailIntersection : MonoBehaviour
+public class RailSection : MonoBehaviour
 {
     public List<Vector2> AllowedPaths;
     public IntersectionType type;
@@ -10,6 +10,10 @@ public class RailIntersection : MonoBehaviour
         switch (type)
         {
             case IntersectionType.End:
+                AllowedPaths.Add(Vector2.down);
+                break;
+            case IntersectionType.Line:
+                AllowedPaths.Add(Vector2.up);
                 AllowedPaths.Add(Vector2.down);
                 break;
             case IntersectionType.Right:
@@ -35,6 +39,7 @@ public class RailIntersection : MonoBehaviour
 public enum IntersectionType
 {
     End,
+    Line,
     Right,
     Tee,
     Cross,
