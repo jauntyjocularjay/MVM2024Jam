@@ -1,23 +1,22 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 
 public class Blaster : Weapon
 {
-    public GameObject projectilePrefab;
-    public float bulletSpd = 20;
-    public int Damage = 4;
-    public float lifetime = 3;
-    public int projectilesOnScreen = 2;
-    public List<GameObject> currentProjectiles;
+    public bool rapid;
+    void Start()
+    {
+        rapid = false;
+        bulletSpd = 20;
+        Damage = 2;
+        lifetime = 2;
+        maxProjectilesOnScreen = 1;
+    }
 
     public override void OnShoot(Transform emitter, bool rapid)
     {
         Debug.Log($"isInRapidFire before shooting:" + rapid);
-        if ( currentProjectiles.Count < projectilesOnScreen )
+        if ( currentProjectiles.Count < maxProjectilesOnScreen )
         {
             GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
             PlayerProjectile currentBullet = currentObject.GetComponent<PlayerProjectile>();

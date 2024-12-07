@@ -239,11 +239,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         }
     }
     void ReadMovement()
-    /**
-     * @todo Fix extremely janky movement
-     * We need to look at this very carefully. I really don't like the way our ships pivot around the 
-     * forward ship. It comes across extremely janky.
-     */
     {
         playerData.moveDirection = playerMovement.ReadValue<Vector2>();
         playerData.moveDirection.Normalize();

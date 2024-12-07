@@ -3,26 +3,20 @@ using UnityEngine;
 
 public class BankShotBlaster : Weapon
 {
-    public GameObject projectilePrefab;
     public bool rapid;
-    public float bulletSpd;
-    public int Damage;
-    public float lifetime;
-    public int projectilesOnScreen;
-    public List<GameObject> currentProjectiles;
     
     void Start()
     {
         rapid = false;
-        bulletSpd = 2;
+        bulletSpd = 20;
         Damage = 2;
-        lifetime = 5;
-        projectilesOnScreen = 1;
+        lifetime = 2;
+        maxProjectilesOnScreen = 1;
     }
     public override void OnShoot(Transform emitter, bool rapid)
     // do we want the bank shot to have a rapid fire option? 
     {
-        if (currentProjectiles.Count < projectilesOnScreen)
+        if (currentProjectiles.Count < maxProjectilesOnScreen)
         {
             GameObject currentObject = Instantiate(projectilePrefab, emitter.position, emitter.rotation);
             BankShotProjectile currentBullet = currentObject.GetComponent<BankShotProjectile>();
