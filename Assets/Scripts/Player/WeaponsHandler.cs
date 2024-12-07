@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 
 public class WeaponsHandler : MonoBehaviour
 {
@@ -17,9 +13,11 @@ public class WeaponsHandler : MonoBehaviour
     public float tractorBeamFireRate = 5;
     float primaryWeaponCooldown = 0f;
     float tractorBeamCooldown = 0f;
+
     bool primaryWeaponEnabled = true;
     bool tractorBeamEnabled = true;
     bool isInRapidFire = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

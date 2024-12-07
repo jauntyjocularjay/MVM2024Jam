@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8745763607573918833}
   - component: {fileID: 4519163234860049344}
+  - component: {fileID: 286111632465159829}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -45,3 +46,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: save
+  Flags:
+    hasTractor: 0
+    hasRapid: 0
+    hasBank: 0
+    hasSlip: 0
+    currentSavePoint: 0
+  warpManager: {fileID: 286111632465159829}
+--- !u!114 &286111632465159829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2624644233622513437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d831828386f22648850ed473542589c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

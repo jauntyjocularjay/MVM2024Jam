@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public EventFlags Flags;
     private List<IDataPersistence> dataPersistenceObjects;
 
+    public WarpManager warpManager;
+
     FileDataHandler dataHandler;
 
     private void Awake()
@@ -33,7 +35,7 @@ public class GameManager : MonoBehaviour
     public void newGame()
     {
         Flags = new EventFlags();
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
     }
 
     public void saveGame()
@@ -70,7 +72,29 @@ public class GameManager : MonoBehaviour
         {
             dataPersistenceObj.LoadData(Flags);
         }
-        SceneManager.LoadScene(0);
+
+        switch(Flags.currentSavePoint)
+        {
+            case 0: { SceneManager.LoadScene(2); break; }
+            case 1: { 
+                    SceneManager.LoadScene(9);
+                    StartCoroutine(SetPlayerPosition(new Vector3(1.01515f, 1.700776f, 0)));
+                    break; 
+                }
+
+            default: { SceneManager.LoadScene(2); break; }
+        }
+
+    }
+
+    private IEnumerator SetPlayerPosition(Vector3 position)
+    {
+        yield return null; // Wait for the next frame
+        PlayerShip playerShip = FindFirstObjectByType<PlayerShip>();
+        if (playerShip != null)
+        {
+            playerShip.InitializePosition(position);
+        }
     }
 
     private List<IDataPersistence> FindAllDataPersistenceObjects()
