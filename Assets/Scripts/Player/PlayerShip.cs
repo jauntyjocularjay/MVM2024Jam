@@ -209,7 +209,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         {
             WP.ShootBlaster();
         }
-        else if(equippedGun == EquippableGun.BankShot && Mouse.current.leftButton.isPressed)
+        else if(equippedGun == EquippableGun.BankShot && Mouse.current.leftButton.wasPressedThisFrame)
         // press and hold the left mouse button
         {
             Debug.Log("BankShotEngage()");
@@ -229,12 +229,10 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         }
         else if(Mouse.current.scroll.ReadValue().y > 0)
         {
-            Debug.Log("Next Weapon...");
             NextWeapon();
         }
         else if(Mouse.current.scroll.ReadValue().y < 0)
         {
-            Debug.Log("Previous Weapon...");
             PrevWeapon();
         }
     }

@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class Formation : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    new CircleCollider2D collider;
+    EZLerp lerp;
     void Start()
     {
-        
+        collider = GetComponent<CircleCollider2D>();
+        lerp = GetComponent<EZLerp>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.tag.Equals(Tags.Player))
+        {}
+        else if(collision.collider.tag.Equals(Tags.Wall))
+        {}
+    }
 }
+
