@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="bankshot" style="background-image: url(&quot;project://database/Assets/Sprites/GVituri/BankShotProjectile.png?fileID=-8702195539476745835&amp;guid=a9dabace4ad50874d88287e788f938b1&amp;type=3#BankShotProjectile_1&quot;); margin-top: 30%; margin-bottom: 45%; margin-right: 37.5%; margin-left: 37.5%; width: 25%; height: 25%; max-height: 25%;" />
+</ui:UXML>

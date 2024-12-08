@@ -403,7 +403,6 @@ GameObject:
   - component: {fileID: 8857669662148864002}
   - component: {fileID: 7057853401955690686}
   - component: {fileID: 5023370892684456368}
-  - component: {fileID: 4273896640739729040}
   m_Layer: 26
   m_Name: Ship
   m_TagString: Player

@@ -255,9 +255,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
             animator.SetTrigger("idle");
         }
         playerData.positionOnMap = transform.position;
-        /* Trying out attaching camera to the cursor instead */
-        // camera.transform.position = new (transform.position.x, transform.position.y, -10.0f);
-
     }
     void ReadCursorPosition()
     {
