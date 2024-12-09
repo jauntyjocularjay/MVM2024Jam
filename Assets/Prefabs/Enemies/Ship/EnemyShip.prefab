@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 526638908316880982}
   - component: {fileID: 7883074937267604287}
   - component: {fileID: 4442285770913011943}
+  - component: {fileID: 6228912017715526216}
   - component: {fileID: 2406239648438912797}
   - component: {fileID: 7835991243527189983}
   m_Layer: 26
@@ -408,6 +409,43 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!70 &6228912017715526216
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8610918887902604243}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!114 &2406239648438912797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,15 +475,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289837aa29de4874aa99504b6e734638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transform: {fileID: 0}
   startPosition: {x: 0, y: 0, z: 0}
+  currentPosition: {x: 0, y: 0, z: 0}
   endPosition: {x: 0, y: 0, z: 0}
   timeElapsed: 0
   lerpDuration: 0
   progress: 0
   condition: 0
-  currentPosition: {x: 0, y: 0, z: 0}
-  currentTimeElapse: 0
   waypoints:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}

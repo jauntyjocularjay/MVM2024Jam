@@ -2,15 +2,12 @@
 
 public class EnemyFighter : EnemyShip
 {
+    new CapsuleCollider2D collider;
     ProjectileData projectileData;
 
-    void Start()
+    new void Start()
     {
-        
-    }
-
-    void Update()
-    {
-        
+        base.Start();
+        knockback = 2;
     }
 }

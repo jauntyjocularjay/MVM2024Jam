@@ -10,6 +10,7 @@ TagManager:
   - TractorBeam
   - RailBlock
   - Rail
+  - Sensor
   layers:
   - Default
   - TransparentFX

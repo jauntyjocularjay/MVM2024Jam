@@ -113,12 +113,14 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         }
     }
     void Knockback(Vector2 angleOfContact, EnemyShip enemyShip)
+    // @todo shorten the distance of knockback
     {
         animator.SetTrigger("hit");
         Vector3 knockbackEndPosition = new Vector3(
                 transform.position.x - enemyShip.knockback * angleOfContact.x,
                 transform.position.y - enemyShip.knockback * angleOfContact.y
         );
+        Debug.Log($"knockbackEndPosition: {knockbackEndPosition}");
         float duration = enemyShip.knockback * 0.35f;
         
         GetComponent<EZLerp>().Lerp(knockbackEndPosition, duration);
@@ -236,6 +238,14 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
             PrevWeapon();
         }
     }
+    void NextWeapon()
+    {
+        GetComponent<WeaponsHandler>().IncrementWeaponSelector(true);
+    }
+    void PrevWeapon()
+    {
+        GetComponent<WeaponsHandler>().IncrementWeaponSelector(false);
+    }
     void ReadMovement()
     {
         playerData.moveDirection = playerMovement.ReadValue<Vector2>();
@@ -268,14 +278,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
             -10.0f
         );
     }
-    void NextWeapon()
-    {
-        GetComponent<WeaponsHandler>().IncrementWeaponSelector(true);
-    }
-    void PrevWeapon()
-    {
-        GetComponent<WeaponsHandler>().IncrementWeaponSelector(false);
-    }
     void LookAtMouse()
     {
         Vector2 direction = new Vector2(
@@ -291,7 +293,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         }
         if(helperShips.Count == 2)
         {
-        helperShips[1].transform.up = -direction;
+            helperShips[1].transform.up = -direction;
         }
     }
     void ReadThumbstickAngle()

@@ -2,6 +2,9 @@
 
 public class EnemyFormation : MonoBehaviour
 {
+    new CapsuleCollider2D collider;
+    Vector2 pointOfContact;
+    EZLerp lerp;
     public float lerpSegmentLength;
     public float lerpSegmentDuration;
     float angleOfPlayer;
@@ -9,22 +12,28 @@ public class EnemyFormation : MonoBehaviour
 
     void Start()
     {
-        
+        collider = GetComponent<CapsuleCollider2D>();
+        lerp = GetComponent<EZLerp>();
     }
     void Update()
     {
         
     }
-    
-    void OnCollisionEnter2d(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        Vector2 pointOfContact = collision.GetContact(0);
-        if(collision.collider.tag == Tags.Player)
+        pointOfContact = collision.GetContact(0).normal;
+    }
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        
+        // float angleOfContact = pointOfContact;
+        if(collider.gameObject.CompareTag(Tags.Player))
         {
-            
+            Debug.Log("Collided with player");
         }
-        else if(collision.collider.tag = Tags.Wall)
+        else if(collider.gameObject.CompareTag(Tags.Wall))
         {
+            Debug.Log("Collided with wall");
 
         }
     }

@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     public EventFlags Flags;
     private List<IDataPersistence> dataPersistenceObjects;
+    public List<EnemyData> enemyData;
+    public PlayerData playerData;
 
     public WarpManager warpManager;
 
@@ -31,13 +33,21 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    private void Start()
+    {
+        this.dataHandler = new FileDataHandler(fileName);
+        this.dataPersistenceObjects = FindAllDataPersistenceObjects();
+        for(int i = 0; i < enemyData.Count; i++)
+        {
+            enemyData[i].managerIndex = i;
+        }
+        //loadGame();
+    }
     public void newGame()
     {
         Flags = new EventFlags();
         SceneManager.LoadScene(2);
     }
-
     public void saveGame()
     {
         //Pass the data to other scripts so they can update it.
@@ -49,14 +59,6 @@ public class GameManager : MonoBehaviour
 
         dataHandler.Save(Flags);
     }
-
-    private void Start()
-    {
-        this.dataHandler = new FileDataHandler(fileName);
-        this.dataPersistenceObjects = FindAllDataPersistenceObjects();
-        //loadGame();
-    }
-
     public void loadGame()
     {
         Flags = dataHandler.Load();
@@ -86,7 +88,6 @@ public class GameManager : MonoBehaviour
         }
 
     }
-
     private IEnumerator SetPlayerPosition(Vector3 position)
     {
         yield return null; // Wait for the next frame
@@ -96,15 +97,12 @@ public class GameManager : MonoBehaviour
             playerShip.InitializePosition(position);
         }
     }
-
     private List<IDataPersistence> FindAllDataPersistenceObjects()
     {
         IEnumerable<IDataPersistence> dataPersistences = FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None).OfType<IDataPersistence>();
 
         return new List<IDataPersistence>(dataPersistences);
     }
-
-
     private void OnApplicationQuit()
     {
         //saveGame();
