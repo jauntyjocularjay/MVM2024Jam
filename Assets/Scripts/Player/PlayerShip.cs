@@ -64,7 +64,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     {
         ReadMovement();
         ReadCursorPosition();
-        LookAtMouse();
+        LookAtCursor();
         HealingProccess();
         ManageRapidTimers();
         ReadInput();
@@ -114,6 +114,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     }
     void Knockback(Vector2 angleOfContact, EnemyShip enemyShip)
     // @todo shorten the distance of knockback
+    // @todo fix bug that causes ship to always knockback in a y<0 direction
     {
         animator.SetTrigger("hit");
         Vector3 knockbackEndPosition = new Vector3(
@@ -121,7 +122,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
                 transform.position.y - enemyShip.knockback * angleOfContact.y
         );
         Debug.Log($"knockbackEndPosition: {knockbackEndPosition}");
-        float duration = enemyShip.knockback * 0.35f;
+        float duration = enemyShip.knockback * Stats.PlayerVecolicty;
         
         GetComponent<EZLerp>().Lerp(knockbackEndPosition, duration);
     }
@@ -278,9 +279,9 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
             -10.0f
         );
     }
-    void LookAtMouse()
+    void LookAtCursor()
     {
-        Vector2 direction = new Vector2(
+        Vector3 direction = new Vector3(
             cursor.transform.position.x - transform.position.x,
             cursor.transform.position.y - transform.position.y
         );

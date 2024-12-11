@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 273547264}
   - component: {fileID: 273547268}
   - component: {fileID: 273547266}
-  - component: {fileID: 273547267}
+  - component: {fileID: 273547269}
   m_Layer: 0
   m_Name: EnemyFormation
   m_TagString: Sensor
@@ -289,25 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lerpSegmentLength: 0
   lerpSegmentDuration: 0
---- !u!114 &273547267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273547263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfb065b300c6e914ca6d21b2bbbec648, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startPosition: {x: 0, y: 0, z: 0}
-  currentPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
-  timeElapsed: 0
-  lerpDuration: 0
-  progress: 0
-  condition: 0
+  playerData: {fileID: 11400000, guid: 302ed5bcd259c3d44ba603fab3828df5, type: 2}
 --- !u!70 &273547268
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -324,7 +306,7 @@ CapsuleCollider2D:
     m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 67108864
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -345,6 +327,25 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 12, y: 8}
   m_Direction: 1
+--- !u!114 &273547269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273547263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb065b300c6e914ca6d21b2bbbec648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {x: 0, y: 0, z: 0}
+  currentPosition: {x: 0, y: 0, z: 0}
+  endPosition: {x: 0, y: 0, z: 0}
+  timeElapsed: 0
+  lerpDuration: 0
+  progress: 0
+  condition: 0
 --- !u!1001 &325000315
 PrefabInstance:
   m_ObjectHideFlags: 0
