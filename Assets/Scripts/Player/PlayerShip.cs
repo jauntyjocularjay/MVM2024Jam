@@ -70,6 +70,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         HealingProccess();
         ManageRapidTimers();
         ReadInput();
+        playerData.positionOnMap = transform.position;
     }
     void FixedUpdate()
     {
@@ -123,7 +124,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         Debug.Log($"knockbackEndPosition: {knockbackEndPosition}");
         float duration = enemyShip.knockback * Stats.PlayerVecolicty;
         
-        GetComponent<EZLerp>().Lerp(knockbackEndPosition, duration);
+        GetComponent<EZLerp>().Setup(knockbackEndPosition, duration);
     }
     // Weapon Methods
     void RapidEngage()

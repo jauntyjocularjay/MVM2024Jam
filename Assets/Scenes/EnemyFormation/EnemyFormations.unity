@@ -222,7 +222,7 @@ CapsuleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 67108928
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1100,7 +1100,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3523011962579940113, guid: 1a77bf346e4849647805be09e644867f, type: 3}
+    - {fileID: 6737983868425182668, guid: 1a77bf346e4849647805be09e644867f, type: 3}
+    - {fileID: 6792744895377714288, guid: 1a77bf346e4849647805be09e644867f, type: 3}
+    - {fileID: 5805903232538750536, guid: 1a77bf346e4849647805be09e644867f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a77bf346e4849647805be09e644867f, type: 3}

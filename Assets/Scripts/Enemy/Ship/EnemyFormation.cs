@@ -9,8 +9,6 @@ public class EnemyFormation : MonoBehaviour
     Vector3 pointOfContact;
     Vector3 directionOfPlayer;
     EZLerp lerp;
-    public float lerpSegmentLength;
-    public float lerpSegmentDuration;
     float angleOfWall;
     float distanceFromPlayerToMaintain;
     float distanceFromWallToMaintain;
@@ -21,10 +19,15 @@ public class EnemyFormation : MonoBehaviour
         collider = GetComponent<CapsuleCollider2D>();
         transform = GetComponent<Transform>();
         lerp = GetComponent<EZLerp>();
+        distanceFromPlayerToMaintain = 12.0f;
     }
     void Update()
     {
-        
+        Debug.Log($"  distance from player: {VectorFromPlayer().magnitude}");
+        if(distanceFromPlayerToMaintain >= VectorFromPlayer().magnitude)
+        {
+            MoveAwayFromPlayer();
+        }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -36,6 +39,7 @@ public class EnemyFormation : MonoBehaviour
         // float angleOfContact = pointOfContact;
         if(collider.gameObject.CompareTag(Tags.Player))
         {
+            Debug.Log("Warning: Player is too close");
             MoveAwayFromPlayer(VectorFromPlayer().magnitude, VectorFromPlayer().normalized);
         }
         else if(collider.gameObject.CompareTag(Tags.Wall))
@@ -47,36 +51,47 @@ public class EnemyFormation : MonoBehaviour
 
     Vector3 VectorFromPlayer()
      // The distance between player's and enemy's position
+     // @todo fix this because you did it wrong.
     {
-        /*
-        player position: (-1,-1)
-        enemy Formation: (12, 12) (ThisFile)
-        */
         Vector3 currentPosition = new Vector3
         (
-            Mathf.Abs(transform.position.x),
-            Mathf.Abs(transform.position.y)
+            transform.position.x,
+            transform.position.y
         );
-        Vector3 pointOfContact = new Vector3
+        Vector3 playerPosition = new Vector3
         (
-            Mathf.Abs(playerData.positionOnMap.x),
-            Mathf.Abs(playerData.positionOnMap.y)
+            playerData.positionOnMap.x,
+            playerData.positionOnMap.y
         );
+
+        Debug.Log($"  Formation Position: {currentPosition} \n  Player Position: {playerPosition}");
+
         return new Vector3
         (
             // if playerPosition <= currentPosition, the point of contact is below the formation
-            currentPosition.x + pointOfContact.x,
-            currentPosition.y + pointOfContact.y
+            currentPosition.x + playerPosition.x,
+            currentPosition.y + playerPosition.y
         );
     }
-    void MoveAwayFromPlayer(float vectorFromPlayer, Vector3 angleFromPlayer)
+    void MoveAwayFromPlayer()
+    {
+        Vector3 endPosition = new Vector3(
+            distanceFromPlayerToMaintain - VectorFromPlayer().x,
+            distanceFromPlayerToMaintain - VectorFromPlayer().y
+        );
+        Debug.Log($"  distanceFromPlayerToMaintain: {distanceFromPlayerToMaintain} \n  VectorFromPlayer().x: {VectorFromPlayer().x} \n  VectorFromPlayer().y: {VectorFromPlayer().y}");
+        lerp.Setup(
+            endPosition,
+            1.0f
+        );
+    }
+    void MoveAwayFromPlayer(float distanceFromPlayer, Vector3 angleFromPlayer)
     {
         Vector3 endPosition = new Vector3
         (
-            vectorFromPlayer * angleFromPlayer.x,
-            vectorFromPlayer * angleFromPlayer.y
+            distanceFromPlayerToMaintain + (distanceFromPlayer * angleFromPlayer.x),
+            distanceFromPlayerToMaintain + (distanceFromPlayer * angleFromPlayer.y)
         );
-        lerp.Lerp(endPosition, Stats.EnemyVelocity * vectorFromPlayer); // .lerpDuration = Stats.EnemyVelocity * vectorFromPlayer;
-        // lerp.condition = true;
+        lerp.Setup(endPosition, 1.0f);
     }
 }

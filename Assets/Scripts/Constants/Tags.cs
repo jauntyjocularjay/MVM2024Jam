@@ -12,7 +12,7 @@ public class Tags
 public class Stats
 {
     public static float PlayerVecolicty = 0.35f;
-    public static float EnemyVelocity = 0.35f;
+    public static float EnemyVelocity = 0.95f;
 }
 
 
