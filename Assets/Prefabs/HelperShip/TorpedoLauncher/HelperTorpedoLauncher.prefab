@@ -676,16 +676,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289837aa29de4874aa99504b6e734638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transform: {fileID: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
-  timeElapsed: 0
-  lerpDuration: 0
-  progress: 0
-  condition: 0
-  currentPosition: {x: 0, y: 0, z: 0}
-  currentTimeElapse: 0
-  waypoints: []
   path: {fileID: 11400000, guid: 80903d7fa347d134989bc714ae0e6110, type: 2}
   index: 0
   velocity: 1
@@ -860,6 +850,6 @@ MonoBehaviour:
   - {fileID: 2451231648528262431}
   - {fileID: 1431144609825020278}
   - {fileID: 5683987358582763432}
-  pathObj: {fileID: 11400000, guid: d1d4d50fd851da54fb93c2e19a0321c6, type: 2}
+  pathObj: {fileID: 11400000, guid: 80903d7fa347d134989bc714ae0e6110, type: 2}
   filePath: Assets/Scenes/1BugOps/EnemyPaths
   waypointPrefab: {fileID: 1628020740191443198, guid: bd5ec5c6b2d6764479837ff493123fac, type: 3}

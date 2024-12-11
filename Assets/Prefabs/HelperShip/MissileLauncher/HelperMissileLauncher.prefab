@@ -262,16 +262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 289837aa29de4874aa99504b6e734638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transform: {fileID: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  endPosition: {x: 0, y: 0, z: 0}
-  timeElapsed: 0
-  lerpDuration: 0
-  progress: 0
-  condition: 0
-  currentPosition: {x: 0, y: 0, z: 0}
-  currentTimeElapse: 0
-  waypoints: []
   path: {fileID: 11400000, guid: 9999b05e24f698f49b613b10aae3a5ed, type: 2}
   index: 0
   velocity: 1
@@ -530,9 +520,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypointTransforms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8214259887396064660}
+  - {fileID: 5349483199252304013}
+  - {fileID: 8223071052500907580}
   pathObj: {fileID: 11400000, guid: 9999b05e24f698f49b613b10aae3a5ed, type: 2}
   filePath: Assets/Prefabs/HelperShip/MissileLauncher/MissileLauncher
   waypointPrefab: {fileID: 1628020740191443198, guid: bd5ec5c6b2d6764479837ff493123fac, type: 3}

@@ -20,6 +20,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     // public InputAction playerFire;
     Animator animator;
     private new CircleCollider2D collider;
+    private new Transform transform;
 
 
     // Child Objects
@@ -53,10 +54,11 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
 
     void Start()
     {
+        transform = GetComponent<Transform>();
         camera = Camera.main;
         collider = GetComponent<CircleCollider2D>();
         animator = GetComponent<Animator>();
-        playerData.positionOnMap = GetComponent<Transform>().position;
+        playerData.positionOnMap = transform.position;
         animator.SetTrigger("idle");
         WP = GetComponent<WeaponsHandler>();
     }
@@ -68,7 +70,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         HealingProccess();
         ManageRapidTimers();
         ReadInput();
-        // LookInMovementDirection()
     }
     void FixedUpdate()
     {
@@ -86,7 +87,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         hasBank = data.hasBank;
         hasSlip = data.hasSlip;
     }
-
     public void SaveData(ref EventFlags data)
     {
         data.hasTractor = hasTractor;
@@ -94,7 +94,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         data.hasBank = hasBank;
         data.hasSlip = hasSlip;
     }
-
     // Collision Methods
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -126,7 +125,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         
         GetComponent<EZLerp>().Lerp(knockbackEndPosition, duration);
     }
-
     // Weapon Methods
     void RapidEngage()
     {
@@ -178,7 +176,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
             //Die
         }
     }
-
     // Input Methods
     private void OnEnable()
     {
@@ -304,7 +301,6 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         cursorPosition *= playerData.cursorRadius;
         cursor.transform.position = cursorPosition + playerData.positionOnMap;
     }
-
     // Healing Methods
     void HealingProccess()
     {
@@ -322,11 +318,9 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         helperShips.Add(hitEnemy.CapturedShip);
         Destroy(hitEnemy.gameObject);
     }
-
     public void InitializePosition(Vector3 pos)
     {
-        Transform parent = GetComponentInParent<Transform>();
-        parent.transform.position = pos;
+        transform.position = pos;
     }
 }
 

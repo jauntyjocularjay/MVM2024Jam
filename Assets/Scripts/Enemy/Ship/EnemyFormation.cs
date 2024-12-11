@@ -46,38 +46,37 @@ public class EnemyFormation : MonoBehaviour
     }
 
     Vector3 VectorFromPlayer()
-     // The difference between player's and enemy's position
+     // The distance between player's and enemy's position
     {
-            Vector3 currentPosition = new Vector3
-            (
-                Mathf.Abs(transform.position.x),
-                Mathf.Abs(transform.position.y)
-            );
-            Vector3 pointOfContact = new Vector3
-            (
-                Mathf.Abs(playerData.positionOnMap.x),
-                Mathf.Abs(playerData.positionOnMap.y)
-            );
-            return new Vector3
-            (
-                pointOfContact.x >= currentPosition.x 
-                    ? pointOfContact.x - currentPosition.x 
-                    : currentPosition.x - pointOfContact.x,
-                pointOfContact.y >= currentPosition.y 
-                    ? pointOfContact.y - currentPosition.y 
-                    : currentPosition.y - pointOfContact.y
-            );
-    }
-    void MoveAwayFromPlayer(float distanceFromPlayer, Vector3 angleFromPlayer)
-    {
-        Debug.Log($"distanceFromPlayer: {distanceFromPlayer}");
-        Debug.Log($"angleFromPlayer: {angleFromPlayer}");
-        lerp.endPosition = new Vector3
+        /*
+        player position: (-1,-1)
+        enemy Formation: (12, 12) (ThisFile)
+        */
+        Vector3 currentPosition = new Vector3
         (
-            distanceFromPlayer * angleFromPlayer.x,
-            distanceFromPlayer * angleFromPlayer.y
+            Mathf.Abs(transform.position.x),
+            Mathf.Abs(transform.position.y)
         );
-        lerp.lerpDuration = Stats.EnemyVelocity * distanceFromPlayer;
-        lerp.condition = true;
+        Vector3 pointOfContact = new Vector3
+        (
+            Mathf.Abs(playerData.positionOnMap.x),
+            Mathf.Abs(playerData.positionOnMap.y)
+        );
+        return new Vector3
+        (
+            // if playerPosition <= currentPosition, the point of contact is below the formation
+            currentPosition.x + pointOfContact.x,
+            currentPosition.y + pointOfContact.y
+        );
+    }
+    void MoveAwayFromPlayer(float vectorFromPlayer, Vector3 angleFromPlayer)
+    {
+        Vector3 endPosition = new Vector3
+        (
+            vectorFromPlayer * angleFromPlayer.x,
+            vectorFromPlayer * angleFromPlayer.y
+        );
+        lerp.Lerp(endPosition, Stats.EnemyVelocity * vectorFromPlayer); // .lerpDuration = Stats.EnemyVelocity * vectorFromPlayer;
+        // lerp.condition = true;
     }
 }
