@@ -1,89 +1,62 @@
 ﻿
 using System;
 using UnityEngine;
+using EZLerps;
 
 public class EnemyFormation : MonoBehaviour
 {
-    new CapsuleCollider2D collider;
-    new Transform transform;
-    Vector3 pointOfContact;
-    Vector3 directionOfPlayer;
-    EZLerp lerp;
-    float angleOfWall;
-    float distanceToMaintain;
-    float distanceFromWallToMaintain;
+    private Transform txform;
     public PlayerData playerData;
+    public float distanceToMaintain = 4.0f;
+    public Vector3 vectorFromPlayerToThis;
+    private EZLerp lerp;
 
     void Start()
     {
-        collider = GetComponent<CapsuleCollider2D>();
-        transform = GetComponent<Transform>();
+        txform = GetComponent<Transform>();
         lerp = GetComponent<EZLerp>();
-        distanceToMaintain = 4.0f;
     }
     void Update()
-    {
-        
-    }
+    {}
     void FixedUpdate()
     {
-        
-        Debug.Log($"Vector from Player to Formation: {VectorFromPlayer()}");
-        MoveAwayFromPlayer();
+        vectorFromPlayerToThis = GetVectorFromPlayerToThis();
+        FallBack();
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    private Vector3 GetVectorFromPlayerToThis()
     {
-        pointOfContact = collision.GetContact(0).normal;
-    }
-    void OnTriggerEnter2D(Collider2D collider)
-    {
-        if(collider.gameObject.CompareTag(Tags.Wall))
-        {
-            Debug.Log("Collided with wall");
-        }
-    }
-    Vector3 VectorFromPlayer()
-     // The distance between player's and enemy's position
-     // @todo fix this because you did it wrong.
-    {
-        return new Vector3(
-            transform.position.x - playerData.positionOnMap.x,
-            transform.position.y - playerData.positionOnMap.y
+        // GetVectorFromPlayerToThis is the distance on the x and y planes respectively. It cannot be used to calculate distance
+        return new Vector3
+        (
+            txform.position.x - playerData.position.x,
+            txform.position.y - playerData.position.y
         );
     }
-    void MoveAwayFromPlayer()
+    private bool PlayerIsTooClose()
     {
-        Vector3 distanceFromPlayer = VectorFromPlayer();
-        Vector3 angleOfApproach = VectorFromPlayer().normalized;
-        Vector3 endPosition = new Vector3(transform.position.x, transform.position.y);
-        // if approaching from the east/west && too close
-        if(distanceFromPlayer.x >= 0 && TooClose(distanceFromPlayer.x)) // east
+        if(GetVectorFromPlayerToThis().magnitude <= distanceToMaintain)
         {
-            endPosition.x = playerData.positionOnMap.x + distanceToMaintain;
+            Debug.Log("Player is getting closer");
+            return true;
         }
-        else if (distanceFromPlayer.x < 0 && TooClose(distanceFromPlayer.x)) // west
+        else
         {
-            endPosition.x = playerData.positionOnMap.x - distanceToMaintain;
-        }
-
-        // if approaching from the north/south && too close
-        if(distanceFromPlayer.y >= 0 && TooClose(distanceFromPlayer.y))
-        {
-            endPosition.y = playerData.positionOnMap.y + distanceToMaintain;
-        }
-        else if(distanceFromPlayer.y < 0 && TooClose(distanceFromPlayer.y))
-        {
-            endPosition.y = playerData.positionOnMap.y - distanceToMaintain;
-        }
-
-        if(TooClose(distanceFromPlayer.x) || TooClose(distanceFromPlayer.y))
-        {
-            lerp.Setup(endPosition, 0.5f);
+            return false;
         }
     }
-
-    bool TooClose(float distanceFromPlayer)
+    private void FallBack()
     {
-        return distanceFromPlayer < distanceToMaintain;
+        Vector3 angleOfApproach = GetVectorFromPlayerToThis().normalized;
+        Vector3 endPosition = new Vector3
+        (
+            angleOfApproach.x <= 0.0f && PlayerIsTooClose()
+                ? txform.position.x + 2.0f
+                : txform.position.x,
+            angleOfApproach.y <= 0.0f && PlayerIsTooClose()
+                ? txform.position.y + 2.0f
+                : txform.position.y
+        );
+        Debug.Log($"endPosition: {endPosition}");
+        lerp.Setup(endPosition, 0.5f);
     }
 }

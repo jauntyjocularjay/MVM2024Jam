@@ -58,7 +58,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         camera = Camera.main;
         collider = GetComponent<CircleCollider2D>();
         animator = GetComponent<Animator>();
-        playerData.positionOnMap = transform.position;
+        playerData.position = transform.position;
         animator.SetTrigger("idle");
         WP = GetComponent<WeaponsHandler>();
     }
@@ -73,11 +73,11 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     }
     void FixedUpdate()
     {
-        transform.position = new Vector2(
+        transform.position = new Vector3(
             transform.position.x + (playerData.moveDirection.x * playerData.moveSpeed),
             transform.position.y + (playerData.moveDirection.y * playerData.moveSpeed)
         );
-        playerData.positionOnMap = transform.position;
+        playerData.position = transform.position;
     }
 
     // Game State Data
@@ -103,8 +103,8 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
             ContactPoint2D[] contacts = new ContactPoint2D[collision.contactCount];
             collision.GetContacts(contacts);
             Vector2 angleOfContact = new Vector2(
-                contacts[0].point.x - playerData.positionOnMap.x,
-                contacts[0].point.y - playerData.positionOnMap.y
+                contacts[0].point.x - playerData.position.x,
+                contacts[0].point.y - playerData.position.y
             );
             angleOfContact.Normalize();
 
@@ -260,16 +260,18 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
         {
             animator.SetTrigger("idle");
         }
-        playerData.positionOnMap = transform.position;
+        playerData.position = transform.position;
     }
     void ReadCursorPosition()
     {
-        Vector2 cursorPosition = Mouse.current.position.ReadValue() - screenCenter;
-        cursorPosition = new Vector2(
+        Vector3 cursorPosition = Mouse.current.position.ReadValue() - screenCenter;
+        cursorPosition = new Vector3
+        (
             cursorPosition.x / Screen.height * 10.0f,
-            cursorPosition.y / Screen.height * 10.0f
+            cursorPosition.y / Screen.height * 10.0f,
+            0.0f
         );
-        cursor.transform.position = cursorPosition + playerData.positionOnMap;
+        cursor.transform.position = cursorPosition + playerData.position;
         camera.transform.position = new Vector3(
             GetComponent<Transform>().position.x + (cursorPosition.x/6),
             GetComponent<Transform>().position.y + (cursorPosition.y/6),
@@ -296,10 +298,10 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     }
     void ReadThumbstickAngle()
     {
-        Vector2 cursorPosition = Mouse.current.position.ReadValue() - screenCenter;
+        Vector3 cursorPosition = Mouse.current.position.ReadValue() - screenCenter;
         cursorPosition = cursorPosition.normalized;
         cursorPosition *= playerData.cursorRadius;
-        cursor.transform.position = cursorPosition + playerData.positionOnMap;
+        cursor.transform.position = cursorPosition + playerData.position;
     }
     // Healing Methods
     void HealingProccess()

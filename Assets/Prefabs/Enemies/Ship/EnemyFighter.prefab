@@ -155,6 +155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a48832debe9ddca47a2d034b45785bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockback: 0
+  knockback: 1
   enemyData: {fileID: 11400000, guid: 4e2feba93feab6243b7e46ea58153edc, type: 2}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 4519163234860049344, guid: e5bb85c94afdcf44aa1320895d8ad8d9, type: 3}
