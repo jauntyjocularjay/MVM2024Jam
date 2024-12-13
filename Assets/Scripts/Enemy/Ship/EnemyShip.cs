@@ -9,7 +9,6 @@ public abstract class EnemyShip : MonoBehaviour
     private List<VFX> sparks;
     private EnemyHealth enemyHealth;
     private VFX vfx;
-    private Pathwinder pathwinder;
     private HelperShip helperShip;
     public EnemyData enemyData;
     public GameManager gameManager;
@@ -19,11 +18,6 @@ public abstract class EnemyShip : MonoBehaviour
         enemyData = ScriptableObject.Instantiate<EnemyData>(enemyData);
         vfx = GetComponent<VFX>();
         enemyHealth = GetComponent<EnemyHealth>();
-        pathwinder = GetComponent<Pathwinder>();
-        if(pathwinder.path.waypoints.Count > 0)
-        {
-            pathwinder.Go();
-        }
 
         gameManager.enemyData.Add(enemyData);
 

@@ -1,7 +1,8 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using UnityEngine;
-using EZLerps;
+using UnityEngine.Splines;
 
 public class EnemyFormation : MonoBehaviour
 {
@@ -9,12 +10,11 @@ public class EnemyFormation : MonoBehaviour
     public PlayerData playerData;
     public float distanceToMaintain = 4.0f;
     public Vector3 vectorFromPlayerToThis;
-    private EZLerp lerp;
+    public List<SplineContainer> splines;
 
     void Start()
     {
         txform = GetComponent<Transform>();
-        lerp = GetComponent<EZLerp>();
     }
     void Update()
     {}
@@ -57,6 +57,5 @@ public class EnemyFormation : MonoBehaviour
                 : txform.position.y
         );
         Debug.Log($"endPosition: {endPosition}");
-        lerp.Setup(endPosition, 0.5f);
     }
 }

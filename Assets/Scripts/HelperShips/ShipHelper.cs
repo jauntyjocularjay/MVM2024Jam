@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using EZLerps;
 
 public abstract class HelperShip : MonoBehaviour
 {
