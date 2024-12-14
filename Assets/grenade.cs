@@ -4,7 +4,10 @@ public class grenade : MonoBehaviour
 {
 
     public float lifeTime;
+    public float dragTime;
     float remainingLifeTime;
+
+    public GameObject explosionEffect;
 
     private void Awake()
     {
@@ -19,7 +22,12 @@ public class grenade : MonoBehaviour
 
     void Explode()
     {
-        
+        Instantiate(explosionEffect, transform.position, transform.rotation);
+
+        if (gameObject != null)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

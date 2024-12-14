@@ -98,7 +98,7 @@ public class PlayerShip : MonoBehaviour, IDataPersistence
     // Collision Methods
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Explosion"))   
         {
             ContactPoint2D[] contacts = new ContactPoint2D[collision.contactCount];
             collision.GetContacts(contacts);
