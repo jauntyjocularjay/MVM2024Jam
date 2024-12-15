@@ -36,7 +36,7 @@ public class EnemyFormation : MonoBehaviour
     {
         if(GetVectorFromPlayerToThis().magnitude <= distanceToMaintain)
         {
-            Debug.Log("Player is getting closer");
+            // Debug.Log("Player is getting closer");
             return true;
         }
         else
@@ -56,6 +56,6 @@ public class EnemyFormation : MonoBehaviour
                 ? txform.position.y + 2.0f
                 : txform.position.y
         );
-        Debug.Log($"endPosition: {endPosition}");
+        // Debug.Log($"endPosition: {endPosition}");
     }
 }
