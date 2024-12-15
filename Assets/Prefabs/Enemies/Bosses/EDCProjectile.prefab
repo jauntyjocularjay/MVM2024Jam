@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5009396628890928539
+--- !u!1 &5298684918955592966
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1225505410329026605}
-  - component: {fileID: 2197841799580478126}
-  - component: {fileID: 5121916291468953917}
-  - component: {fileID: -112100837565675158}
-  - component: {fileID: -5634953046688522238}
-  m_Layer: 29
-  m_Name: EDCGrenade
+  - component: {fileID: 8473489104217775429}
+  - component: {fileID: 3251997974575803186}
+  - component: {fileID: 6789058436847852315}
+  - component: {fileID: 143898589097650423}
+  - component: {fileID: -2375370521865472844}
+  m_Layer: 0
+  m_Name: EDCProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1225505410329026605
+--- !u!4 &8473489104217775429
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5009396628890928539}
+  m_GameObject: {fileID: 5298684918955592966}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.4147067, y: -0.74395406, z: 0}
+  m_LocalPosition: {x: 4.4098954, y: 1.4331369, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2197841799580478126
+--- !u!212 &3251997974575803186
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5009396628890928539}
+  m_GameObject: {fileID: 5298684918955592966}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8589641344194744187, guid: dd618582a5f19d947abd5b8e07d87f9f, type: 3}
+  m_Sprite: {fileID: -879488023, guid: c8809e1b9cb9cf24484e2e82e4f796b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -90,30 +90,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5121916291468953917
+--- !u!114 &6789058436847852315
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5009396628890928539}
+  m_GameObject: {fileID: 5298684918955592966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72921628016d82e4fb5b14cb5b5cd091, type: 3}
+  m_Script: {fileID: 11500000, guid: c79125c38b995dd419b19c0ccf5ad006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpd: 0
-  lifeTime: 7
-  dragTime: 5
-  rb: {fileID: -5634953046688522238}
-  explosionEffect: {fileID: 6738920331907489190, guid: 74cdfc83359089443a2b7fbe3dd7b974, type: 3}
---- !u!61 &-112100837565675158
+  rb: {fileID: 143898589097650423}
+--- !u!50 &143898589097650423
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5298684918955592966}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &-2375370521865472844
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5009396628890928539}
+  m_GameObject: {fileID: 5298684918955592966}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -153,30 +176,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!50 &-5634953046688522238
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5009396628890928539}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0

@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 
 public class EDCMovementandShootingScript : MonoBehaviour
 {
+    public Transform shotPos;
+
     public GameObject ShieldObj;
     public List<GameObject> Shields;
 
@@ -15,6 +17,10 @@ public class EDCMovementandShootingScript : MonoBehaviour
     public GameObject projectile;
 
     public GameObject GrenadeProjectile;
+    public float grenadeLifeTime;
+    public float grenadeDragTime;
+
+    public int grenadeClusterAmmount;
 
     [SerializeField] float ProjectileCooldown;
     float currentProjCooldown;
@@ -50,6 +56,31 @@ public class EDCMovementandShootingScript : MonoBehaviour
         }
     }
 
+    void shootProjectile()
+    {
+        GameObject currentObject = Instantiate(projectile, shotPos.position, shotPos.rotation);
+        EDCProjectile currentBullet = currentObject.GetComponent<EDCProjectile>();
+
+        currentBullet.CalibrateBullet(10f, 25, 5);
+
+        currentProjCooldown = ProjectileCooldown;
+
+    }
+
+    void shootGrenade()
+    {
+        for (int i = 0; i < grenadeClusterAmmount; i++)
+        {
+            GameObject newNade = Instantiate(GrenadeProjectile, shotPos.position, shotPos.rotation);
+            newNade.transform.rotation = Quaternion.Euler(0f, 0f, (transform.rotation.eulerAngles.z + UnityEngine.Random.Range(-25f, 25f)));
+
+            newNade.GetComponent<grenade>().CalibrateBullet(10, 7, 0.1f);
+
+           
+        }
+
+        currentGrenadeCooldown = GrenadeCooldown;
+    }
 
     public void InitializeFight()
     {
@@ -68,7 +99,8 @@ public class EDCMovementandShootingScript : MonoBehaviour
     void eventClock()
     {
         currentShieldCooldown -= Time.deltaTime;
-        //TODO, add rest of cooldowns;
+        currentProjCooldown -= Time.deltaTime;
+        currentGrenadeCooldown -= Time.deltaTime;
     }
 
     void handleCooldowns()
@@ -77,6 +109,15 @@ public class EDCMovementandShootingScript : MonoBehaviour
         {
             RefreshShields();
         }
+        if (currentProjCooldown <= 0.0f)
+        {
+            shootProjectile();
+        }
+        if (currentGrenadeCooldown <= 0.0f)
+        {
+            shootGrenade();
+        }
+
         //TODO, add rest of cooldowns;
     }
 
