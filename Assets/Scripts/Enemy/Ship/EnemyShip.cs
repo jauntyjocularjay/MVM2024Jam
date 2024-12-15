@@ -18,7 +18,6 @@ public abstract class EnemyShip : MonoBehaviour
         enemyData = ScriptableObject.Instantiate<EnemyData>(enemyData);
         vfx = GetComponent<VFX>();
         enemyHealth = GetComponent<EnemyHealth>();
-
         gameManager.enemyData.Add(enemyData);
 
     }
@@ -34,6 +33,8 @@ public abstract class EnemyShip : MonoBehaviour
         {
             sparks[1].Play();
         }
+
+
     }
     bool DiesOnContact()
     {
