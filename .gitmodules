@@ -4,6 +4,3 @@
 [submodule "Assets/StudioDMB/EZLerp"]
 	path = Assets/StudioDMB/EZLerp
 	url = https://github.com/jauntyjocularjay/ezlerp.git
-[submodule "Assets/StudioDMB/VectorPP"]
-	path = Assets/StudioDMB/VectorPP
-	url = https://github.com/jauntyjocularjay/vectorpp.git
