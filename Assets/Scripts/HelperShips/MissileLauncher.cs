@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class MissileLauncher : HelperShip
 {
+    public ShipType shipType = ShipType.MissileLauncher;
     new void Start()
     {
         base.Start();

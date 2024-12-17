@@ -1,9 +1,8 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Pavise : HelperShip
 {
-    ShipType shipType = ShipType.Pavise;
+    public ShipType shipType = ShipType.Pavise;
 
     new void Start()
     {

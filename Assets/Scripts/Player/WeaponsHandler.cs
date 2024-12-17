@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 
 public class WeaponsHandler : MonoBehaviour
 {
@@ -36,14 +32,14 @@ public class WeaponsHandler : MonoBehaviour
         //handleWeapons();
         handleCooldowns();
     }
-    public void IncrementWeaponSelector(bool positive)
+    public void IncrementWeaponSelector(bool positive) // Incrementing in positive
     {
         if(positive && weaponsIndex + 1 < weapons.Count)
         {
             weaponsIndex++;
             primaryWeapon = weapons[weaponsIndex];
         }
-        else if(!positive && weaponsIndex -1 < weapons.Count)
+        else if(!positive && weaponsIndex > 0) // Incrementing in negative
         {
             weaponsIndex--;
             primaryWeapon = weapons[weaponsIndex];

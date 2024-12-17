@@ -1,12 +1,15 @@
 [submodule "git"]
-    path = git
-    url = https://github.com/jauntyjocularjay/kwikgit.git
+	path = git
+	url = https://github.com/jauntyjocularjay/kwikgit.git
 [submodule "Assets/StudioDMB/EZLerp"]
-    path = Assets/StudioDMB/EZLerp
-    url = https://github.com/jauntyjocularjay/ezlerp.git
+	path = Assets/StudioDMB/EZLerp
+	url = https://github.com/jauntyjocularjay/ezlerp.git
+<<<<<<< HEAD
 [submodule "Assets/StudioDMB/VectorPP"]
-    path = Assets/StudioDMB/VectorPP
-    url = https://github.com/jauntyjocularjay/VectorPPUnity.git
+	path = Assets/StudioDMB/VectorPP
+	url = https://github.com/jauntyjocularjay/vectorpp.git
+=======
 [submodule "Assets/StudioDMB/Magellin"]
-    path = Assets/StudioDMB/Magellin
-    url = https://github.com/jauntyjocularjay/Magellin.git
+	path = Assets/StudioDMB/Magellin
+	url = https://github.com/jauntyjocularjay/Magellin.git
+>>>>>>> dev

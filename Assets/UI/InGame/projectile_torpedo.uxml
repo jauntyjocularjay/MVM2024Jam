@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="torpedo" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/GVituri/torpedo_display.png?fileID=-2376145196101976775&amp;guid=c228e873f9d176649b4fcf2a46ab494d&amp;type=3#torpedo_0&quot;); height: 45%; width: 15%; max-height: 45%;" />
+</ui:UXML>

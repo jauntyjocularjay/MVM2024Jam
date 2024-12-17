@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class TorpedoLauncher : HelperShip
 {
+    public ShipType shipType = ShipType.TorpedoLauncher;
     new void Start()
     {
         base.Start();

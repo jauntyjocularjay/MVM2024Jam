@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using EZLerps;
 
-public class HelperShip : MonoBehaviour
+public abstract class HelperShip : MonoBehaviour
 {
-    public List<Vector3> destinations;
     public int HP;
     private Animator animator;
     private GameObject projectilePrefab;
@@ -15,15 +15,11 @@ public class HelperShip : MonoBehaviour
         pathwinder.Go();
     }
     public void Idle()
-    {
-        
-    }
+    {}
     public void MoveLeft()
-    {
-    }
+    {}
     public void MoveRight()
-    {
-    }
+    {}
 }
 
 public enum ShipType

@@ -1,16 +1,16 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyTorpedoLauncher : EnemyShip
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    SpriteRenderer spriteRenderer;
+    new void Start()
     {
-        
+        base.Start();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite.rect.Set(spriteRenderer.sprite.rect.x, spriteRenderer.sprite.rect.y, spriteRenderer.sprite.rect.height * 0.9f, spriteRenderer.sprite.rect.width * 0.7f);
     }
-
-    // Update is called once per frame
-    void Update()
+    new void Update()
     {
-        
+        base.Update();        
     }
 }

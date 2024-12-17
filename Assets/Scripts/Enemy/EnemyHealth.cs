@@ -10,8 +10,6 @@ public class EnemyHealth : MonoBehaviour
     /* @todo Jade is refactoring HelperShip */
     public HelperShip CapturedShip;
 
-    public bool isAShield = false;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

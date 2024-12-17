@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8379679720187363526}
   - component: {fileID: 5017806205411621718}
-  - component: {fileID: 2987884208614832899}
+  - component: {fileID: -5666332553582438386}
+  - component: {fileID: -6040477928776176671}
   m_Layer: 6
   m_Name: Transmitter
   m_TagString: Untagged
@@ -88,8 +89,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &2987884208614832899
-PolygonCollider2D:
+--- !u!61 &-5666332553582438386
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -132,11 +133,17 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.28125, y: 1.25}
-      - {x: -0.34375, y: 0.9375}
-      - {x: -0.34375, y: -1.25}
-      - {x: 0.34375, y: -1.25}
-      - {x: 0.34375, y: 1.25}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &-6040477928776176671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820651042166793804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4728449dc57ca44aaa13f29907c8797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

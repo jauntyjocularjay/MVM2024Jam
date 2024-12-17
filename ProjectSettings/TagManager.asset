@@ -8,8 +8,9 @@ TagManager:
   - Enemy
   - EnergyField
   - TractorBeam
-  - Explosion
-  - Shield
+  - RailBlock
+  - Rail
+  - Sensor
   layers:
   - Default
   - TransparentFX
@@ -39,8 +40,8 @@ TagManager:
   - 
   - Action
   - Bullets
-  - NoProjectile
-  - IgnoreAll
+  - 
+  - 
   - 
   - 
   m_SortingLayers:
