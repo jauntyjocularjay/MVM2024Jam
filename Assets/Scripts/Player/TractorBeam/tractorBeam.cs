@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class tractorBeam : Weapon
+public class TractorBeam : Weapon
 {
     public override void OnShoot(Transform emitter, bool rapid)
     {

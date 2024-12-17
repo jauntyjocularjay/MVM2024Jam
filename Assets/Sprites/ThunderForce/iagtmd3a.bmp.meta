@@ -1,0 +1,2912 @@
+fileFormatVersion: 2
+guid: cab02504d87fa984ab60365b7e1e2057
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -261183498940647918
+    second: iagtmd3a_0
+  - first:
+      213: -6076286468919762370
+    second: iagtmd3a_1
+  - first:
+      213: -171871821865521812
+    second: iagtmd3a_2
+  - first:
+      213: 8417253887365107610
+    second: iagtmd3a_3
+  - first:
+      213: 2691438732466135068
+    second: iagtmd3a_4
+  - first:
+      213: -6303360142494293504
+    second: iagtmd3a_5
+  - first:
+      213: -7846673405047142561
+    second: iagtmd3a_6
+  - first:
+      213: -3742607282051237918
+    second: iagtmd3a_7
+  - first:
+      213: -6132474914196510766
+    second: iagtmd3a_8
+  - first:
+      213: 1968807084091035685
+    second: iagtmd3a_9
+  - first:
+      213: -1254103941727728957
+    second: iagtmd3a_10
+  - first:
+      213: -497396685221845640
+    second: iagtmd3a_11
+  - first:
+      213: -3352624987328337283
+    second: iagtmd3a_12
+  - first:
+      213: -2666757823563602797
+    second: iagtmd3a_13
+  - first:
+      213: -5750915095101572432
+    second: iagtmd3a_14
+  - first:
+      213: -6352443554249648256
+    second: iagtmd3a_15
+  - first:
+      213: 3771701558156878636
+    second: iagtmd3a_16
+  - first:
+      213: 265517702647702973
+    second: iagtmd3a_17
+  - first:
+      213: -1976188910134543725
+    second: iagtmd3a_18
+  - first:
+      213: -5273692398294197883
+    second: iagtmd3a_19
+  - first:
+      213: -1688203505777325729
+    second: iagtmd3a_20
+  - first:
+      213: -2506704273245807145
+    second: iagtmd3a_21
+  - first:
+      213: 7841400824174772176
+    second: iagtmd3a_22
+  - first:
+      213: -8635486474195945994
+    second: iagtmd3a_23
+  - first:
+      213: 6621649043210622439
+    second: iagtmd3a_24
+  - first:
+      213: -2670087659006361389
+    second: iagtmd3a_25
+  - first:
+      213: 60917737224066987
+    second: iagtmd3a_26
+  - first:
+      213: -5786715061206968363
+    second: iagtmd3a_27
+  - first:
+      213: 7805664729381993030
+    second: iagtmd3a_28
+  - first:
+      213: -447407761312080892
+    second: iagtmd3a_29
+  - first:
+      213: -6576517026470600674
+    second: iagtmd3a_30
+  - first:
+      213: -1636474469848786630
+    second: iagtmd3a_31
+  - first:
+      213: -4164462490436651291
+    second: iagtmd3a_32
+  - first:
+      213: -6224571780817755374
+    second: iagtmd3a_33
+  - first:
+      213: -386435761261005828
+    second: iagtmd3a_34
+  - first:
+      213: 8337910286916207845
+    second: iagtmd3a_35
+  - first:
+      213: -1045193769425373156
+    second: iagtmd3a_36
+  - first:
+      213: 5907026005815981513
+    second: iagtmd3a_37
+  - first:
+      213: 1012415327168474967
+    second: iagtmd3a_38
+  - first:
+      213: 3832492287083110065
+    second: iagtmd3a_39
+  - first:
+      213: -1385061722956655588
+    second: iagtmd3a_40
+  - first:
+      213: -3021993187877893957
+    second: iagtmd3a_41
+  - first:
+      213: 3220031222120327501
+    second: iagtmd3a_42
+  - first:
+      213: 8938641228663742191
+    second: iagtmd3a_43
+  - first:
+      213: 6836667603095939759
+    second: iagtmd3a_44
+  - first:
+      213: -8770436458988459707
+    second: iagtmd3a_45
+  - first:
+      213: 3497033902706897541
+    second: iagtmd3a_46
+  - first:
+      213: -8323466179564981293
+    second: iagtmd3a_47
+  - first:
+      213: -3402244959758904369
+    second: iagtmd3a_48
+  - first:
+      213: -2821302722869918624
+    second: iagtmd3a_49
+  - first:
+      213: 2799594515620592318
+    second: iagtmd3a_50
+  - first:
+      213: 2947597009444756835
+    second: iagtmd3a_51
+  - first:
+      213: -3657895195886508221
+    second: iagtmd3a_52
+  - first:
+      213: 2181960500140623256
+    second: iagtmd3a_53
+  - first:
+      213: 9194726377662727062
+    second: iagtmd3a_54
+  - first:
+      213: -6133347208686306954
+    second: iagtmd3a_55
+  - first:
+      213: -4181424778505742685
+    second: iagtmd3a_56
+  - first:
+      213: 4596360754896928325
+    second: iagtmd3a_57
+  - first:
+      213: -85426003641955752
+    second: iagtmd3a_58
+  - first:
+      213: 4350014408940970708
+    second: iagtmd3a_59
+  - first:
+      213: 5296497583556024077
+    second: iagtmd3a_60
+  - first:
+      213: 8338563594654120217
+    second: iagtmd3a_61
+  - first:
+      213: -3103670366278265872
+    second: iagtmd3a_62
+  - first:
+      213: 3675512084378937401
+    second: iagtmd3a_63
+  - first:
+      213: -7652719089558748259
+    second: iagtmd3a_64
+  - first:
+      213: -783934982175485864
+    second: iagtmd3a_65
+  - first:
+      213: 4542254710948378549
+    second: iagtmd3a_66
+  - first:
+      213: 3157056581844238010
+    second: iagtmd3a_67
+  - first:
+      213: 3719879666844402862
+    second: iagtmd3a_68
+  - first:
+      213: -7418627871741644370
+    second: iagtmd3a_69
+  - first:
+      213: 5214854891013833727
+    second: iagtmd3a_70
+  - first:
+      213: -4004119437942798221
+    second: iagtmd3a_71
+  - first:
+      213: -7991232295172563109
+    second: iagtmd3a_72
+  - first:
+      213: 4461681656846467148
+    second: iagtmd3a_73
+  - first:
+      213: 257477396496319247
+    second: iagtmd3a_74
+  - first:
+      213: -8170766440507918325
+    second: iagtmd3a_75
+  - first:
+      213: -7077533272812624346
+    second: iagtmd3a_76
+  - first:
+      213: 1213396608866843760
+    second: iagtmd3a_77
+  - first:
+      213: 8046864314976085551
+    second: iagtmd3a_78
+  - first:
+      213: 8206102685924035954
+    second: iagtmd3a_79
+  - first:
+      213: 5293207656174645898
+    second: iagtmd3a_80
+  - first:
+      213: 7129249084555766739
+    second: iagtmd3a_81
+  - first:
+      213: 5698736536568173512
+    second: iagtmd3a_82
+  - first:
+      213: -5755670565822401949
+    second: iagtmd3a_83
+  - first:
+      213: 6583532778654812508
+    second: iagtmd3a_84
+  - first:
+      213: 4341001484800022500
+    second: iagtmd3a_85
+  - first:
+      213: 3217360137599216384
+    second: iagtmd3a_86
+  - first:
+      213: -2350608569646701883
+    second: iagtmd3a_87
+  - first:
+      213: 2029565457383127391
+    second: iagtmd3a_88
+  - first:
+      213: -6935983240848368555
+    second: iagtmd3a_89
+  - first:
+      213: -4108815238926550970
+    second: iagtmd3a_90
+  - first:
+      213: 7793846184236296410
+    second: iagtmd3a_91
+  - first:
+      213: 569878148214368543
+    second: iagtmd3a_92
+  - first:
+      213: 8959127513609128703
+    second: iagtmd3a_93
+  - first:
+      213: 2580078275955637579
+    second: iagtmd3a_94
+  - first:
+      213: -4966570053277877175
+    second: iagtmd3a_95
+  - first:
+      213: 1441419957557568749
+    second: iagtmd3a_96
+  - first:
+      213: -8978086362562472703
+    second: iagtmd3a_97
+  - first:
+      213: -7681850605254529941
+    second: iagtmd3a_98
+  - first:
+      213: -4190932424105426341
+    second: iagtmd3a_99
+  - first:
+      213: -8745954702419426626
+    second: iagtmd3a_100
+  - first:
+      213: 8636051194232889367
+    second: iagtmd3a_101
+  - first:
+      213: -1179972578470059941
+    second: iagtmd3a_102
+  - first:
+      213: -6148312798791648002
+    second: iagtmd3a_103
+  - first:
+      213: 2448663786006371000
+    second: iagtmd3a_104
+  - first:
+      213: 7993010773997431725
+    second: iagtmd3a_105
+  - first:
+      213: 6524912255276018565
+    second: iagtmd3a_106
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: iagtmd3a_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 154
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216f274ddf6106cf0800000000000000
+      internalID: -261183498940647918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 154
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32668a66a1bcaba0800000000000000
+      internalID: -6076286468919762370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 154
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d6ec61d736d9df0800000000000000
+      internalID: -171871821865521812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 154
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f4ca460d710d470800000000000000
+      internalID: 8417253887365107610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 154
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c102f5f6449e95520800000000000000
+      internalID: 2691438732466135068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 117
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002a547d857f588a0800000000000000
+      internalID: -6303360142494293504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 117
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5709af8c140b1390800000000000000
+      internalID: -7846673405047142561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 117
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7bb8391869f0cc0800000000000000
+      internalID: -3742607282051237918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_8
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 117
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7a2598e8215eaa0800000000000000
+      internalID: -6132474914196510766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_9
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 117
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520d48e9c9b925b10800000000000000
+      internalID: 1968807084091035685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 119
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cac6e90c17889ee0800000000000000
+      internalID: -1254103941727728957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 119
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87525e0a954e819f0800000000000000
+      internalID: -497396685221845640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 105
+        width: 66
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a223546551971d0800000000000000
+      internalID: -3352624987328337283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_13
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 95
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3946f7873e5cdfad0800000000000000
+      internalID: -2666757823563602797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_14
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 101
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0baf90fc035a030b0800000000000000
+      internalID: -5750915095101572432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 97
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087da3d7e3697d7a0800000000000000
+      internalID: -6352443554249648256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_16
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 94
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c236ab47596c75430800000000000000
+      internalID: 3771701558156878636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_17
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 98
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5e4eb91fe4fa300800000000000000
+      internalID: 265517702647702973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_18
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 79
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a3d5218aa2394e0800000000000000
+      internalID: -1976188910134543725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 84
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5891ff874b410d6b0800000000000000
+      internalID: -5273692398294197883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_20
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 84
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59c2912bdb4298e0800000000000000
+      internalID: -1688203505777325729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_21
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 83
+        width: 66
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ddda3c9eb5663dd0800000000000000
+      internalID: -2506704273245807145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_22
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 79
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df746a018042dc60800000000000000
+      internalID: 7841400824174772176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_23
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 79
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f53cd2fdc6982880800000000000000
+      internalID: -8635486474195945994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_24
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 79
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5dfd7c8b2d4eb50800000000000000
+      internalID: 6621649043210622439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_25
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 79
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d085cdbb61f1fad0800000000000000
+      internalID: -2670087659006361389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_26
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 79
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7d2c7fb5c68d000800000000000000
+      internalID: 60917737224066987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_27
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 61
+        width: 66
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d71b58af4571bfa0800000000000000
+      internalID: -5786715061206968363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_28
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 57
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64afb9617ba435c60800000000000000
+      internalID: 7805664729381993030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_29
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 52
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c9d35f20d7ac9f0800000000000000
+      internalID: -447407761312080892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_30
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 47
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1069e9bb948bb4a0800000000000000
+      internalID: -6576517026470600674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_31
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 59
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39daacd3231a49e0800000000000000
+      internalID: -1636474469848786630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_32
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6b511ed6bd436c0800000000000000
+      internalID: -4164462490436651291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_33
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 59
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213ef6dc1f0ed99a0800000000000000
+      internalID: -6224571780817755374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_34
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 59
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3b789f8ba13aaf0800000000000000
+      internalID: -386435761261005828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_35
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 32
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e447b4da3536b370800000000000000
+      internalID: 8337910286916207845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_36
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 32
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18f2fbedc9be71f0800000000000000
+      internalID: -1045193769425373156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_37
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 32
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5f7a30bd8f9f150800000000000000
+      internalID: 5907026005815981513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_38
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 32
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fa9054062dc0e00800000000000000
+      internalID: 1012415327168474967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_39
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 32
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be53000e6fbf2530800000000000000
+      internalID: 3832492287083110065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_40
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 32
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c149d2b83b547cce0800000000000000
+      internalID: -1385061722956655588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_41
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 32
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb843e2f439bf06d0800000000000000
+      internalID: -3021993187877893957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_42
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 32
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4926280659dfac20800000000000000
+      internalID: 3220031222120327501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_43
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 32
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feed929a6de6c0c70800000000000000
+      internalID: 8938641228663742191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_44
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 32
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa64f976f8b0ee50800000000000000
+      internalID: 6836667603095939759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_45
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 32
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 549abd02286294680800000000000000
+      internalID: -8770436458988459707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_46
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 32
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582b7527ec5f78030800000000000000
+      internalID: 3497033902706897541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_47
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 32
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d33d0bfb9b1d7c80800000000000000
+      internalID: -8323466179564981293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_48
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 32
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc315b62c3cc8c0d0800000000000000
+      internalID: -3402244959758904369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_49
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 32
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0640f771f18b8d8d0800000000000000
+      internalID: -2821302722869918624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_50
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 32
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba72ba01682ad620800000000000000
+      internalID: 2799594515620592318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_51
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 32
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d55f0fcd7f7e820800000000000000
+      internalID: 2947597009444756835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_52
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 32
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347a39f13bb8c3dc0800000000000000
+      internalID: -3657895195886508221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_53
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895c0dca381e74e10800000000000000
+      internalID: 2181960500140623256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_54
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 32
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693408bbcea3a9f70800000000000000
+      internalID: 9194726377662727062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_55
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 20
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6797e16a539f1eaa0800000000000000
+      internalID: -6133347208686306954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_56
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 20
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6162e615898f5c0800000000000000
+      internalID: -4181424778505742685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_57
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 18
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e7d2701cd89cf30800000000000000
+      internalID: 4596360754896928325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_58
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 18
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a0756908180def0800000000000000
+      internalID: -85426003641955752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_59
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 20
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2e1ccbe0b5e5c30800000000000000
+      internalID: 4350014408940970708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_60
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 20
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07529d7d70f08940800000000000000
+      internalID: 5296497583556024077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_61
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 20
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919fc54e86788b370800000000000000
+      internalID: 8338563594654120217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_62
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 18
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3d31eee3c8de4d0800000000000000
+      internalID: -3103670366278265872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_63
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 20
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 938ef0d54ca020330800000000000000
+      internalID: 3675512084378937401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_64
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 19
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93000da8841cc590800000000000000
+      internalID: -7652719089558748259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_65
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 20
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8509d648947ee15f0800000000000000
+      internalID: -783934982175485864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_66
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 20
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b73c6df794590f30800000000000000
+      internalID: 4542254710948378549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_67
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 18
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe72a00c3e10db20800000000000000
+      internalID: 3157056581844238010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_68
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 20
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea4857529daaf9330800000000000000
+      internalID: 3719879666844402862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_69
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 20
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1f608914dbb0990800000000000000
+      internalID: -7418627871741644370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_70
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 20
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff38616d4e2ee5840800000000000000
+      internalID: 5214854891013833727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_71
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 20
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378ce2ff5928e68c0800000000000000
+      internalID: -4004119437942798221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_72
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 18
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f1c902190791190800000000000000
+      internalID: -7991232295172563109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_73
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 20
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40c531f3d31bed30800000000000000
+      internalID: 4461681656846467148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_74
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 20
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f030bd3f35eb29300800000000000000
+      internalID: 257477396496319247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_75
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 8
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08b7d2863b9b9e80800000000000000
+      internalID: -8170766440507918325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_76
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626eefb9cfc87cd90800000000000000
+      internalID: -7077533272812624346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_77
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 6
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cfb2379c9d6d010800000000000000
+      internalID: 1213396608866843760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_78
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 6
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26aae9d5743caf60800000000000000
+      internalID: 8046864314976085551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_79
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 6
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d81e04aeee1e170800000000000000
+      internalID: 8206102685924035954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_80
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 8
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a82faa49150457940800000000000000
+      internalID: 5293207656174645898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_81
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 8
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dba930254e20f260800000000000000
+      internalID: 7129249084555766739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_82
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 8
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c39fa2dfaaf51f40800000000000000
+      internalID: 5698736536568173512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_83
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362fbff7d10cf10b0800000000000000
+      internalID: -5755670565822401949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_84
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c594cde5e286d5b50800000000000000
+      internalID: 6583532778654812508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_85
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 8
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7d2fec9d55e3c30800000000000000
+      internalID: 4341001484800022500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_86
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b6a14bffb56ac20800000000000000
+      internalID: 3217360137599216384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_87
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c22830c5f5f06fd0800000000000000
+      internalID: -2350608569646701883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_88
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5979b7c7077a2c10800000000000000
+      internalID: 2029565457383127391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_89
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c9b29adff6ebf90800000000000000
+      internalID: -6935983240848368555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_90
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 8
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64832144f4e8af6c0800000000000000
+      internalID: -4108815238926550970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_91
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 8
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8207d9fcd492c60800000000000000
+      internalID: 7793846184236296410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_92
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 8
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19239d082d98e700800000000000000
+      internalID: 569878148214368543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_93
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 8
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffac9129107355c70800000000000000
+      internalID: 8959127513609128703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_94
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 8
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4db90ba5874ec320800000000000000
+      internalID: 2580078275955637579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_95
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c774eb9d2331bb0800000000000000
+      internalID: -4966570053277877175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_96
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4a06e70d3f00410800000000000000
+      internalID: 1441419957557568749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_97
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1055fac650e676380800000000000000
+      internalID: -8978086362562472703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_98
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 8
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c2f202395946590800000000000000
+      internalID: -7681850605254529941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_99
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52878f2a21d6d5c0800000000000000
+      internalID: -4190932424105426341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_100
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb202a4498020a680800000000000000
+      internalID: -8745954702419426626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_101
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710e65e2eca69d770800000000000000
+      internalID: 8636051194232889367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_102
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50279f0135ef9fe0800000000000000
+      internalID: -1179972578470059941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_103
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc390ca51eccaaa0800000000000000
+      internalID: -6148312798791648002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_104
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bad5436db66bf120800000000000000
+      internalID: 2448663786006371000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_105
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dabacfd33f0ecee60800000000000000
+      internalID: 7993010773997431725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iagtmd3a_106
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 6
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58be15e20252d8a50800000000000000
+      internalID: 6524912255276018565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      iagtmd3a_0: -261183498940647918
+      iagtmd3a_1: -6076286468919762370
+      iagtmd3a_10: -1254103941727728957
+      iagtmd3a_100: -8745954702419426626
+      iagtmd3a_101: 8636051194232889367
+      iagtmd3a_102: -1179972578470059941
+      iagtmd3a_103: -6148312798791648002
+      iagtmd3a_104: 2448663786006371000
+      iagtmd3a_105: 7993010773997431725
+      iagtmd3a_106: 6524912255276018565
+      iagtmd3a_11: -497396685221845640
+      iagtmd3a_12: -3352624987328337283
+      iagtmd3a_13: -2666757823563602797
+      iagtmd3a_14: -5750915095101572432
+      iagtmd3a_15: -6352443554249648256
+      iagtmd3a_16: 3771701558156878636
+      iagtmd3a_17: 265517702647702973
+      iagtmd3a_18: -1976188910134543725
+      iagtmd3a_19: -5273692398294197883
+      iagtmd3a_2: -171871821865521812
+      iagtmd3a_20: -1688203505777325729
+      iagtmd3a_21: -2506704273245807145
+      iagtmd3a_22: 7841400824174772176
+      iagtmd3a_23: -8635486474195945994
+      iagtmd3a_24: 6621649043210622439
+      iagtmd3a_25: -2670087659006361389
+      iagtmd3a_26: 60917737224066987
+      iagtmd3a_27: -5786715061206968363
+      iagtmd3a_28: 7805664729381993030
+      iagtmd3a_29: -447407761312080892
+      iagtmd3a_3: 8417253887365107610
+      iagtmd3a_30: -6576517026470600674
+      iagtmd3a_31: -1636474469848786630
+      iagtmd3a_32: -4164462490436651291
+      iagtmd3a_33: -6224571780817755374
+      iagtmd3a_34: -386435761261005828
+      iagtmd3a_35: 8337910286916207845
+      iagtmd3a_36: -1045193769425373156
+      iagtmd3a_37: 5907026005815981513
+      iagtmd3a_38: 1012415327168474967
+      iagtmd3a_39: 3832492287083110065
+      iagtmd3a_4: 2691438732466135068
+      iagtmd3a_40: -1385061722956655588
+      iagtmd3a_41: -3021993187877893957
+      iagtmd3a_42: 3220031222120327501
+      iagtmd3a_43: 8938641228663742191
+      iagtmd3a_44: 6836667603095939759
+      iagtmd3a_45: -8770436458988459707
+      iagtmd3a_46: 3497033902706897541
+      iagtmd3a_47: -8323466179564981293
+      iagtmd3a_48: -3402244959758904369
+      iagtmd3a_49: -2821302722869918624
+      iagtmd3a_5: -6303360142494293504
+      iagtmd3a_50: 2799594515620592318
+      iagtmd3a_51: 2947597009444756835
+      iagtmd3a_52: -3657895195886508221
+      iagtmd3a_53: 2181960500140623256
+      iagtmd3a_54: 9194726377662727062
+      iagtmd3a_55: -6133347208686306954
+      iagtmd3a_56: -4181424778505742685
+      iagtmd3a_57: 4596360754896928325
+      iagtmd3a_58: -85426003641955752
+      iagtmd3a_59: 4350014408940970708
+      iagtmd3a_6: -7846673405047142561
+      iagtmd3a_60: 5296497583556024077
+      iagtmd3a_61: 8338563594654120217
+      iagtmd3a_62: -3103670366278265872
+      iagtmd3a_63: 3675512084378937401
+      iagtmd3a_64: -7652719089558748259
+      iagtmd3a_65: -783934982175485864
+      iagtmd3a_66: 4542254710948378549
+      iagtmd3a_67: 3157056581844238010
+      iagtmd3a_68: 3719879666844402862
+      iagtmd3a_69: -7418627871741644370
+      iagtmd3a_7: -3742607282051237918
+      iagtmd3a_70: 5214854891013833727
+      iagtmd3a_71: -4004119437942798221
+      iagtmd3a_72: -7991232295172563109
+      iagtmd3a_73: 4461681656846467148
+      iagtmd3a_74: 257477396496319247
+      iagtmd3a_75: -8170766440507918325
+      iagtmd3a_76: -7077533272812624346
+      iagtmd3a_77: 1213396608866843760
+      iagtmd3a_78: 8046864314976085551
+      iagtmd3a_79: 8206102685924035954
+      iagtmd3a_8: -6132474914196510766
+      iagtmd3a_80: 5293207656174645898
+      iagtmd3a_81: 7129249084555766739
+      iagtmd3a_82: 5698736536568173512
+      iagtmd3a_83: -5755670565822401949
+      iagtmd3a_84: 6583532778654812508
+      iagtmd3a_85: 4341001484800022500
+      iagtmd3a_86: 3217360137599216384
+      iagtmd3a_87: -2350608569646701883
+      iagtmd3a_88: 2029565457383127391
+      iagtmd3a_89: -6935983240848368555
+      iagtmd3a_9: 1968807084091035685
+      iagtmd3a_90: -4108815238926550970
+      iagtmd3a_91: 7793846184236296410
+      iagtmd3a_92: 569878148214368543
+      iagtmd3a_93: 8959127513609128703
+      iagtmd3a_94: 2580078275955637579
+      iagtmd3a_95: -4966570053277877175
+      iagtmd3a_96: 1441419957557568749
+      iagtmd3a_97: -8978086362562472703
+      iagtmd3a_98: -7681850605254529941
+      iagtmd3a_99: -4190932424105426341
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

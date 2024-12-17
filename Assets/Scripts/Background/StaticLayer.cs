@@ -4,6 +4,6 @@ public class StaticLayer : Layer
 {
     void LateUpdate()
     {
-        transform.position = playerData.positionOnMap;
+        transform.position = playerData.position;
     }
 }

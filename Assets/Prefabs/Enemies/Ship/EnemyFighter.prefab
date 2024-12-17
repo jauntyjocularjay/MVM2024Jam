@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1895735325043558861
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 526638908316880982, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442285770913011943, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442285770913011943, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442285770913011943, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 67108864
+      objectReference: {fileID: 0}
+    - target: {fileID: 5431272268968934755, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: pathObj
+      value: 
+      objectReference: {fileID: 11400000, guid: 47c671685aac1c54e903dfd09661f9bb, type: 2}
+    - target: {fileID: 5431272268968934755, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: filePath
+      value: Assets/Scenes/1BugOps/EnemyPaths/MissileLauncherA/path01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228912017715526216, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_Size.x
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228912017715526216, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_Size.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228912017715526216, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835991243527189983, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: path
+      value: 
+      objectReference: {fileID: 11400000, guid: 47c671685aac1c54e903dfd09661f9bb, type: 2}
+    - target: {fileID: 7835991243527189983, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: waypoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883074937267604287, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883074937267604287, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8030166706537922623, guid: c5f81ee997379194c8617984e64766c8, type: 3}
+    - target: {fileID: 7883074937267604287, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8610918887902604243, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: m_Name
+      value: EnemyFighter
+      objectReference: {fileID: 0}
+    - target: {fileID: 8975542837466378139, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: 'sparks.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4236228302238018967}
+    - target: {fileID: 8975542837466378139, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      propertyPath: 'sparks.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5571893244795600318}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: -3880142378278821465, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8610918887902604243, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: -5730589595812015131}
+    - targetCorrespondingSourceObject: {fileID: 8610918887902604243, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2241808710738662995}
+  m_SourcePrefab: {fileID: 100100000, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+--- !u!114 &4236228302238018967 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2343307809946068058, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+  m_PrefabInstance: {fileID: 1895735325043558861}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04413710b2cf9e148aa4842a7cb33d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5571893244795600318 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6276986922561778803, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+  m_PrefabInstance: {fileID: 1895735325043558861}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04413710b2cf9e148aa4842a7cb33d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7912578396188795422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8610918887902604243, guid: ed52a695d856fe8449c040e3e1e24192, type: 3}
+  m_PrefabInstance: {fileID: 1895735325043558861}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-5730589595812015131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7912578396188795422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48832debe9ddca47a2d034b45785bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockback: 1
+  enemyData: {fileID: 11400000, guid: 4e2feba93feab6243b7e46ea58153edc, type: 2}
+  gameManager: {fileID: 4519163234860049344, guid: e5bb85c94afdcf44aa1320895d8ad8d9, type: 3}
+--- !u!114 &2241808710738662995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7912578396188795422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eecf0660787901b45abd91346848eba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  pathObj: {fileID: 0}
+  filePath: Assets/Prefabs/Enemies/Ship/FighterPaths/01
+  waypointPrefab: {fileID: 8476713871376570907, guid: 1420f64286cf69945bfa10189f88f3da, type: 3}

@@ -5,7 +5,7 @@ public class tractorBeamProjectile : MonoBehaviour
     private float bulletSpd;
     public float maxLifeTime;
     float lifeTime;
-    tractorBeam parentBlaster;
+    TractorBeam parentBlaster;
     [SerializeField] Rigidbody2D rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="missile" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/GVituri/missile_display.png?fileID=-652089275&amp;guid=5367ab0d527032e4582509d3e332706f&amp;type=3#missile 1_0&quot;); max-width: 20%; min-height: 45%; max-height: 45%; margin-right: 40%; margin-left: 40%; margin-top: 27.5%; margin-bottom: 27.5%;" />
+</ui:UXML>
