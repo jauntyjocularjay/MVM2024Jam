@@ -18,6 +18,12 @@
 		},
 		{
 			"path": "Assets/StudioDMB/EZLerp"
+		},
+		{
+			"path": "Assets/StudioDMB/VectorPP"
+		},
+		{
+			"path": "Assets/StudioDMB/Magellin"
 		}
 	],
 	"settings": {
