@@ -6,7 +6,6 @@ public class Warper : MonoBehaviour
     public string targetingScenePath;
     public int sceneEnterance;
 
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
