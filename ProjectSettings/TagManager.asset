@@ -4,10 +4,13 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Enemy
   - Wall
+  - Enemy
   - EnergyField
   - TractorBeam
+  - RailBlock
+  - Rail
+  - Sensor
   layers:
   - Default
   - TransparentFX
@@ -48,14 +51,17 @@ TagManager:
   - name: Background
     uniqueID: 1782188563
     locked: 0
-  - name: Character
-    uniqueID: 3198005807
+  - name: Environment
+    uniqueID: 2059313747
     locked: 0
-  - name: UI
-    uniqueID: 3541971387
+  - name: Action
+    uniqueID: 3198005807
     locked: 0
   - name: Props
     uniqueID: 1569864525
+    locked: 0
+  - name: UI
+    uniqueID: 3541971387
     locked: 0
   m_RenderingLayers:
   - Default

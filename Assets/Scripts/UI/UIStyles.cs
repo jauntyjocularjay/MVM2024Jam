@@ -31,10 +31,4 @@ public class UIStyles : MonoBehaviour
             txt.color = color;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

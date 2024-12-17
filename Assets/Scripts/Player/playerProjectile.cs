@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class PlayerProjectile : MonoBehaviour
 {
-
-
     private float bulletSpd;
-    private float Damage;
+    private int Damage;
     private float lifeTime;
     Blaster parentBlaster;
     [SerializeField] Rigidbody2D rb;
 
-    public void CalibrateBullet(float Speed, float bDamage, float life, Blaster pB)
+    public void CalibrateBullet(float Speed, int bDamage, float life, Blaster pB)
     {
         bulletSpd = Speed;
         Damage = bDamage;
@@ -26,7 +24,7 @@ public class PlayerProjectile : MonoBehaviour
 
         if(lifeTime <= 0)
         {
-            destroyProjectile();
+            DestroyProjectile();
         }
     }
 
@@ -34,16 +32,16 @@ public class PlayerProjectile : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            collision.gameObject.GetComponent<enemyHealth>().takeDamage(Damage);
-            destroyProjectile();
+            collision.gameObject.GetComponent<EnemyHealth>().takeDamage(Damage);
+            DestroyProjectile();
         }
         if (collision.gameObject.tag == "Wall")
         {
-            destroyProjectile();
+            DestroyProjectile();
         }
     }
 
-    private void destroyProjectile()
+    private void DestroyProjectile()
     {
         parentBlaster.currentProjectiles.Remove(gameObject);
         Destroy(gameObject);

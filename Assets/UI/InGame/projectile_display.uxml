@@ -1,0 +1,6 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="projectile_bankshot" src="project://database/Assets/UI/InGame/projectile_bankshot.uxml?fileID=9197481963319205126&amp;guid=b68507b8774702046b3c3a490b0fb6ef&amp;type=3#projectile_bankshot" />
+    <engine:VisualElement name="weapon_display_panel" class="ui-tint" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Sprites/jadedrakerider/RoundFrame.png?fileID=2800000&amp;guid=3850f6aaa1d91c54884ac94749e06fcb&amp;type=3#RoundFrame&quot;);">
+        <engine:Instance template="projectile_bankshot" name="TemplateContainer" style="margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; width: 100%; height: 100%;" />
+    </engine:VisualElement>
+</engine:UXML>
